@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="dao.UtoonMapper">
+	
+	<!-- 로그인 -->
+	<select id="memberLogin" parameterType="dao.MemberVO" resultType="dao.MemberVO">
+		select * from tbl_mem where mem_id = #{mem_id} and mem_pw = #{mem_pw}
+	</select>
+
+	<!-- 회원가입 -->
+	<insert id="newProfile" parameterType="dao.MemberVO">
+		insert into
+		tbl_mem(mem_id,mem_pw,mem_nick,mem_date,mem_type)
+		values(#{mem_id},#{mem_pw},#{mem_nick},sysdate,'1')
+	</insert>
+	
+	<!-- 커뮤니티 전체 게시글 불러오기 -->
+	<select id="postAllList" resultType="dao.PostVO">
+		select * from tbl_comm order by post_date desc
+	</select>
+	
+	<!-- 커뮤니티 게시글 쓰기 -->
+	<insert id="postInsert" parameterType="dao.PostVO">
+		insert into tbl_comm(
+		mem_id,post_title, post_ctnt)
+		values(#{mem_id},#{post_title},#{post_ctnt})
+	</insert>
+	
+	<!-- 커뮤니티 게시글 상세보기 -->
+	<select id="postGet" parameterType="int"
+		resultType="dao.PostVO">
+		select * from tbl_comm where post_num = #{post_num}
+	</select>
+	
+	<!-- 커뮤니티 게시글 삭제하기 -->
+	<delete id="postDelete" parameterType="int">
+		delete from tbl_comm where
+		post_num = #{post_num}
+	</delete>
+	
+	<!-- 커뮤니티 게시글 수정하기 -->
+	<update id="postUpdate" parameterType="dao.PostVO">
+		update tbl_comm set post_title
+		= #{post_title}, post_ctnt= #{post_ctnt} where post_num = #{post_num}
+	</update>
+	<!-- 커뮤니티 뷰 카운트 -->
+	<update id="postView" parameterType="int">
+		update tbl_comm set
+		post_vcnt=post_vcnt+1 where post_num=#{post_num}
+	</update>
+
+	
+	<!-- 리뷰 전체 게시글 불러오기 -->
+	<select id="reviewAllList" resultType="dao.ReviewVO">
+		select * from tbl_wt_review order by rv_date desc
+	</select>
+	
+	<!-- 리뷰 게시글 쓰기 -->
+	<insert id="reviewInsert" parameterType="dao.ReviewVO">
+		insert into tbl_wt_review(
+		mem_id, rv_ctnt,)
+		values(#{mem_id},#{rv_ctnt})
+	</insert>
+	
+	<!-- 리뷰 게시글 상세보기 -->
+	<select id="reviewGet" parameterType="int"
+		resultType="dao.PostVO">
+		select * from tbl_wt_review where rv_num = #{rv_num}
+	</select>
+	
+	<!-- 리뷰 게시글 삭제하기 -->
+	<delete id="reviewDelete" parameterType="int">
+		delete from tbl_wt_review where
+		rv_num = #{rv_num}
+	</delete>
+	
+	<!-- 리뷰 게시글 수정하기 -->
+	<update id="reviewUpdate" parameterType="dao.ReviewVO">
+		update tbl_wt_review set
+		rv_ctnt= #{rv_ctnt} where rv_num = #{rv_num}
+	</update>
+	
+	
+	
+	<!-- 내 게시글 불러오기 -->
+	<select id="myPost" resultType="dao.PostVO">
+		select * from tbl_comm where mem_id = #{mem_id} order by post_date desc
+	</select>
+	
+	<!-- 내 리뷰 불러오기 -->
+	<select id="myReview" resultType="dao.ReviewVO">
+		select * from tbl_wt_review where mem_id = #{mem_id} order by rv_date desc
+	</select>
+	
+	<!-- 내 게시글 댓글 불러오기 -->
+	<select id="myPComment" resultType="dao.PCommentVO">
+		select * from tbl_comm_cmt where mem_id = #{mem_id} order by cmt_date desc
+	</select>
+	
+	<!-- 내 리뷰 댓글 불러오기 -->
+	<select id="myRComment" resultType="dao.RCommentVO">
+		select * from tbl_rv_cmt where mem_id = #{mem_id} order by cmt_date desc
+	</select>
+	
+	<!-- 스크랩 리스트 불러오기 -->
+	
+	
+	
+
+	
+	<!-- 내 게시글 개수 -->
+	<select id="myPC" resultType="int">
+		select count(*) from tbl_comm where mem_id = #{mem_id} order by post_date desc
+	</select>
+	
+	<!-- 내 리뷰 개수 -->
+	<select id="myRC" resultType="int">
+		select count(*) from tbl_wt_review where mem_id = #{mem_id} order by rv_date desc
+	</select>
+	
+	<!-- 내 게시글 댓글 개수 -->
+	<select id="myPCC" resultType="int">
+		select count(*) from tbl_comm_cmt where mem_id = #{mem_id} order by cmt_date desc
+	</select>
+	
+	<!-- 내 리뷰 댓글 개수 -->
+	<select id="myRCC" resultType="int">
+		select count(*) from tbl_rv_cmt where mem_id = #{mem_id} order by cmt_date desc
+	</select>
+
+	<!-- 작성하시오 -->
+
+
+</mapper>

@@ -1,0 +1,1928 @@
+--------------------------------------------------------------------- File Name: style.css ---------------------------------------------------------------------*/
+/*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
+
+@import url(animate.min.css);
+@import url(normalize.css);
+@import url(icomoon.css);
+@import url(css/font-awesome.min.css);
+@import url(meanmenu.css);
+@import url(owl.carousel.min.css);
+@import url(swiper.min.css);
+@import url(slick.css);
+@import url(jquery.fancybox.min.css);
+@import url(jquery-ui.css);
+@import url(nice-select.css);
+
+/*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
+
+* {
+    box-sizing: border-box !important;
+    transition: ease all 0.5s;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    color: #666666;
+    font-size: 14px;
+    line-height: 1.80857;
+    font-weight: normal;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    color: #1f1f1f;
+    text-decoration: none !important;
+    outline: none !important;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    letter-spacing: 0;
+    font-weight: normal;
+    position: relative;
+    padding: 0 0 10px 0;
+    font-weight: normal;
+    line-height: normal;
+    color: #111111;
+    margin: 0
+}
+
+h1 {
+    font-size: 24px
+}
+
+h2 {
+    font-size: 10px;
+    /* text-align: left; */
+}
+
+h3 {
+    font-size: 18px
+}
+
+h4 {
+    font-size: 15px
+}
+
+h5 {
+    font-size: 14px
+}
+
+h6 {
+    font-size: 13px
+}
+
+*,
+*::after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    color: #212121;
+    text-decoration: none!important;
+    opacity: 1
+}
+
+button:focus {
+    outline: none;
+}
+
+ul,
+li,
+ol {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+p {
+    margin: 20px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    outline: none !important;
+}
+
+a,
+.btn {
+    text-decoration: none !important;
+    outline: none !important;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+img {
+    max-width: 100%;
+    height: 100%;
+
+}
+
+ :focus {
+    outline: 0;
+}
+
+.paddind_bottom_0 {
+    padding-bottom: 0 !important;
+}
+
+.btn-custom {
+    margin-top: 20px;
+    background-color: transparent !important;
+    border: 2px solid #ddd;
+    padding: 12px 40px;
+    font-size: 16px;
+}
+
+.lead {
+    font-size: 18px;
+    line-height: 30px;
+    color: #767676;
+    margin: 0;
+    padding: 0;
+}
+
+.form-control:focus {
+    border-color: #ffffff !important;
+    box-shadow: 0 0 0 .2rem rgba(255, 255, 255, .25);
+}
+
+.navbar-form input {
+    border: none !important;
+}
+
+.badge {
+    font-weight: 500;
+}
+
+blockquote {
+    margin: 20px 0 20px;
+    padding: 30px;
+}
+
+button {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.full {
+    float: left;
+    width: 100%;
+}
+
+.layout_padding {
+    padding-top: 90px;
+    padding-bottom: 0px;
+}
+
+.padding_0 {
+    padding: 0px;
+}
+
+
+/* banner bg main start */
+
+.banner_bg_main {
+    width: 100%;
+    float: left;
+    /* background-image: url(../images/banner-bg.png); */
+    background-color: #5e27cd2a;
+    height: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+
+/* banner bg main end */
+
+
+/* header top section start */
+
+.header_section_top {
+    width: 100%;
+    float: left;
+    background-color: #5e27cd2a;
+    /* clip-path: polygon(0 0, 100% 0, 96% 100%, 3% 100%); */
+    border-radius: 20px;
+    height: auto;
+    padding: 10px 0px;
+}
+
+.custom_menu {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    
+}
+
+.custom_menu ul {
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+}
+
+.custom_menu li {
+    float: left;
+    font-size: 20px;
+    color: black;
+    padding: 6px 10px 0px 10px;
+    font-weight: bold;
+}
+
+.custom_menu li a {
+    color:white;
+}
+
+.custom_menu li a:hover {
+    color: #596275;
+}
+
+
+/* header top section end */
+
+
+/* logo section start */
+
+.logo_section {
+    width: 100%;
+    height: 50%;
+    float: left;
+}
+
+.logo {
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding: 70px 0px;
+}
+
+
+/* logo section end */
+
+
+/* header section start */
+
+.header_section {
+    width: 100%;
+    display: flex;
+}
+
+.containt_main {
+    display: flex;
+}
+
+
+/* opennav bar start */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #596275;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #222f3e;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.sidenav_2 {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: ##596275;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav_2 a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+.toggle_icon {
+    cursor: pointer;
+    color: #ffffff;
+    order: 2;
+}
+
+.header_box {
+    order: 2;
+    display: flex;
+}
+
+.dropdown,
+.dropleft,
+.dropright,
+.dropup {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    display: inline-block;
+    margin-left: 30px;
+    order: 2;
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: #30302e;
+    border-color: #30302e;
+}
+
+.btn-secondary:hover {
+    color: #fff;
+    background-color: #30302e;
+    border-color: #30302e;
+}
+
+.show>.btn-secondary.dropdown-toggle:focus {
+    box-shadow: none;
+}
+
+
+/* opennav bar end */
+
+
+/* Styles for wrapping the search box start */
+
+.main {
+    flex: 1;
+    margin: 0px 30px;
+    display: inline-block;
+    order: 2;
+}
+
+
+/* Bootstrap 4 text input with search icon */
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+
+/* Styles for wrapping the search box end */
+
+.login_menu {
+    display: flex;
+    text-align: right;
+    float: right;
+}
+
+.login_menu ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.login_menu li {
+    float: left;
+    font-size: 16px;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding-left: 10px;
+    padding-top: 4px;
+}
+
+.login_menu li a {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.login_menu li a:hover {
+    color: #596275;
+}
+
+.padding_10 {
+    padding-left: 10px;
+}
+
+
+/* flage css start */
+
+.lang_box {
+    display: flex;
+    float: right;
+    background: #fff;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.nav-link {
+    display: block;
+    padding: .4rem 1rem;
+}
+
+a:hover {
+    color: #596275;
+    text-decoration: underline;
+}
+
+
+/* flage css end */
+
+
+/* header section end */
+
+
+/* banner section start */
+
+.banner_section {
+    width: 100%;
+    float: left;
+    padding-bottom: 150px;
+}
+
+.banner_taital {
+    width: 100%;
+    font-size: 25px;
+    color: #ffffff;
+    text-align: ㅣleft;
+    margin-left: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.buynow_bt {
+    width: 170px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.buynow_bt a {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #252525;
+    text-align: center;
+    padding: 10px 0px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.buynow_bt a:hover {
+    background-color: #596275;
+    color: #ffffff;
+}
+
+#my_slider a.carousel-control-next {
+    left: 0px;
+    top: 40px;
+}
+
+#my_slider a.carousel-control-prev {
+    right: 0px;
+    top: 40px;
+}
+
+#my_slider .carousel-control-next,
+#my_slider .carousel-control-prev {
+    width: 45px;
+    height: 45px;
+    background: rgb(242, 222, 172, 0.80);
+    opacity: 1;
+    font-size: 20px;
+    color: #000;
+    border-radius: 100px;
+}
+
+#my_slider .carousel-control-next:focus,
+#my_slider .carousel-control-next:hover,
+#my_slider .carousel-control-prev:focus,
+#my_slider .carousel-control-prev:hover {
+    color: #fff;
+}
+
+
+/* banner section end */
+
+
+/* fashion section start */
+
+.fashion_section {
+    width: 100%;
+    float: left;
+    padding-bottom: 200px;
+    background-color: white;
+}
+
+
+.fashion_taital {
+    padding-top: 20px;
+    width: 100%;
+    font-size: 25px;
+    color: white;
+    font-family : Impact, Charcoal, sans-serif;
+    text-align: left;
+    font-weight: bold;
+    margin-left : 8px;
+    /* background-color: #192a56; */
+}
+.community_taital {
+    padding-top: 20px;
+    width: 100%;
+    font-size: 23px;
+    color: #303952;
+    font-family : Impact, Charcoal, sans-serif;
+    text-align: left;
+    font-weight: bold;
+    margin-left : 8px;
+    /* background-color: #192a56; */
+}
+
+
+.fashion_section_2 {
+    width: 100%;
+    margin-top: 30px;
+    background-color: white;
+}
+
+.box_main {
+    width: 95%;
+    background-color: #5e27cd2a;
+    height: 90%;
+    padding: 10px;
+    box-sizing: border-box;
+    /* box-shadow: 0px 0 30px 10px #f0f0f0; */
+    /* margin-bottom: 20px; */
+    border-radius : 30px; 
+}
+
+.box_main_lank {
+    width: 315%;
+    background-color: #5e27cd2a;
+    height: 100%;
+    padding: 0px;
+    box-sizing: border-box;
+    /* box-shadow: 0px 0 30px 10px #f0f0f0; */
+    /* margin-bottom: 20px; */
+    border-radius : 30px; 
+}
+
+.shirt_text {
+    width: 100%;
+    font-size: 20px;
+    color: #30302e;
+    margin-left: 20px;
+    text-align: left;
+    /* font-weight: bold; */
+    /* padding-bottom: 5px; */
+}
+
+.shirt_text a{
+    font-size : 28px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+
+.shirt_text span{
+    color: #262626;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.shirt_text a:hover{
+    color: yellow;
+}
+
+.price_text {
+    width: 100%;
+    font-size: 16px;
+    color: #f26522;
+    text-align: left;
+    margin: 0px;
+}
+
+.tshirt_img {
+    width: 100%;
+    text-align: center;
+    /* margin: 10px 10px 10px 10px;  */
+    margin-bottom: 15%;
+    min-height: 100px;
+    border-radius : 20%; 
+}
+
+.btn_main {
+    width: 100%;
+    display: flex;
+}
+
+.buy_bt {
+    float: left;
+    width: 100%;
+}
+
+.buy_bt a {
+    width: 100%;
+    font-size: 16px;
+    color: #fab1a0;
+    background-color: transparent;
+    text-align: right;
+    font-weight: bold;
+}
+
+.buy_bt a:hover {
+    background-color: transparent;
+    color: #596275;
+}
+
+.seemore_bt {
+    width: 80%;
+    float: right;
+    text-align: right;
+}
+
+.seemore_bt a {
+    width: 100%;
+    font-size: 16px;
+    color: #262626;
+    background-color: transparent;
+    text-align: right;
+    margin-left: 5%;
+}
+
+.seemore_bt a:hover {
+    background-color: transparent;
+    color: #596275;
+}
+
+#main_slider a.carousel-control-next {
+    right: 615px;
+    top: 105%;
+}
+
+#main_slider a.carousel-control-prev {
+    left: 615px;
+    top: 105%;
+}
+
+#main_slider .carousel-control-next,
+#main_slider .carousel-control-prev {
+    width: 55px;
+    height: 55px;
+    background-color: #30302e;
+    opacity: 1;
+    font-size: 30px;
+    color: #ffffff;
+    margin-top: 100px;
+    border-radius: 50%;
+}
+
+#main_slider .carousel-control-next:focus,
+#main_slider .carousel-control-next:hover,
+#main_slider .carousel-control-prev:focus,
+#main_slider .carousel-control-prev:hover {
+    color: #fff;
+    background-color: #596275;
+}
+
+
+/* fashion section end */
+
+
+
+/* new section start */
+.new_title{
+    /* font-weight: bold; */
+    text-align: center;
+}
+
+.new_option{
+    color: #192a56;
+    margin-left: 70px;
+    font-size: 18px;
+}
+
+
+
+
+/* electronic section start */
+
+.electronic_img {
+    width: 100%;
+    text-align: center;
+    margin: 50px 0px;
+    min-height: 293px;
+}
+
+#electronic_main_slider a.carousel-control-next {
+    right: 615px;
+    top: 105%;
+}
+
+#electronic_main_slider a.carousel-control-prev {
+    left: 615px;
+    top: 105%;
+}
+
+#electronic_main_slider .carousel-control-next,
+#electronic_main_slider .carousel-control-prev {
+    width: 55px;
+    height: 55px;
+    background-color: #30302e;
+    border-radius: 50%;
+    opacity: 1;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+#electronic_main_slider .carousel-control-next:focus,
+#electronic_main_slider .carousel-control-next:hover,
+#electronic_main_slider .carousel-control-prev:focus,
+#electronic_main_slider .carousel-control-prev:hover {
+    color: #fff;
+    background-color: #596275;
+}
+
+
+/* electronic section end */
+
+
+/* jewellery section start */
+
+.jewellery_section {
+    width: 100%;
+    float: left;
+    padding-bottom: 100px;
+    background-color: white;
+}
+
+.jewellery_img {
+    width: 100%;
+    text-align: center;
+    margin: 50px 0px;
+    min-height: 293px;
+}
+
+
+#jewellery_main_slider a.carousel-control-next {
+    right: 615px;
+    top: 100%;
+}
+#jewellery_main_slider a.carousel-control-prev {
+    left: 615px;
+    top: 100%;
+}
+
+
+#jewellery_main_slider .carousel-control-next,
+#jewellery_main_slider .carousel-control-prev {
+    width: 55px;
+    height: 55px;
+    background-color: #30302e;
+    border-radius: 50%;
+    opacity: 1;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+#jewellery_main_slider .carousel-control-next:focus,
+#jewellery_main_slider .carousel-control-next:hover,
+#jewellery_main_slider .carousel-control-prev:focus,
+#jewellery_main_slider .carousel-control-prev:hover {
+    color: #fff;
+    background-color: #596275;
+}
+
+
+/* loader bar css start */
+
+.loader_main {
+    width: 100%;
+    text-align: center;
+    margin-top: 140px;
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #414744;
+    border-right: 16px solid #f26522;
+    border-bottom: 16px solid #414744;
+    border-left: 16px solid #f26522;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 6s linear infinite;
+    margin: 0 auto;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* loader bar css end */
+
+
+/* jewellery section end */
+
+
+/* footer section start */
+
+
+/* footer section start */
+
+.footer_section {
+    width: 100%;
+    float: left;
+    background-color: #252525;
+    height: auto;
+}
+
+.footer_logo {
+    width: 100%;
+    text-align: center;
+}
+
+.input_bt {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    border-bottom: 1px solid #ffffff !important;
+}
+
+.mail_bt {
+    width: 100%;
+    float: left;
+    font-size: 18px;
+    color: #fff;
+    background-color: transparent;
+    padding: 5px 0px 5px 0px;
+    height: 60px;
+    border: 0px;
+}
+
+input.mail_bt::placeholder {
+    color: #fff;
+}
+
+.subscribe_bt {
+    width: 30%;
+    float: right;
+    font-size: 16px;
+    color: #f26522;
+    background-color: transparent;
+    padding: 20px 0px 5px 0px;
+    border-radius: 30px;
+    border: 0px;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.subscribe_bt a {
+    color: #fab1a0;
+}
+
+.subscribe_bt a:hover {
+    color: #ffffff;
+}
+
+.footer_menu {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer_menu ul {
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+}
+
+.footer_menu li {
+    float: left;
+    font-size: 16px;
+    color: #f1f1f1;
+    padding: 20px 10px 0px 10px;
+}
+
+.footer_menu li a {
+    color: #f1f1f1;
+}
+
+.footer_menu li a:hover {
+    color: #596275;
+}
+
+.location_main {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.location_main {
+    float: left;
+    font-size: 16px;
+    color: #ffffff;
+    padding: 30px 30px 30px 30px;
+}
+
+.location_main a {
+    color: #ffffff;
+}
+
+.location_main a:hover {
+    color: #596275;
+}
+
+
+/* footer section end */
+
+
+/* copyright section start */
+
+.copyright_section {
+    width: 100%;
+    float: left;
+    background-color: #252525;
+    height: auto;
+}
+
+.copyright_text {
+    width: 100%;
+    float: left;
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    margin: 20px 0px;
+}
+
+.copyright_text a {
+    color: #ffffff;
+}
+
+.copyright_text a:hover {
+    color: #596275;
+}
+
+.margin_top90 {
+    margin-top: 90px;
+}
+
+
+/* copyright section end */
+/*--------------------------------------------- 아이디,이메일 */
+.id_email{
+    list-style-type:none;
+    text-align: center;
+    font-size: 20px;
+}
+/*--------------------------------------------- 프로필로고이미지 */
+.logo_img{
+    width:175px;
+    height:175px;
+    display: block; 
+    margin:auto; 
+    border: 1px solid #5e27cdf3; 
+    border-radius: 50%;
+}
+/*--------------------------------------------- 설정*/
+#set{
+    height: 60px; 
+    width: 60px; 
+    margin-left: 53%; 
+    margin-top: -30px;
+    
+}
+/*--------------------------------------------- 내정보 */
+.myinfo{
+    text-align: center; 
+    padding-top: 40px; 
+    font-size: 300%;
+}
+/*--------------------------------------------- 박스1_박스*/
+.box_1th{
+    text-align:center; 
+    border-radius: 50px; 
+    height: 180px;
+    background-color: #5e27cd2a; 
+    padding: 10px 16px 10px 16px ;
+}
+/*--------------------------------------------- 박스1_테이블크기 */
+.box_1th_table{
+    width:100% ; 
+    height: 100px;
+}
+/*--------------------------------------------- 박스1_줄간격,글자크기 */
+.box_1th_tr_1{
+    line-height:200%; 
+    font-size:44px ; 
+    width:90%; 
+}
+/*--------------------------------------------- 박스1_찜,보는중,봤어요*/
+.box_1th_tr_2{
+    font-size: 25px;
+}
+/*--------------------------------------------- 박스2*/
+#box_2th{
+    text-align:left;  
+    border-radius: 50px; 
+    height: 330px;
+    background-color: #5e27cd2a;
+}
+/*--------------------------------------------- 박스크기*/
+#box_2th_table{
+    width:100% ; 
+    height: 180px;
+}
+/*--------------------------------------------- 작성리뷰,구독중인 서비스 */
+#box_2th_th_review,#box_2th_th_service{
+    padding-top: 3%;
+    font-size: 23px;
+    text-indent: 4em;
+    }
+/*---------------------------------------------  작성리뷰,구독중인 서비스 갯수*/
+#box_2th_th_rn,#box_2th_th_sn{
+    padding-top: 3%;
+    font-size: 23px;
+    text-indent: 1em;
+}
+
+/*--------------------------------------------- 헤드값*/
+#wantlist_h,#lifeWork_h{
+    font-size:30px; 
+    text-align: left;
+}
+/*--------------------------------------------- 텍스트값*/
+#lifeWork_text,#wantlist_text{
+    font-size: 23px;
+    text-align:center;
+}
+/*---------------------------------------------  버튼*/
+#lifeWork_btn,#wantlist_btn{
+
+    font-size: 20px;
+    border-radius: 10px; 
+    background-color: #5e27cd15;
+    padding: 3px;
+}
+/*--------------------------------------------- div값*/
+#lifeWork-1,#wantlist{
+    text-align: center;
+    font-size: 25px; 
+    width: 100%; 
+    height: 250px;
+}
+/* ---------------------------------------------------------------box1(찜,보는중,봤어요) */
+.hm_want,.hm_watching,.hm_saw {
+    padding-top: 7%;
+    padding-bottom: 2%;
+    margin-left: 6%;
+}
+
+.head_title_w,
+.head_title_s,
+.head_title_saw {
+    padding-top: 20px;
+}
+
+.box_want,
+.box_watching,
+.box_saw {
+    width: 90%;
+    height: 700px;
+    padding-left: 0px;
+    background-color: #5e27cd15;
+    border-radius: 30px;
+    transform: translate(5%, 0%);
+}
+
+.want_text,
+.watching_text,
+.saw_text {
+    text-align: center;
+    transform: translate(0, 800%);
+    font-size: 20px;
+    border: 1px;
+    color: #5F27CD;
+}
+
+.post-content{
+    background-color: white;
+    border-radius: 30px;
+}
+
+.box_saw1 {
+    width: 90%;
+    height: 300px;
+    padding-left: 0px;
+    background-color: #5e27cd15;
+    border-radius: 30px;
+    transform: translate(5%, 0%);
+}
+
+.filter_channels .filter_list {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.filter_channels{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.filter-channels .filter-list[data-v-c2959444]::-webkit-scrollbar {
+    display: none;
+}
+
+.swiper_container {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+
+button, input, optgroup, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+.box_3th{
+    text-align:center; 
+    border-radius: 30px; 
+    height: 100px;
+    background-color: #5e27cd2a; 
+    /* padding: 10px 16px 10px 16px ; */
+}
+
+.box_1th_tr_3{
+    line-height:200%; 
+    font-size:20px ; 
+    width:90%; 
+}
+
+/*--------------------------------------------------------------------- 타임라인 시작 ---------------------------------------------------------------------*/
+
+:root {
+    --primary-color: #fff;
+    /* try #212121 also for dark mode */
+    --background-color: #212121;
+    --font: sans-serif;
+}
+
+/* -------------------------------------------------------- 가운데 정렬 및 디자인 망함*/
+
+.tl {
+    /* background: var(--background-color);
+    font-family: var(--font);
+    display: inline; */
+    /* justify-content: center; */
+    /* margin: 0;
+    padding: 0; */
+    /* width: 1400px;
+    height: 1500px;
+    border: 1px solid black;
+    border-radius: 30px;
+    margin-top: 50px;
+    padding-left: 100px;
+    padding-top: 0px;
+    transform: translate(20%,0); */
+
+}
+
+
+/* -------------------------------------------------------- 업뎃만화_이미지틀*/
+.new_box {
+    width: 190px;
+    height: 240px;
+    /* border: 1px solid rgba(24, 10, 145, 0.712); */
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/* --------------------------------------------------------엇뎃만화_제목 */
+.new_box_title {
+    font-size: 17px;
+}
+
+/* --------------------------------------------------------n화 업뎃 문구 */
+.info {
+    display: inline-block;
+    width: 300px;
+    height: 60px;
+    /* border: 1px solid red; */
+    font-size: 18px;
+    padding-bottom: 6%;
+}
+
+/* --------------------------------------------------------웹툰 사이트(네이버,봄툰,카카오 등) */
+.title_site {
+    padding-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(8, 2, 87, 0.836);
+    line-height: 0px;
+    /* border: 1px solid rgb(119, 0, 255); */
+}
+
+/* -------------------------------------------------------- 날짜 옆 점 */
+.dot{
+    width: 15px;
+    height: 15px;
+    border-radius: 999px;
+    margin-left: -8px;
+    margin-bottom: -18px;
+    background: white;
+    border: 3px solid orangered;
+    border-radius:7px;
+}
+
+/* -------------------------------------------------------- 업뎃날짜 */
+.title_date {
+    margin-left: 15px;
+    color: orangered;
+    position: relative;
+}
+
+/* -------------------------------------------------------- 구분상자 */
+.card {
+
+    position: relative;
+    margin: 0 0 20px 20px;
+    padding: 10px;
+    background: #5e27cd2a;
+    color: gray;
+    border-radius: 8px;
+    width: 1110px;
+}
+
+
+/* Timeline Container */
+.timeline {
+    background: var(--primary-color);
+    margin: 30px auto;
+    padding: 20px;
+}
+
+/* Outer Layer with the timeline border */
+.outer {
+    border-left: 2px solid #333;
+}
+
+
+/* Information about the timeline */
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* -------------------------------------------------------- 커뮤니티 */
+.community_taital{
+    color : black
+}
+
+/*------------------------------
+  Breadcrumb section (분류 표기)
+-------------------------------*/
+
+.breadcrumb-option {
+	margin-top: -270px;
+}
+
+.breadcrumb__links a {
+	font-size: 20px;
+	color: #ffffff;
+	margin-right: 18px;
+	display: inline-block;
+	position: relative;
+}
+
+.breadcrumb__links a i {
+	margin-right: 5px;
+	color: #e53637;
+}
+
+.breadcrumb__links a:after {
+	position: absolute;
+	right: -14px;
+	top: 0;
+	content: "";
+	font-family: "FontAwesome";
+}
+
+.breadcrumb__links span {
+	font-size: 20px;
+    color: #b7b7b7;
+	display: inline-block;
+}
+
+/*---------------------
+    collection-detail.html
+    Helper CSS
+-----------------------*/
+
+.section-title {
+	margin-bottom: 30px;
+}
+
+.section-title h4,
+.section-title h5 {
+	color: #ffffff;
+	font-weight: 600;
+	line-height: 21px;
+	text-transform: uppercase;
+	padding-left: 20px;
+	position: relative;
+	font-family: "Oswald", sans-serif;
+}
+
+.section-title h4:after,
+.section-title h5:after {
+	position: absolute;
+	left: 0;
+	top: -6px;
+	height: 32px;
+	width: 4px;
+	background: #e53637;
+	content: "";
+}
+
+.set-bg {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+}
+
+.spad {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.text-white h1,
+.text-white h2,
+.text-white h3,
+.text-white h4,
+.text-white h5,
+.text-white h6,
+.text-white p,
+.text-white span,
+.text-white li,
+.text-white a {
+	color: #fff;
+}
+
+--------------------------------------------------------
+
+
+/*----- 리뷰 글 내역 START ----*/
+
+.collection-details {
+	padding-top: 20px;
+}
+
+.collection__details__content {
+	margin-bottom: 65px;
+}
+
+.collection__details__text {
+	position: relative;
+}
+
+.collection__details__text p {
+	color: #b7b7b7;
+	font-size: 18px;
+	line-height: 30px;
+}
+
+.collection__details__pic {
+	height: 440px;
+	border-radius: 5px;
+	position: relative;
+}
+
+.collection__details__pic .comment {
+	font-size: 13px;
+	color: #ffffff;
+	background: #3d3d3d;
+	display: inline-block;
+	padding: 5px 10px;
+	border-radius: 10px;
+	position: absolute;
+	left: 10px;
+	bottom: 80px;
+}
+
+.collection__details__pic .view {
+	font-size: 13px;
+	color: #ffffff;
+	background: #3d3d3d;
+	display: inline-block;
+	padding: 5px 10px;
+	border-radius: 10px;
+	position: absolute;
+	right: 10px;
+	bottom: 80px;
+}
+
+.collection__details__title {
+	margin-bottom: 10px;
+}
+
+.collection__details__title h3 {
+	color: #ffffff;
+	font-weight: 700;
+    font-size: 30px;
+	margin-bottom: 13px;
+}
+
+.collection__details__title span {
+	font-size: 15px;
+	color: #b7b7b7;
+	display: block;
+}
+
+.collection__details__rating {
+	text-align: center;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.collection__details__rating .rating i {
+	font-size: 30px;
+	color: #e89f12;
+	display: inline-block;
+}
+
+.collection__details__rating span {
+	display: block;
+	font-size: 18px;
+	color: #b7b7b7;
+    
+}
+
+.collection__details__widget {
+	margin-bottom: 5px;
+}
+
+.collection__details__widget ul {
+	margin-bottom: 5px;
+}
+
+.collection__details__widget ul li {
+	list-style: none;
+	font-size: 15px;
+	color: #ffffff;
+	line-height: 30px;
+	position: relative;
+	padding-left: 18px;
+}
+
+.collection__details__widget ul li:before {
+	position: absolute;
+	left: 0;
+	top: 12px;
+	height: 6px;
+	width: 6px;
+	background: #b7b7b7;
+	content: "";
+}
+
+.collection__details__widget ul li span {
+	color: #b7b7b7;
+	width: 115px;
+	display: inline-block;
+}
+
+.collection__details__btn .follow-btn {
+	font-size: 20px;
+	color: #ffffff;
+	background: #5050FF;
+	display: inline-block;
+	font-weight: 600;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	padding: 14px 10px;
+	border-radius: 4px;
+	margin-right: 20px;
+}
+
+.collection__details__btn .book-btn {
+	font-size: 20px;
+	color: #ffffff;
+	background: #242484;
+	display: inline-block;
+	font-weight: 600;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	padding: 10px 34px;
+	border-radius: 7px 7px 7px 7px;
+	margin-right: 1px;
+}
+
+
+.collection__details__review {
+	margin-bottom: 55px;
+    
+}
+
+.collection__review__item {
+	overflow: hidden;
+	margin-bottom: 22px;
+}
+
+.collection__review__item__pic {
+	float: left;
+	margin-right: 20px;
+	position: relative;
+}
+
+.collection__review__item__pic:before {
+	position: absolute;
+	right: -30px;
+	top: 15px;
+	border-top: 15px solid transparent;
+	border-left: 15px solid #1d1e39;
+	content: "";
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.collection__review__item__pic images {
+	height: 50px;
+	width: 50px;
+	border-radius: 100%;
+}
+
+.collection__review__item__text {
+	overflow: hidden;
+	background: #1d1e39;
+	padding: 18px 30px 16px 20px;
+	border-radius: 10px;
+}
+
+.collection__review__item__text h6 {
+	color: #ffffff;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+
+.collection__review__item__text h6 span {
+	color: #b7b7b7;
+	font-weight: 400;
+}
+
+.collection__review__item__text p {
+	color: #b7b7b7;
+	line-height: 23px;
+	margin-bottom: 0;
+}
+
+.collection__details__form form textarea {
+	width: 100%;
+	font-size: 15px;
+	color: #b7b7b7;
+	padding-left: 20px;
+	padding-top: 12px;
+	height: 110px;
+	border: none;
+	border-radius: 5px;
+	resize: none;
+	margin-bottom: 24px;
+}
+
+.collection__details__form form button {
+	font-size: 11px;
+	color: #ffffff;
+	font-weight: 700;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	background: #e53637;
+	border: none;
+	padding: 10px 15px;
+	border-radius: 2px;
+    
+}
+.collection__review__item__text h6 span {
+    font-size: 12px;
+}
+.collection__review__item__text {
+    padding: 18px 20px 20px;
+}
+
+/*----- 리뷰 글 내역 end ----*/
+
+-------------------------------------------------
+
+/*---------------------
+  작품 컬렉션 모듬 start
+-----------------------*/
+
+
+.product__sidebar .section-title h5 {
+	color: #ffffff;
+	font-weight: 600;
+	font-family: "Oswald", sans-serif;
+	line-height: 21px;
+	text-transform: uppercase;
+	padding-left: 20px;
+	position: relative;
+}
+
+.product__sidebar .section-title h5:after {
+	position: absolute;
+	left: 0;
+	top: -6px;
+	height: 32px;
+	width: 4px;
+	background: #e53637;
+	content: "";
+}
+
+.product__sidebar__view {
+	position: relative;
+	margin-bottom: 80px;
+}
+
+.product__sidebar__view .filter__controls {
+	position: absolute;
+	right: 0;
+	top: -5px;
+}
+
+.product__sidebar__view .filter__controls li {
+	list-style: none;
+	font-size: 13px;
+	color: #b7b7b7;
+	display: inline-block;
+	margin-right: 70px;
+	cursor: pointer;
+}
+
+.product__sidebar__view .filter__controls li.active {
+	color: #ffffff;
+}
+
+.product__sidebar__view .filter__controls li:last-child {
+	margin-right: 0;
+}
+
+.product__sidebar__view__item {
+	height: 190px;
+	position: relative;
+	border-radius: 5px;
+	margin-bottom: 20px;
+    
+}
+
+.product__sidebar__view__item .ep {
+	font-size: 13px;
+	color: #ffffff;
+	background: #e53637;
+	display: inline-block;
+	padding: 2px 12px;
+	border-radius: 4px;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+}
+
+.product__sidebar__view__item .view {
+	font-size: 13px;
+	color: #ffffff;
+	background: #3d3d3d;
+	display: inline-block;
+	padding: 2px 10px;
+	border-radius: 4px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+
+.product__sidebar__view__item h5 {
+	position: absolute;
+	left: 0;
+	bottom: 25px;
+	width: 100%;
+	padding: 0 30px 0 20px;
+}
+
+.product__sidebar__view__item h5 a {
+	color: #ffffff;
+	font-weight: 700;
+	line-height: 26px;
+}
+
+.product__sidebar__comment {
+	margin-bottom: 35px;
+}
+
+.product__sidebar__comment__item {
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+
+.product__sidebar__comment__item__pic {
+	float: left;
+	margin-right: 15px;
+}
+
+.product__sidebar__comment__item__text {
+	overflow: hidden;
+}
+
+.product__sidebar__comment__item__text ul {
+	margin-bottom: 10px;
+}
+
+.product__sidebar__comment__item__text ul li {
+	list-style: none;
+	font-size: 10px;
+	color: #ffffff;
+	font-weight: 700;
+	padding: 1px 10px;
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 50px;
+	display: inline-block;
+}
+
+.product__sidebar__comment__item__text h5 {
+	margin-bottom: 10px;
+}
+
+.product__sidebar__comment__item__text h5 a {
+	color: #ffffff;
+	font-weight: 700;
+	line-height: 26px;
+}
+
+.product__sidebar__comment__item__text span {
+	display: block;
+	font-size: 13px;
+	color: #b7b7b7;
+}
+
+/*---------------------
+  작품 컬렉션 모듬 end
+-----------------------*/
+
+/* -------------------------------------------------------------------------box2(리뷰)시작 */
+
+/* -----------------------------내정보 > 작성한 댓글,내가 작성한 댓글 */
+.head_review_wite,
+.hm_review {
+    color: #192a56;
+    margin-left: 27%;
+}
+
+/* -----------------------------상단 페이지 상자*/
+.page_ment{
+    width: 800px;
+    height: 17px;
+    /* margin-right:50px; */
+    transform: translate(133%,0);
+    /* float: right; */
+    
+}
+
+
+/* -----------------------------보라색 상자*/
+.review_text {
+    margin: auto;
+    width: 1200px;
+    height: 85px;
+    background-color: #5e27cd27;
+    margin-bottom: 1px;
+    border-bottom: 1px solid white;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+/* ----------------------------댓글*/
+.rv_data {
+    float: right;
+    font-size: 12px;
+    color: gray;
+}
+
+
+/* ---------------------------------하단 페이지버튼 */
+.page_btn {
+    /* transform: translate(50%,10%); */
+    text-align: center;
+    letter-spacing: 15px;
+    margin-top: 1%;
+}
+.page_btn a{
+    color : #192a56;
+}
