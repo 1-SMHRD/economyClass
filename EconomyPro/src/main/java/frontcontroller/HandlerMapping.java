@@ -4,8 +4,10 @@ import java.util.HashMap;
 
 import controller.Controller;
 import controller.collectionController;
+import controller.collectionDetailController;
 import controller.communityController;
 import controller.editProfileController;
+import controller.editProfileFormController;
 import controller.exploreController;
 import controller.loginController;
 import controller.loginFormController;
@@ -52,9 +54,11 @@ public class HandlerMapping {
 		mappings.put("/toonDetail.do",new toonDetailController());
 		mappings.put("/postDetail.do",new postDetailController());
 		mappings.put("/reviewDetail.do",new reviewDetailController());
+		mappings.put("/collectionDetail.do",new collectionDetailController());
 		
 		// 프로필 수정, 내 게시글, 내 리뷰, 내 게시글 댓글, 내 리뷰 댓글, 스크랩 리스트 맵핑		
 		mappings.put("/editProfile.do",new editProfileController());
+		mappings.put("editProfileForm.do",new editProfileFormController());
 		mappings.put("/myScrap.do",new myScrapController());
 		mappings.put("/myPost.do",new myPostController());
 		mappings.put("/myReview.do",new myReviewController());
