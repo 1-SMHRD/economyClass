@@ -57,7 +57,7 @@
                         </a>
                      </div>
                      <!-- 왼쪽 최상단 로고 END-->
-                     <div class="custom_menu">
+                     <div class="custom_menu" >
                         <ul>
                            	<li><a href="${cpath}/mainPage.do">홈</a></li>
 							<li><a href="${cpath}/collection.do">컬렉션</a></li>
@@ -67,7 +67,7 @@
 							<li><a href="${cpath}/myPage.do">마이페이지</a></li>
                         </ul>
                      </div>
-                  <!-- </div> -->
+                  </div>
                </div>
             </div>
          </div>
@@ -125,7 +125,7 @@
             </div>
          </div>
          <!-- banner section end -->
-      </div>
+     <!--  </div> -->
       <!-- banner bg main end -->
       <!-- fashion section start -->
       <div class="fashion_section">
