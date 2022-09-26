@@ -30,15 +30,15 @@
    <meta name="description" content="">
    <meta name="author" content="">
    <!-- bootstrap css -->
-   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="${cpath}/utoon/css/bootstrap.min.css">
    <!-- style css -->
-   <link rel="stylesheet" type="text/css" href="css/style.css">
+   <link rel="stylesheet" type="text/css" href="${cpath}/utoon/css/style.css">
    <!-- Responsive-->
-   <link rel="stylesheet" href="css/responsive.css">
+   <link rel="stylesheet" href="${cpath}/utoon/css/responsive.css">
    <!-- fevicon -->
-   <link rel="icon" href="images/fevicon.png" type="image/gif" />
+   <link rel="icon" href="${cpath}/utoon/images/fevicon.png" type="image/gif" />
    <!-- Scrollbar Custom CSS -->
-   <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+   <link rel="stylesheet" href="${cpath}/utoon/css/jquery.mCustomScrollbar.min.css">
    <!-- Tweaks for older IEs-->
    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
    <!-- fonts -->
@@ -50,8 +50,8 @@
    <!-- owl stylesheets -->
    <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Poppins:400,700&display=swap&subset=latin-ext"
       rel="stylesheet">
-   <link rel="stylesheet" href="css/owl.carousel.min.css">
-   <link rel="stylesoeet" href="css/owl.theme.default.min.css">
+   <link rel="stylesheet" href="${cpath}/utoon/css/owl.carousel.min.css">
+   <link rel="stylesoeet" href="${cpath}/utoon/css/owl.theme.default.min.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
       media="screen">
 </head>
@@ -230,7 +230,7 @@
                         <div class="col-lg-4 col-sm-4">
                            <div class="box_main_lank">
                               <ul class="shirt_text">
-                                 <li><span>🥇  1</span><a href="#">여신강림</a> </li>
+                                 <li><span>🥇 1</span><a href="#">여신강림</a> </li>
                                  <li><span>🥈 2</span><a href="#">여신강림</a> </li>
                                  <li><span>🥉 3</span><a href="#">여신강림</a> </li>
                                  <li><span>🏅 4</span><a href="#">여신강림</a> </li>
@@ -713,14 +713,14 @@
    </div> -->
    <!-- copyright section end -->
    <!-- Javascript files-->
-   <script src="js/jquery.min.js"></script>
-   <script src="js/popper.min.js"></script>
-   <script src="js/bootstrap.bundle.min.js"></script>
-   <script src="js/jquery-3.0.0.min.js"></script>
-   <script src="js/plugin.js"></script>
+   <script src="${cpath}/utoon/js/jquery.min.js"></script>
+   <script src="${cpath}/utoon/js/popper.min.js"></script>
+   <script src="${cpath}/utoon/js/bootstrap.bundle.min.js"></script>
+   <script src="${cpath}/utoon/js/jquery-3.0.0.min.js"></script>
+   <script src="${cpath}/utoon/js/plugin.js"></script>
    <!-- sidebar -->
-   <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-   <script src="js/custom.js"></script>
+   <script src="${cpath}/utoon/js/jquery.mCustomScrollbar.concat.min.js"></script>
+   <script src="${cpath}/utoon/js/custom.js"></script>
    <script>
       function openNav() {
          document.getElementById("mySidenav").style.width = "250px";
