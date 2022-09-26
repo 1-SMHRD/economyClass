@@ -57,7 +57,8 @@
 		post_vcnt=post_vcnt+1 where post_num=#{post_num}
 	</update>
 
-	
+	<!-- test  -->
+	<!-- test  -->
 	<!-- 리뷰 전체 게시글 불러오기 -->
 	<select id="reviewAllList" resultType="dao.ReviewVO">
 		select * from tbl_wt_review order by rv_date desc
