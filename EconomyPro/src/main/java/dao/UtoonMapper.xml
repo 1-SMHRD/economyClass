@@ -17,6 +17,11 @@
 		values(#{mem_id},#{mem_pw},#{mem_nick},sysdate,'1')
 	</insert>
 	
+	<!-- 회원정보 -->
+	<select id="profileInfo" resultType="dao.MemberVO">
+		select * from tbl_mem where mem_id = #{mem_id}
+	</select>
+	
 	<!-- 커뮤니티 전체 게시글 불러오기 -->
 	<select id="postAllList" resultType="dao.PostVO">
 		select * from tbl_comm order by post_date desc
@@ -106,6 +111,9 @@
 	</select>
 	
 	<!-- 스크랩 리스트 불러오기 -->
+	<select id="myScrap" resultType="dao.ScrapVO">
+		select * from tbl_scrap where mem_id = #{mem_id} order by scr_num desc
+	</select>
 	
 	
 	

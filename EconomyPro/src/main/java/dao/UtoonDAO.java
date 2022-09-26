@@ -46,6 +46,13 @@ public class UtoonDAO {
 		return lvo;
 
 	}
+	// 프로필 전체 정보 가져오기
+	public List<MemberVO> profileInfo(String mem_id){
+		SqlSession session = sqlSessionFactory.openSession();
+		List<MemberVO> pi = session.selectList("profileInfo",mem_id);
+		session.close();// 반납
+		return pi;
+	}
 ////////////////////////////////////////////////////////////////////////////////////////////
 	// 커뮤니티 전체 글 가져오기
 	public List<PostVO> postAllList() {
@@ -163,7 +170,12 @@ public class UtoonDAO {
 		return list;
 	}
 	// 스크랩 리스트
-	
+	public List<ScrapVO> myScrap(String mem_id) {
+		SqlSession session = sqlSessionFactory.openSession();
+		List<ScrapVO> list = session.selectList("myScrap",mem_id);
+		session.close();// 반납
+		return list;	
+	}
 	// 내 게시글 개수
 	public int myPC(String mem_id) {
 		SqlSession session = sqlSessionFactory.openSession();
