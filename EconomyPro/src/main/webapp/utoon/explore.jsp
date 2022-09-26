@@ -21,7 +21,7 @@
 <!-- bootstrap css -->
 <link rel="stylesheet" type="text/css"
 	href="${cpath}/utoon/css/bootstrap.min.css">
-<!-- style css -->
+<!-- style css --> 
 <link rel="stylesheet" type="text/css"
 	href="${cpath}/utoon/css/style.css">
 <!-- Responsive-->
@@ -96,7 +96,7 @@
 	<div class="new_section container">
 		<br>
 
-		<div class="dropdown">
+		<!-- <div class="dropdown">
 			<button class="btn btn-secondary dropdown-toggle" type="button"
 				id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
 				aria-expanded="false">플랫폼</button>
@@ -125,7 +125,43 @@
 					class="dropdown-item" href="#">순정</a> <a class="dropdown-item"
 					href="#">판타지</a> <a class="dropdown-item" href="#">BL/GL</a>
 			</div>
+		</div> -->
+
+		<div class="filter container">
+			<label for="platform-select">플랫폼 : </label> <input type="checkbox"
+				value="naver-webtoon">네이버웹툰
+			</option>
+			<input type="checkbox" value="kakao-webtoon">카카오웹툰
+			</option>
+			<input type="checkbox" value="lezin-webtoon">레진코믹스
+			</option>
+			<input type="checkbox" value="top-webtoon">탑툰
+			</option>
+			<input type="checkbox" value="toomics-webtoon">투믹스
+			</option>
+			</select> <br> <label for="point-select">UToon평점</label> <select
+				name="points" id="point-select"
+				style="background-color: #5e27cd2a; border-radius: 30px;">
+				<option value="" disabled selected>--선택해주세요--</option>
+				<option value="5points">5점 이하</option>
+				<option value="4points">4점 이하</option>
+				<option value="3points">3점 이하</option>
+				<option value="2points">2점 이하</option>
+				<option value="1point">1점 이하</option>
+			</select> <label for="theme-select">장르/테마</label> <select name="themes"
+				id="theme-select"
+				style="background-color: #5e27cd2a; border-radius: 30px;">
+				<option value="" disabled selected>--선택해주세요--</option>
+				<option value="horror">공포</option>
+				<option value="action">액션</option>
+				<option value="comic">코믹</option>
+				<option value="pure">순정</option>
+				<option value="fantasy">판타지</option>
+				<option value="bl/gl">BL/GL</option>
+			</select> <input type="button" value="검색" onclick="check()" />
 		</div>
+
+
 		<br> <br>
 		<h1 class="new_title">작품 탐색 🔍</h1>
 		<br>
