@@ -57,75 +57,23 @@
                         </a>
                      </div>
                      <!-- 왼쪽 최상단 로고 END-->
-                     <div class="custom_menu" >
-                        <ul>
-                           	<li><a href="${cpath}/mainPage.do">홈</a></li>
-							<li><a href="${cpath}/collection.do">컬렉션</a></li>
-							<li><a href="${cpath}/community.do">커뮤니티</a></li>
-							<li><a href="${cpath}/explore.do">탐색</a></li>
-							<li><a href="${cpath}/newToon.do">신작</a></li>
-							<li><a href="${cpath}/myPage.do">마이페이지</a></li>
-                        </ul>
-                     </div>
-                  </div>
+                     <div class="custom_menu" style="font-size: 15;">
+							<ul>
+								<li><a href="${cpath}/mainPage.do">홈</a></li>
+								<li><a href="${cpath}/collection.do">컬렉션</a></li>
+								<li><a href="${cpath}/community.do">커뮤니티</a></li>
+								<li><a href="${cpath}/explore.do">탐색</a></li>
+								<li><a href="${cpath}/newToon.do">신작</a></li>
+								<li><a href="${cpath}/myPage.do">마이페이지</a></li>
+							</ul>
+						</div>
+                  <!-- </div> -->
                </div>
             </div>
          </div>
-         <!-- header top section start -->
-         <!-- logo section start -->
-         <!-- <div class="logo_section">
-            <div class="container">
-               <div class="row">
-                  <div class="col-sm-12">
-                     <div class="logo"><a href="index.html"><img src="images/웹툰01.png"></a></div>
-                  </div>
-               </div>
-            </div>
-         </div> -->
-         <!-- logo section end -->
-         <!-- header section start -->
-         <!-- header section end -->
-         <!-- banner section start -->
-         <!-- <div class="banner_section layout_padding"> -->
-            <div class="container">
-               <div id="my_slider" class="carousel slide" data-ride="carousel">
-                  <div class="carousel-inner">
-                     <div class="carousel-item active">
-                        <div class="row">
-                           <!-- <div class="col-sm-12">
-                              <h1 class="banner_taital">Get Start <br>Your favriot shoping</h1>
-                              <div class="buynow_bt"><a href="#">Buy Now</a></div>
-                           </div> -->
-                        </div>
-                     </div>
-                     <div class="carousel-item">
-                        <div class="row">
-                           <!-- <div class="col-sm-12">
-                              <h1 class="banner_taital">Get Start <br>Your favriot shoping</h1>
-                              <div class="buynow_bt"><a href="#">Buy Now</a></div>
-                           </div> -->
-                        </div>
-                     </div>
-                     <div class="carousel-item">
-                        <div class="row">
-                           <!-- <div class="col-sm-12">
-                              <h1 class="banner_taital">Get Start <br>Your favriot shoping</h1>
-                              <div class="buynow_bt"><a href="#">Buy Now</a></div>
-                           </div> -->
-                        </div>
-                     </div>
-                  </div>
-                  <!-- <a class="carousel-control-prev" href="#my_slider" role="button" data-slide="prev">
-                  <i class="fa fa-angle-left"></i>
-                  </a>
-                  <a class="carousel-control-next" href="#my_slider" role="button" data-slide="next">
-                  <i class="fa fa-angle-right"></i>
-                  </a> -->
-               </div>
-            </div>
          </div>
          <!-- banner section end -->
-     <!--  </div> -->
+      </div>
       <!-- banner bg main end -->
       <!-- fashion section start -->
       <div class="fashion_section">
