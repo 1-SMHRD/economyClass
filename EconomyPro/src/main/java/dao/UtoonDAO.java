@@ -46,12 +46,12 @@ public class UtoonDAO {
 		return lvo;
 
 	}
-	// 프로필 전체 정보 가져오기
-	public List<MemberVO> profileInfo(String mem_id){
+	// 회원정보 수정
+	public void editProfile(MemberVO vo){
 		SqlSession session = sqlSessionFactory.openSession();
-		List<MemberVO> pi = session.selectList("profileInfo",mem_id);
-		session.close();// 반납
-		return pi;
+		session.update("editProfile", vo);
+		session.commit();
+		session.close();
 	}
 ////////////////////////////////////////////////////////////////////////////////////////////
 	// 커뮤니티 전체 글 가져오기

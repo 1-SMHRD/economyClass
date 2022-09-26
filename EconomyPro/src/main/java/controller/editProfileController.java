@@ -21,11 +21,8 @@ public class editProfileController implements Controller {
 
 		UtoonDAO dao = new UtoonDAO();
 		MemberVO vo = (MemberVO) session.getAttribute("lvo");
+		request.setAttribute("vo", vo);
 		
-		String mem_id = vo.getMem_id();
-		List <MemberVO> pi = dao.profileInfo(mem_id);
-		request.setAttribute("pi", pi);
-
 		System.out.println("프로필수정 세션정보 " + session.getAttribute("lvo"));
 
 		return "editProfile";
