@@ -126,6 +126,7 @@
 		<ul class="id_email">
 			<li>${lvo.mem_nick}</li>
 			<li>${lvo.mem_id}</li>
+			<li>${lvo.mem_cmt}</li>
 		</ul>
 	</div>
 

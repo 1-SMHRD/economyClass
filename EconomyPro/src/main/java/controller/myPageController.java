@@ -27,6 +27,7 @@ public class myPageController implements Controller {
 		UtoonDAO dao = new UtoonDAO();
 		MemberVO vo = (MemberVO)session.getAttribute("lvo");
 		String mem_id = vo.getMem_id();
+		String mem_nick = vo.getMem_nick();
 		
 		int myPC = dao.myPC(mem_id);
 		request.setAttribute("myPC", myPC);
