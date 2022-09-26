@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import dao.MemberVO;
-import dao.PostVO;
+import dao.ScrapVO;
 import dao.UtoonDAO;
 
 
@@ -26,21 +26,26 @@ public class myPageController implements Controller {
 		
 		UtoonDAO dao = new UtoonDAO();
 		MemberVO vo = (MemberVO)session.getAttribute("lvo");
-		List<PostVO> list = dao.postAllList();
-		request.setAttribute("list", list);
 		String mem_id = vo.getMem_id();
+		
 		int myPC = dao.myPC(mem_id);
-		int myPCC = dao.myPCC(mem_id);
-		int myRC = dao.myRC(mem_id);
-		int myRCC = dao.myRCC(mem_id);
 		request.setAttribute("myPC", myPC);
+		
+		int myPCC = dao.myPCC(mem_id);
 		request.setAttribute("myPCC", myPCC);
+		
+		int myRC = dao.myRC(mem_id);
 		request.setAttribute("myRC", myRC);
+		
+		int myRCC = dao.myRCC(mem_id);
 		request.setAttribute("myRCC", myRCC);
-
+		
+		List<ScrapVO> list = dao.myScrap(mem_id);
+		request.setAttribute("list", list);
+		
 		System.out.println("마이페이지 세션정보 "+session.getAttribute("lvo"));
-		System.out.println("마이페이지 게시글정보 "+list);
-		System.out.printf("마이페이지 myPC %d, myPCC %d, myRC %d, myRCC %d " ,myPC,myPCC,myRC,myRCC);
+		System.out.printf("마이페이지 myPC %d, myPCC %d, myRC %d, myRCC %d %n" ,myPC,myPCC,myRC,myRCC);
+		System.out.println("마이페이지 스크랩정보 "+list);
 		return "myPage";
 	}
 
