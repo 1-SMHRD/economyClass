@@ -65,128 +65,201 @@
 
 
 
- <!-- banner bg main start -->
-   <div class="banner_bg_main">
-      <!-- header top section start -->
-      <div class="container">
-         <div class="header_section_top">
-            <div class="row">
-               <div class="col-sm-12">
-                  <!-- 왼쪽 최상단 로고 START-->
-                  <div class="header__logo" style="margin-left: 50px;">
-                     <a href="Home.html">
-                        <img src="images/logo.png" alt="">
-                     </a>
-                  </div>
-                  <!-- 왼쪽 최상단 로고 END-->
-                  <div class="custom_menu">
-                     <ul>
-                        <li><a href="Home.html">홈</a></li>
-                        <li><a href="collection.html">컬렉션</a></li>
-                        <li><a href="community.html">커뮤니티</a></li>
-                        <li><a href="quest.html">탐색</a></li>
-                        <li><a href="new.html">신작</a></li>
-                        <li><a href="mypage.html">마이페이지</a></li>
-                     </ul>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- header top section end -->
-   </div>
-   <!-- banner bg main end -->
+	<!-- banner bg main start -->
+	<div class="banner_bg_main">
+		<!-- header top section start -->
+		<div class="container">
+			<div class="header_section_top">
+				<div class="row">
+					<div class="col-sm-12">
+						<!-- 왼쪽 최상단 로고 START-->
+						<div class="header__logo" style="margin-left: 30px;">
+							<a href="${cpath}/mainPage.do"> <img
+								src="${cpath}/utoon/images/logo.png" alt="">
+							</a>
+						</div>
+						<!-- 왼쪽 최상단 로고 END-->
+						<div class="custom_menu">
+							<ul>
+								<li><a href="${cpath}/mainPage.do">홈</a></li>
+								<li><a href="${cpath}/collection.do">컬렉션</a></li>
+								<li><a href="${cpath}/community.do">커뮤니티</a></li>
+								<li><a href="${cpath}/explore.do">탐색</a></li>
+								<li><a href="${cpath}/newToon.do">신작</a></li>
+								<li><a href="${cpath}/myPage.do">마이페이지</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- header top section end-->
+	</div>
+	<!-- banner bg main end -->
 
-   <!-- fashion section start -->
-   <div id="main_slider" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
-         <div class="carousel-item active">
-            <div class="container">
-               <h1 class="community_taital">커뮤니티 인기글 🔥</h1>
-               <div class="fashion_section_2">
-                  <div class="row">
-                     <div class="col-lg-4 col-sm-4">
-                        <div class="box_main">
-                           <h4 class="communitybox_text">1번째 글</h4>
-                           <p class="community_text">커뮤니티 1</p>
+	<!-- fashion section start -->
+	<div class="fashion_section">
+		<div id="main_slider" class="carousel slide" data-ride="carousel">
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<div class="container">
+						<h1 class="community_taital" style="color: #303952">커뮤니티
+							인기글🔥</h1>
 
-                           <div class="btn_main">
-                              <div class="write_bt"><a href="#">글쓴이1</a></div>
-                              <div class="seemore_bt"><a href="#">See More</a></div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-lg-4 col-sm-4">
-                        <div class="box_main">
-                           <h4 class="communitybox_text">2번째 글</h4>
-                           <p class="community_text">커뮤니티 2</p>
 
-                           <div class="btn_main">
-                              <div class="write_bt"><a href="#">글쓴이2</a></div>
-                              <div class="seemore_bt"><a href="#">See More</a></div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-lg-4 col-sm-4">
-                        <div class="box_main">
-                           <h4 class="communitybox_text">3번째 글</h4>
-                           <p class="community_text">커뮤니티 3</p>
 
-                           <div class="btn_main">
-                              <div class="write_bt"><a href="#">글쓴이3</a></div>
-                              <div class="seemore_bt"><a href="#">See More</a></div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="carousel-item">
-            <div class="container">
-               <h1 class="community_taital">커뮤니티 인기글 🔥</h1>
-               <div class="fashion_section_2">
-                  <div class="row">
-                     <div class="col-lg-4 col-sm-4">
-                        <div class="box_main">
-                           <h4 class="communitybox_text">4번째 글</h4>
-                           <p class="community_text">커뮤니티 4</p>
+						<div class="fashion_section_2">
+							<div class="row">
+								<c:forEach var="post" items="${list}">
+									<!-- 여기서부터 반복 -->
+									<div class="col-lg-6 col-sm-6">
+										<div class="box_main">
+											<h4 class="communitybox_text">${post.post_num}번째글</h4>
+											<p class="community_text">${post.post_ctnt}</p>
 
-                           <div class="btn_main">
-                              <div class="write_bt"><a href="#">글쓴이4</a></div>
-                              <div class="seemore_bt"><a href="#">See More</a></div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-lg-4 col-sm-4">
-                        <div class="box_main">
-                           <h4 class="communitybox_text">5번째 글</h4>
-                           <p class="community_text">커뮤니티 5</p>
+											<div class="btn_main">
+												<div class="write_bt">
+													<a href="#">${post.mem_id}</a>
+												</div>
+												<div class="seemore_bt">
+													<a href="#">See More</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- 끝 -->
+								</c:forEach>
 
-                           <div class="btn_main">
-                              <div class="write_bt"><a href="#">글쓴이5</a></div>
-                              <div class="seemore_bt"><a href="#">See More</a></div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-lg-4 col-sm-4">
-                        <div class="box_main">
-                           <h4 class="communitybox_text">6번째 글</h4>
-                           <p class="community_text">커뮤니티 6</p>
 
-                           <div class="btn_main">
-                              <div class="write_bt"><a href="#">글쓴이6</a></div>
-                              <div class="seemore_bt"><a href="#">See More</a></div>
-                           </div>
-                        </div>
-                     </div>
+		<!-- 						<div class="col-lg-6 col-sm-6">
+									<div class="box_main">
+										<h4 class="communitybox_text">2번째 글</h4>
+										<p class="community_text">커뮤니티 2</p>
 
-                  </div>
-               </div>
-            </div>
-         </div>
+										<div class="btn_main">
+											<div class="write_bt">
+												<a href="#">글쓴이2</a>
+											</div>
+											<div class="seemore_bt">
+												<a href="#">See More</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-6 col-sm-6">
+									<div class="box_main">
+										<h4 class="communitybox_text">3번째 글</h4>
+										<p class="community_text">커뮤니티 3</p>
 
-      </div>
+										<div class="btn_main">
+											<div class="write_bt">
+												<a href="#">글쓴이3</a>
+											</div>
+											<div class="seemore_bt">
+												<a href="#">See More</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-6 col-sm-6">
+									<div class="box_main">
+										<h4 class="communitybox_text">4번째 글</h4>
+										<p class="community_text">커뮤니티 4</p>
+
+										<div class="btn_main">
+											<div class="write_bt">
+												<a href="#">글쓴이3</a>
+											</div>
+											<div class="seemore_bt">
+												<a href="#">See More</a>
+											</div>
+										</div>
+									</div>
+								</div> -->
+								
+								
+								
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<div class="container">
+					<h1 class="community_taital" style="color: #303952">커뮤니티 인기글
+						🔥</h1>
+					<div class="fashion_section_2">
+						<div class="row">
+							<div class="col-lg-6 col-sm-6">
+								<div class="box_main">
+									<h4 class="communitybox_text">4번째 글</h4>
+									<p class="community_text">커뮤니티 4</p>
+
+									<div class="btn_main">
+										<div class="write_bt">
+											<a href="#">글쓴이4</a>
+										</div>
+										<div class="seemore_bt">
+											<a href="#">See More</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 col-sm-6">
+								<div class="box_main">
+									<h4 class="communitybox_text">5번째 글</h4>
+									<p class="community_text">커뮤니티 5</p>
+
+									<div class="btn_main">
+										<div class="write_bt">
+											<a href="#">글쓴이5</a>
+										</div>
+										<div class="seemore_bt">
+											<a href="#">See More</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 col-sm-6">
+								<div class="box_main">
+									<h4 class="communitybox_text">6번째 글</h4>
+									<p class="community_text">커뮤니티 6</p>
+
+									<div class="btn_main">
+										<div class="write_bt">
+											<a href="#">글쓴이6</a>
+										</div>
+										<div class="seemore_bt">
+											<a href="#">See More</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 col-sm-6">
+								<div class="box_main">
+									<h4 class="communitybox_text">6번째 글</h4>
+									<p class="community_text">커뮤니티 6</p>
+
+									<div class="btn_main">
+										<div class="write_bt">
+											<a href="#">글쓴이6</a>
+										</div>
+										<div class="seemore_bt">
+											<a href="#">See More</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+
       <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
          <i class="fa fa-angle-right"></i>
       </a>
@@ -221,194 +294,170 @@
          </div>
 
 
-         <!-- </div> -->
-         <!-- fashion section end -->
+      </div>
+	<!-- fashion section end -->
 
 
-         <!DOCTYPE html>
-         <html lang="en">
 
-         <head>
-            <meta charset="UTF-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Document</title>
-         </head>
 
-         <body>
 
-         </body>
-
-         </html>
-
-         <br>
-         <br>
-         <br>
-
-         <!-- Page section -->
-         <section class="page-section community-page set-bg" data-setbg="images/community-bg.jpg">
-            <div class="community-warp spad">
-               <div class="container">
-                  <div class="row">
-                     <div class="col-md-6">
-                        <h3 class="community-top-title">All Members (100)</h3>
-                     </div>
-                     <div class="col-md-6 text-lg-right">
-                        <form class="community-filter">
-                           <label for="fdf5">Show</label>
-                           <select id="fdf5">
-                              <option value="#">Everything</option>
-                              <option value="#">Everything</option>
-                           </select>
-                        </form>
-                     </div>
-                  </div>
-                  <ul class="community-post-list">
-                     <li>
-                        <div class="community-post">
-                           <div class="author-avator set-bg">
-                              <img src="images/authors/1.jpg">
-                           </div>
-                           <div class="post-content">
-                              <h5>James Smith<span>posted an update</span></h5>
-                              <div class="post-date">June 21, 2018</div>
-                              <p>Lorem ipsum dolor sit amet, cdictum nisl onsectetur adipisc ing ipsum dolor sit ame.
-                                 Lorem
-                                 ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit ame.Donec venenatis at
-                                 eros
-                                 sit
-                                 amet aliquam. Donec vel orci efficitur, dictum nisl vitae, scelerisque nibh. Curabitur
-                                 eget
-                                 ipsum pulvinar nunc gravida interdum. </p>
-                           </div>
-                        </div>
-                     </li>
-                     <li>
-                        <div class="community-post">
-                           <div class="author-avator set-bg">
-                              <img src="images/authors/8.jpg">
-                           </div>
-                           <div class="post-content">
-                              <h5>Partik Williams<span>posted an update</span></h5>
-                              <div class="post-date">June 21, 2018</div>
-                              <p>Lorem ipsum dolor sit amet, cdictum nisl onsectetur adipisc ing ipsum dolor sit ame.
-                                 Lorem
-                                 ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit ame.Donec venenatis at
-                                 eros
-                                 sit
-                                 amet aliquam. Donec vel orci efficitur, dictum nisl vitae, scelerisque nibh. Curabitur
-                                 eget
-                                 ipsum pulvinar nunc gravida interdum. </p>
-                              <div class="attachment-file">
-                                 <img src="images/attachment.jpg" alt="">
-                              </div>
-                           </div>
-                        </div>
-                     </li>
-                     <li>
-                        <div class="community-post">
-                           <div class="author-avator set-bg">
-                              <img src="images/authors/5.jpg">
-                           </div>
-                           <div class="post-content">
-                              <h5>Cris The Man<span>posted an update</span></h5>
-                              <div class="post-date">June 21, 2018</div>
-                              <p>Lorem ipsum dolor sit amet, cdictum nisl onsectetur adipisc ing ipsum dolor sit ame.
-                                 Lorem
-                                 ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit ame.Donec venenatis at
-                                 eros
-                                 sit
-                                 amet aliquam. Donec vel orci efficitur, dictum nisl vitae, scelerisque nibh. Curabitur
-                                 eget
-                                 ipsum pulvinar nunc gravida interdum. </p>
-                           </div>
-                        </div>
-                     </li>
-                     <li>
-                        <div class="community-post">
-                           <div class="author-avator set-bg">
-                              <img src="images/authors/1.jpg">
-                           </div>
-                           <div class="post-content">
-                              <h5>James Smith<span>posted an update</span></h5>
-                              <div class="post-date">June 21, 2018</div>
-                              <p>Lorem ipsum dolor sit amet, cdictum nisl onsectetur adipisc ing ipsum dolor sit ame.
-                                 Lorem
-                                 ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit ame.Donec venenatis at
-                                 eros
-                                 sit
-                                 amet aliquam. Donec vel orci efficitur, dictum nisl vitae, scelerisque nibh. Curabitur
-                                 eget
-                                 ipsum pulvinar nunc gravida interdum. </p>
-                           </div>
-                        </div>
-                     </li>
-                     <li>
-                        <div class="community-post">
-                           <div class="author-avator set-bg">
-                              <img src="images/authors/4.jpg">
-                           </div>
-                           <div class="post-content">
-                              <h5>Cris The Man<span>posted an update</span></h5>
-                              <div class="post-date">June 21, 2018</div>
-                              <p>Lorem ipsum dolor sit amet, cdictum nisl onsectetur adipisc ing ipsum dolor sit ame.
-                                 Lorem
-                                 ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit ame.Donec venenatis at
-                                 eros
-                                 sit
-                                 amet aliquam. Donec vel orci efficitur, dictum nisl vitae, scelerisque nibh. Curabitur
-                                 eget
-                                 ipsum pulvinar nunc gravida interdum. </p>
-                           </div>
-                        </div>
-                     </li>
-                     <li>
-                        <div class="community-post">
-                           <div class="author-avator set-bg">
-                              <img src="images/authors/6.jpg">
-                           </div>
-                           <div class="post-content">
-                              <h5>James Smith<span>posted an update</span></h5>
-                              <div class="post-date">June 21, 2018</div>
-                              <p>Lorem ipsum dolor sit amet, cdictum nisl onsectetur adipisc ing ipsum dolor sit ame.
-                                 Lorem
-                                 ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit ame.Donec venenatis at
-                                 eros
-                                 sit
-                                 amet aliquam. Donec vel orci efficitur, dictum nisl vitae, scelerisque nibh. Curabitur
-                                 eget
-                                 ipsum pulvinar nunc gravida interdum. </p>
-                           </div>
-                        </div>
-                     </li>
-                     <li>
-                        <div class="community-post">
-                           <div class="author-avator set-bg">
-                              <img src="images/authors/7.jpg">
-                           </div>
-                           <div class="post-content">
-                              <h5>Maria Doe<span>posted an update</span></h5>
-                              <div class="post-date">June 21, 2018</div>
-                              <p>Lorem ipsum dolor sit amet, cdictum nisl onsectetur adipisc ing ipsum dolor sit ame.
-                                 Lorem
-                                 ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit ame.Donec venenatis at
-                                 eros
-                                 sit
-                                 amet aliquam. Donec vel orci efficitur, dictum nisl vitae, scelerisque nibh. Curabitur
-                                 eget
-                                 ipsum pulvinar nunc gravida interdum. </p>
-                           </div>
-                        </div>
-                     </li>
-                  </ul>
-                  <div class="site-pagination sp-style-2">
-                     <span class="active">01.</span>
-                     <a href="#">02.</a>
-                     <a href="#">03.</a>
-                  </div>
-               </div>
-            </div>
-         </section>
+	<!-- Page section -->
+	<section class="page-section community-page set-bg"
+		data-setbg="images/community-bg.jpg">
+		<div class="community-warp spad">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<h3 class="community-top-title">All Members (100)</h3>
+					</div>
+					<div class="col-md-6 text-lg-right">
+						<form class="community-filter">
+							<label for="fdf5">Show</label> <select id="fdf5">
+								<option value="#">Everything</option>
+								<option value="#">Everything</option>
+							</select>
+						</form>
+					</div>
+				</div>
+				<ul class="community-post-list">
+					<li>
+						<div class="community-post">
+							<div class="author-avator set-bg">
+								<img src="images/authors/1.jpg">
+							</div>
+							<div class="post-content">
+								<h5>
+									James Smith<span>posted an update</span>
+								</h5>
+								<div class="post-date">June 21, 2018</div>
+								<p>${post.post_ctnt}</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="community-post">
+							<div class="author-avator set-bg">
+								<img src="images/authors/8.jpg">
+							</div>
+							<div class="post-content">
+								<h5>
+									Partik Williams<span>posted an update</span>
+								</h5>
+								<div class="post-date">June 21, 2018</div>
+								<p>Lorem ipsum dolor sit amet, cdictum nisl onsectetur
+									adipisc ing ipsum dolor sit ame. Lorem ipsum dolor sit amet,
+									consectetur adipisc ing ipsum dolor sit ame.Donec venenatis at
+									eros sit amet aliquam. Donec vel orci efficitur, dictum nisl
+									vitae, scelerisque nibh. Curabitur eget ipsum pulvinar nunc
+									gravida interdum.</p>
+								<div class="attachment-file">
+									<img src="images/attachment.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="community-post">
+							<div class="author-avator set-bg">
+								<img src="images/authors/5.jpg">
+							</div>
+							<div class="post-content">
+								<h5>
+									Cris The Man<span>posted an update</span>
+								</h5>
+								<div class="post-date">June 21, 2018</div>
+								<p>Lorem ipsum dolor sit amet, cdictum nisl onsectetur
+									adipisc ing ipsum dolor sit ame. Lorem ipsum dolor sit amet,
+									consectetur adipisc ing ipsum dolor sit ame.Donec venenatis at
+									eros sit amet aliquam. Donec vel orci efficitur, dictum nisl
+									vitae, scelerisque nibh. Curabitur eget ipsum pulvinar nunc
+									gravida interdum.</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="community-post">
+							<div class="author-avator set-bg">
+								<img src="images/authors/1.jpg">
+							</div>
+							<div class="post-content">
+								<h5>
+									James Smith<span>posted an update</span>
+								</h5>
+								<div class="post-date">June 21, 2018</div>
+								<p>Lorem ipsum dolor sit amet, cdictum nisl onsectetur
+									adipisc ing ipsum dolor sit ame. Lorem ipsum dolor sit amet,
+									consectetur adipisc ing ipsum dolor sit ame.Donec venenatis at
+									eros sit amet aliquam. Donec vel orci efficitur, dictum nisl
+									vitae, scelerisque nibh. Curabitur eget ipsum pulvinar nunc
+									gravida interdum.</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="community-post">
+							<div class="author-avator set-bg">
+								<img src="images/authors/4.jpg">
+							</div>
+							<div class="post-content">
+								<h5>
+									Cris The Man<span>posted an update</span>
+								</h5>
+								<div class="post-date">June 21, 2018</div>
+								<p>Lorem ipsum dolor sit amet, cdictum nisl onsectetur
+									adipisc ing ipsum dolor sit ame. Lorem ipsum dolor sit amet,
+									consectetur adipisc ing ipsum dolor sit ame.Donec venenatis at
+									eros sit amet aliquam. Donec vel orci efficitur, dictum nisl
+									vitae, scelerisque nibh. Curabitur eget ipsum pulvinar nunc
+									gravida interdum.</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="community-post">
+							<div class="author-avator set-bg">
+								<img src="images/authors/6.jpg">
+							</div>
+							<div class="post-content">
+								<h5>
+									James Smith<span>posted an update</span>
+								</h5>
+								<div class="post-date">June 21, 2018</div>
+								<p>Lorem ipsum dolor sit amet, cdictum nisl onsectetur
+									adipisc ing ipsum dolor sit ame. Lorem ipsum dolor sit amet,
+									consectetur adipisc ing ipsum dolor sit ame.Donec venenatis at
+									eros sit amet aliquam. Donec vel orci efficitur, dictum nisl
+									vitae, scelerisque nibh. Curabitur eget ipsum pulvinar nunc
+									gravida interdum.</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="community-post">
+							<div class="author-avator set-bg">
+								<img src="images/authors/7.jpg">
+							</div>
+							<div class="post-content">
+								<h5>
+									Maria Doe<span>posted an update</span>
+								</h5>
+								<div class="post-date">June 21, 2018</div>
+								<p>Lorem ipsum dolor sit amet, cdictum nisl onsectetur
+									adipisc ing ipsum dolor sit ame. Lorem ipsum dolor sit amet,
+									consectetur adipisc ing ipsum dolor sit ame.Donec venenatis at
+									eros sit amet aliquam. Donec vel orci efficitur, dictum nisl
+									vitae, scelerisque nibh. Curabitur eget ipsum pulvinar nunc
+									gravida interdum.</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<div class="site-pagination sp-style-2">
+					<span class="active">01.</span> <a href="#">02.</a> <a href="#">03.</a>
+				</div>
+			</div>
+		</div>
+	</section>
 	<!-- Page section end -->
 
 
@@ -463,52 +512,5 @@
 
 
 
-
-
-
-
-
-
-
-
-
-	커뮤니티
-	<button onclick="location.href='${cpath}/postWrite.do'">글쓰기</button>
-	<button onclick="location.href='${cpath}/myPost.do'">내글보기</button>
-	<br>
-
-	<button onclick="location.href='${cpath}/postDetail.do'">글1</button>
-	<br> 글2
-	<br> 글3
-	<br> 글4
-	<br> 글5
-	<br>
-
-	<!-- 1,2,3,4,5페이지로 나눠서 볼 수 있도록 구현했으면 좋겠다-->
-
-
-	<br>
-	<br>
-	<br>
-
-
-
-	<br>
-	<br>
-
-
-
-
-	<button onclick="location.href='${cpath}/mainPage.do'">홈</button>
-	<button onclick="location.href='${cpath}/collection.do'">컬렉션</button>
-	<button onclick="location.href='${cpath}/community.do'">커뮤니티</button>
-	<button onclick="location.href='${cpath}/explore.do'">탐색</button>
-	<button onclick="location.href='${cpath}/newToon.do'">신작</button>
-	<button onclick="location.href='${cpath}/myPage.do'">마이페이지</button>
-	<br> 1. - 메뉴의 커뮤니티 클릭한다. - 작성된 글이 나열된다. - 사용자는 커뮤니티에 작성된 글을 읽을 수
-	있다. - 게시된 글의 조회수가 높아지면 인기 글로 등록할 수 있다. 2. - 사용자는 글 작성하기를 클릭해 이미지와 글을
-	작성한다. : 글 작성할 때 첨부하고자 하는 작품을 첨부할 수 있다. - 사용자는 작성한 글수와 내용을 조회할 수 있다. -
-	사용자는 작성한 리뷰수와 내용을 조회 할 수 있다. - 사용자가 작성한 글에 한해 수정 및 삭제할 수 있다. - 작성된 모든
-	글에 댓글을 작성할 수 있다.
 </body>
 </html>
