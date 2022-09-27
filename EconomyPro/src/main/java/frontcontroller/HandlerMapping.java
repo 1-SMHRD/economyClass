@@ -20,7 +20,10 @@ import controller.myReviewController;
 import controller.myScrapController;
 import controller.newProfileController;
 import controller.newToonController;
+import controller.postDeleteController;
 import controller.postDetailController;
+import controller.postWriteController;
+import controller.postWriteFormController;
 import controller.reviewDetailController;
 import controller.searchAjaxController;
 import controller.searchController;
@@ -64,6 +67,11 @@ public class HandlerMapping {
 		mappings.put("/myReview.do",new myReviewController());
 		mappings.put("/myPComment.do",new myPCommentController());
 		mappings.put("/myRComment.do",new myRCommentController());
+		
+		mappings.put("/postWrite.do",new postWriteController());
+		mappings.put("/postWriteForm.do",new postWriteFormController());
+		mappings.put("/postDelete.do",new postDeleteController());
+		
 		
 		// 에이잭스 맵핑
 		mappings.put("/searchAjax.do",new searchAjaxController());
