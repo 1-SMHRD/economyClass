@@ -56,7 +56,7 @@
 
 </head>
 <body>
-<!-- 보류//////////////////////////////////////////////////////////////////////////////-->
+	<!-- 보류//////////////////////////////////////////////////////////////////////////////-->
 	<!-- banner bg main start -->
 	<div class="banner_bg_main">
 		<!-- header top section start -->
@@ -91,22 +91,6 @@
 
 	<!-- banner bg main end -->
 
-	<!-- Breadcrumb section (분류 표기)-->
-	<div class="breadcrumb-option">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="breadcrumb__links">
-						<a href="${cpath}/mainPage.do"><i class="fa fa-home"></i> 홈</a> <a
-							href="${cpath}/collection.do">컬렉션</a> <span>소년</span>
-
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Breadcrumb End -->
-
 	<!---------------------------
         collection section start 
     ------------------------------>
@@ -117,12 +101,7 @@
 					<div class="col-lg-3">
 						<div class="collection__details__pic set-bg">
 							<img src="${cpath}/utoon/images/anime/details-pic.jpg">
-							<div class="comment">
-								<i class="fa fa-comments"></i> 16
-							</div>
-							<div class="view">
-								<i class="fa fa-eye"></i> 67.7만
-							</div>
+
 						</div>
 					</div>
 					<div class="col-lg-9">
@@ -131,16 +110,8 @@
 								<h3>망할 가문을 살려보겠습니다</h3>
 
 							</div>
-							<!--레이팅넣는곳  -->
-							<div class="collection__details__rating">
-								<div class="rating">
-									<a href="#"><i class="fa fa-star"></i></a> <a href="#"><i
-										class="fa fa-star"></i></a> <a href="#"><i class="fa fa-star"></i></a>
-									<a href="#"><i class="fa fa-star"></i></a> <a href="#"><i
-										class="fa fa-star-half-o"></i></a>
-								</div>
-								<span>1.029 Votes</span>
-							</div>
+
+							<!-- 작품설명 -->
 							<p>
 								그것도 몇 장 나오지 않았던 엘리어스 가문의 다섯째 딸, <br> 고도비반 히키코모리 영애인 테라
 								엘리어스. <br> 산넘어 산이라고 이 가문은 곧 역적으로 몰려 멸문하고, <br> 직계가족은
@@ -150,54 +121,72 @@
 								<div class="row">
 									<div class="col-lg-6 col-md-6">
 										<ul>
-											<li><span>분류:</span> 웹툰|로판</li>
-											<li><span>플랫폼:</span> 카카오웹툰</li>
-											<li><span>연재:</span> 월요일|독점</li>
+											<li><span>장르:</span> 로판</li>
 											<li><span>글, 그림:</span> 무늬랑, NU</li>
 
 										</ul>
 									</div>
 									<div class="col-lg-6 col-md-6">
 										<ul>
-											<li><span>발행자:</span> 케나즈</li>
+											<li><span>연재 시작일:</span> 월요일</li>
 											<li><span>연령등급:</span> 전체이용가</li>
-											<li><span>Views:</span> 131,541</li>
 										</ul>
 									</div>
 								</div>
 							</div>
-							<div class="collection__details__btn">
-								<a href="#" class="follow-btn"> &#128544; 별로에요</a> <a href="#"
-									class="follow-btn"> &#128522; 좋아요</a> <a href="#"
-									class="follow-btn"><i class="fa fa-heart-o"></i> Follow</a> <a
-									href="#" class="follow-btn"><span>Watch Now</span></a>
-							</div>
-							<br>
-							<div class="collection__details__btn">
-								<a href="#" class="book-btn"> &#128681; 책갈피</a> <a href="#"
-									class="book-btn"> &#128374; 보는 중</a> <a href="#"
-									class="book-btn"> &#9989; 봤어요</a> <a href="#" class="book-btn">
-									&#128214; 리뷰</a>
 
+
+							<!-- UTOON 선호도 표시(신호등) start -->
+							<div class="collection-light-wrap">
+								<div class="icon-light-green"></div>
+								<div class="collection-light-percent light-green">95.59%</div>
 							</div>
-							<br>
+							<!-- UTOON 선호도 표시(신호등) end -->
+
 						</div>
 					</div>
 				</div>
-				<!-- 리뷰 글 작성 START-->
-				<div class="collection__details__form">
-					<div class="section-title">
-						<h5>Your Comment</h5>
-					</div>
-					<form action="#">
-						<textarea placeholder="Your Comment"></textarea>
-						<button type="submit">
-							<i class="comment-btn"></i> Review
-						</button>
-					</form>
+				<hr>
+
+				<div class="collection__details__btn">
+					<a href="#" class="follow-btn"> &#128544; 별로에요</a> <a href="#"
+						class="follow-btn"> &#128522; 좋아요</a> <a href="#"
+						class="follow-btn"><i class="fa fa-heart-o"></i> Follow</a> <a
+						href="#" class="follow-btn"><span>Watch Now</span></a>
 				</div>
 				<br>
-				<!-- 리뷰 글 작성 END-->
+				<div class="collection__details__btn">
+					<a href="#" class="book-btn"> &#128681; 책갈피</a> <a href="#"
+						class="book-btn"> &#128374; 보는 중</a> <a href="#" class="book-btn">
+						&#9989; 봤어요</a> <a href="#" class="book-btn"> &#128214; 리뷰</a>
+
+				</div>
+				<br>
+
+				<hr>
+
+				<!-- UTOON 지수(가로그래프) start -->
+
+				<div class="article-wrap">
+					<h3 class="title">UTOON 지수</h3>
+					<div class="indicator-bar-wrap">
+						<div class="bar-wrap">
+							<span class="indicator-bar_red"></span> <span
+								class="indicator-bar_green"></span>
+						</div>
+					</div>
+					<div class="sub-description">
+						<span class="text red">별로예요 4%</span> <span class="text green">좋아요
+							96%</span>
+					</div>
+
+				</div>
+
+				<!-- UTOON 지수(가로그래프) end -->
+
+				<hr>
+
+
 				<!-- 리뷰 글 내역 START-->
 				<div class="row">
 					<div class="col-lg-8 col-md-8">
@@ -207,135 +196,126 @@
 							</div>
 							<div class="collection__review__item">
 								<div class="collection__review__item__pic">
-									<img src="images/anime/review-1.jpg" alt="">
+									<img src="images/독립일기.PNG" alt="">
 								</div>
 								<div class="collection__review__item__text">
 									<h6>
-										Chris Curry - <span>1 Hour ago</span>
+										<a href="nickname"><span>Chris Curry - </a>1 Hour ago</span>
 									</h6>
 									<p>whachikan Just noticed that someone categorized this as
 										belonging to the genre "demons" LOL</p>
+									<br>
+									<button type="button">좋아요</button>
+									<button type="button">댓글달기</button>
+									<button type="button">공유하기</button>
 								</div>
+								<!-- </div>
+                            <div class="collection__review__item">
+                                <div class="collection__review__item__pic">
+                                    <img src="images/라온의남자.PNG" alt="">
+                                </div>
+                                <div class="collection__review__item__text">
+                                    <h6><a href="nickname"><span>Lewis Mann - </a>5 Hour ago</span></h6>
+                                    <p>Finally it came out ages ago</p> <br>
+                                    <button type="button">좋아요</button>
+                                    <button type="button">댓글달기</button>
+                                    <button type="button">공유하기</button>
+                                </div>
+                            </div>
+                            <div class="collection__review__item">
+                                <div class="collection__review__item__pic">
+                                    <img src="images/별이삼샵.PNG" alt="">
+                                </div>
+                                <div class="collection__review__item__text">
+                                    <h6><a href="nickname"><span>Louis Tyler - </a>20 Hour ago</span></h6>
+                                    <p>Where is the episode 15 ? Slow update! Tch</p> <br>
+                                    <button type="button">좋아요</button>
+                                    <button type="button">댓글달기</button>
+                                    <button type="button">공유하기</button>
+                                </div>
+                            </div>
+                            <div class="collection__review__item">
+                                <div class="collection__review__item__pic">
+                                    <img src="images/싸움독학.PNG" alt="">
+                                </div>
+                                <div class="collection__review__item__text">
+                                    <h6><a href="nickname"><span>Chris Curry - </a>1 Hour ago</span></h6>
+                                    <p>whachikan Just noticed that someone categorized this as belonging to the
+                                        genre
+                                        "demons" LOL</p> <br>
+                                    <button type="button" class="review-button">좋아요</button>
+                                    <button type="button">댓글달기</button>
+                                    <button type="button">공유하기</button>
+                                </div>
+                            </div>
+                            <div class="collection__review__item">
+                                <div class="collection__review__item__pic">
+                                    <img src="images/여신강림.PNG" alt="">
+                                </div>
+                                <div class="collection__review__item__text">
+                                    <h6><a href="nickname"><span>Lewis Mann - </a>5 Hour ago</span></h6>
+                                    <p>Finally it came out ages ago</p> <br>
+                                    <button type="button">좋아요</button>
+                                    <button type="button">댓글달기</button>
+                                    <button type="button">공유하기</button>
+                                </div>
+                            </div>
+                            <div class="collection__review__item">
+                                <div class="collection__review__item__pic">
+                                    <img src="images/이상한변호사 우영우.PNG" alt="">
+                                </div>
+                                <div class="collection__review__item__text">
+                                    <h6><a href="nickname"><span>Louis Tyler - </a>20 Hour ago</span></h6>
+                                    <p>Where is the episode 15 ? Slow update! Tch</p> <br>
+                                    <button type="button">좋아요</button>
+                                    <button type="button">댓글달기</button>
+                                    <button type="button">공유하기</button>
+                                </div>
+                            </div> -->
 							</div>
-							<div class="collection__review__item">
-								<div class="collection__review__item__pic">
-									<img src="images/anime/review-2.jpg" alt="">
-								</div>
-								<div class="collection__review__item__text">
-									<h6>
-										Lewis Mann - <span>5 Hour ago</span>
-									</h6>
-									<p>Finally it came out ages ago</p>
-								</div>
-							</div>
-							<div class="collection__review__item">
-								<div class="collection__review__item__pic">
-									<img src="images/anime/review-3.jpg" alt="">
-								</div>
-								<div class="collection__review__item__text">
-									<h6>
-										Louis Tyler - <span>20 Hour ago</span>
-									</h6>
-									<p>Where is the episode 15 ? Slow update! Tch</p>
-								</div>
-							</div>
-							<div class="collection__review__item">
-								<div class="collection__review__item__pic">
-									<img src="images/anime/review-4.jpg" alt="">
-								</div>
-								<div class="collection__review__item__text">
-									<h6>
-										Chris Curry - <span>1 Hour ago</span>
-									</h6>
-									<p>whachikan Just noticed that someone categorized this as
-										belonging to the genre "demons" LOL</p>
-								</div>
-							</div>
-							<div class="collection__review__item">
-								<div class="collection__review__item__pic">
-									<img src="images/anime/review-5.jpg" alt="">
-								</div>
-								<div class="collection__review__item__text">
-									<h6>
-										Lewis Mann - <span>5 Hour ago</span>
-									</h6>
-									<p>Finally it came out ages ago</p>
-								</div>
-							</div>
-							<div class="collection__review__item">
-								<div class="collection__review__item__pic">
-									<img src="images/anime/review-6.jpg" alt="">
-								</div>
-								<div class="collection__review__item__text">
-									<h6>
-										Louis Tyler - <span>20 Hour ago</span>
-									</h6>
-									<p>Where is the episode 15 ? Slow update! Tch</p>
-								</div>
-							</div>
+
 						</div>
-
+						<!-- 리뷰 글 내역 END-->
 					</div>
-					<!-- 리뷰 글 내역 END-->
-
-					<!-- 작품 컬렉션 모듬 START-->
-					<div class="col-lg-4 col-md-4">
-						<div class="collection__details__sidebar">
-							<div class="section-title">
-								<h5>인기 Top 5 웹툰</h5>
-							</div>
-							<div class="product__sidebar__view__item set-bg">
-								<img src="images/sidebar/tv-1.jpg">
-								<div class="ep">18 / ?</div>
-								<div class="view">
-									<i class="fa fa-eye"></i> 9141
-								</div>
-								<h5>
-									<a href="#">Boruto: Naruto next generations</a>
-								</h5>
-							</div>
-							<div class="product__sidebar__view__item set-bg">
-								<img src="images/sidebar/tv-2.jpg">
-								<div class="ep">18 / ?</div>
-								<div class="view">
-									<i class="fa fa-eye"></i> 9141
-								</div>
-								<h5>
-									<a href="#">The Seven Deadly Sins: Wrath of the Gods</a>
-								</h5>
-							</div>
-							<div class="product__sidebar__view__item set-bg">
-								<img src="images/sidebar/tv-3.jpg">
-								<div class="ep">18 / ?</div>
-								<div class="view">
-									<i class="fa fa-eye"></i> 9141
-								</div>
-								<h5>
-									<a href="#">Sword art online alicization war of underworld</a>
-								</h5>
-							</div>
-							<div class="product__sidebar__view__item set-bg">
-								<img src="images/sidebar/tv-4.jpg">
-								<div class="ep">18 / ?</div>
-								<div class="view">
-									<i class="fa fa-eye"></i> 9141
-								</div>
-								<h5>
-									<a href="#">Fate/stay night: Heaven's Feel I. presage
-										flower</a>
-								</h5>
-							</div>
-						</div>
-					</div>
-					<!-- 작품 컬렉션 모듬 END-->
-
 
 				</div>
 
-			</div>
-		</div>
+
+
+				<!-- 작품 추천 Section start -->
+
+				<div class="collection__recommend">
+					<div class="col-lg-8 col-md-8">
+						<div class="collection__recommend__title">
+							<div class="section-title">
+								<h5>이 작품이 담긴 컬렉션</h5>
+							</div>
+
+
+							<div class="collection__recommend__item">
+								<div class="collection__recommend__item__pic">
+									<a href="collection.html"><img src="images/독립일기.PNG" alt=""></a>
+								</div>
+								<div class="collection__recommend__item__text">
+									<h6>
+										<a href="collection.html"><span>신작 추천</span>
+									</h6>
+									<a href="collection__recommend__img"><i
+										class="fa fa-heart-o"></i></a>
+
+
+
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+
+
+				<!-- 작품 추천 Section End -->
 	</section>
-	<!-- Anime Section End -->
 
 	<!-- Javascript files-->
 	<script src="${cpath}/utoon/js/jquery.min.js"></script>
