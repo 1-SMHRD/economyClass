@@ -17,10 +17,16 @@
 		values(#{mem_id},#{mem_pw},#{mem_nick},sysdate,'1')
 	</insert>
 	
-	<!-- 회원정보 -->
-	<select id="profileInfo" resultType="dao.MemberVO">
-		select * from tbl_mem where mem_id = #{mem_id}
-	</select>
+	<!-- 회원정보수정 -->
+	<update id="editProfile" parameterType="dao.MemberVO">
+		update tbl_mem
+		set mem_nick = #{mem_nick},
+			mem_pw = #{mem_pw},
+			mem_img = #{mem_img},
+			mem_sns = #{mem_sns},
+			mem_cmt = #{mem_cmt}
+		where mem_id = #{mem_id}	
+	</update>
 	
 	<!-- 커뮤니티 전체 게시글 불러오기 -->
 	<select id="postAllList" resultType="dao.PostVO">

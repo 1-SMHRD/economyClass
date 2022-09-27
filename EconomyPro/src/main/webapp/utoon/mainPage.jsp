@@ -68,12 +68,12 @@
                <div class="col-sm-12">
                   <div class="custom_menu">
                      <ul>
-                        <li><a href="Home.html">홈</a></li>
-                        <li><a href="collection.html">컬렉션</a></li>
-                        <li><a href="community.html">커뮤니티</a></li>
-                        <li><a href="quest.html">탐색</a></li>
-                        <li><a href="new.html">신작</a></li>
-                        <li><a href="mypage.html">마이페이지</a></li>
+                        <li><a href="${cpath}/mainPage.do">홈</a></li>
+                        <li><a href="${cpath}/collection.do">컬렉션</a></li>
+                        <li><a href="${cpath}/community.do">커뮤니티</a></li>
+                        <li><a href="${cpath}/explore.do">탐색</a></li>
+                        <li><a href="${cpath}/newToon.do">신작</a></li>
+                        <li><a href="${cpath}/myPage.do">마이페이지</a></li>
 
                      </ul>
                   </div>

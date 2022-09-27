@@ -46,12 +46,12 @@ public class UtoonDAO {
 		return lvo;
 
 	}
-	// 프로필 전체 정보 가져오기
-	public List<MemberVO> profileInfo(String mem_id){
+	// 회원정보 수정
+	public void editProfile(MemberVO vo){
 		SqlSession session = sqlSessionFactory.openSession();
-		List<MemberVO> pi = session.selectList("profileInfo",mem_id);
-		session.close();// 반납
-		return pi;
+		session.update("editProfile", vo);
+		session.commit();
+		session.close();
 	}
 ////////////////////////////////////////////////////////////////////////////////////////////
 	// 커뮤니티 전체 글 가져오기
@@ -142,16 +142,16 @@ public class UtoonDAO {
 	}
 ////////////////////////////////////////////////////////////////////////////////////////////
 	// 내 게시글
-	public List<PostVO> myPost() {
+	public List<PostVO> myPost(String mem_id) {
 		SqlSession session = sqlSessionFactory.openSession();
-		List<PostVO> list = session.selectList("myPost");
+		List<PostVO> list = session.selectList("myPost",mem_id);
 		session.close();// 반납
 		return list;
 	}
 	// 내 리뷰
-	public List<ReviewVO> myReview() {
+	public List<ReviewVO> myReview(String mem_id) {
 		SqlSession session = sqlSessionFactory.openSession();
-		List<ReviewVO> list = session.selectList("myReview");
+		List<ReviewVO> list = session.selectList("myReview",mem_id);
 		session.close();// 반납
 		return list;
 	}
