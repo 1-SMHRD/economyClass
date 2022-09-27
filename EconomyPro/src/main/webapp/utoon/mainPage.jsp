@@ -108,11 +108,11 @@
                </div>
                <div class="main">
                   <!-- Another variation with a button -->
-                  <div class="input-group">
+                   <div class="input-group">
                      <input type="text" class="form-control" placeholder="작품명 / 작가 검색하기">
                      <div class="input-group-append">
                         <button class="btn btn-secondary" type="button"
-                           style="background-color: #596275; border-color:#596275 ">
+                           style="background-color: #5e17eb; border-color:#5e17eb ">
                            <i class="fa fa-search"></i>
                         </button>
                      </div>
@@ -157,6 +157,8 @@
                                  <li><span>🥉 3</span><a href="#">여신강림</a> </li>
                                  <li><span>🏅 4</span><a href="#">여신강림</a> </li>
                                  <li><span>🏅 5</span><a href="#">여신강림</a> </li>
+                                 <li><span>🏅 6</span><a href="#">여신강림</a> </li>
+                                 <li><span>🏅 7</span><a href="#">여신강림</a> </li>
                               </ul>
                               
                               <!-- <div class="electronic_img"><img src="images/laptop-img.png"></div> -->
@@ -187,6 +189,8 @@
                                  <li><span>🥉 3</span><a href="#">여신강림</a> </li>
                                  <li><span>🏅 4</span><a href="#">여신강림</a> </li>
                                  <li><span>🏅 5</span><a href="#">여신강림</a> </li>
+                                 <li><span>🏅 6</span><a href="#">여신강림</a> </li>
+                                 <li><span>🏅 7</span><a href="#">여신강림</a> </li>
                               </ul>
                               <div class="btn_main">
                                  <!-- <div class="buy_bt"><a href="#">Buy Now</a></div>
@@ -211,6 +215,8 @@
                                  <li><span>🥉 3</span><a href="#">여신강림</a> </li>
                                  <li><span>🏅 4</span><a href="#">여신강림</a> </li>
                                  <li><span>🏅 5</span><a href="#">여신강림</a> </li>
+                                 <li><span>🏅 6</span><a href="#">여신강림</a> </li>
+                                 <li><span>🏅 7</span><a href="#">여신강림</a> </li>
                               </ul>
                               <div class="btn_main">
                                  <!-- <div class="buy_bt"><a href="#">Buy Now</a></div>
@@ -235,6 +241,8 @@
                                  <li><span>🥉 3</span><a href="#">여신강림</a> </li>
                                  <li><span>🏅 4</span><a href="#">여신강림</a> </li>
                                  <li><span>🏅 5</span><a href="#">여신강림</a> </li>
+                                 <li><span>🏅 6</span><a href="#">여신강림</a> </li>
+                                 <li><span>🏅 7</span><a href="#">여신강림</a> </li>
                               </ul>
                               <div class="btn_main">
                                  <!-- <div class="buy_bt"><a href="#">Buy Now</a></div>
@@ -259,6 +267,8 @@
                                  <li><span>🥉 3</span><a href="#">여신강림</a> </li>
                                  <li><span>🏅 4</span><a href="#">여신강림</a> </li>
                                  <li><span>🏅 5</span><a href="#">여신강림</a> </li>
+                                 <li><span>🏅 6</span><a href="#">여신강림</a> </li>
+                                 <li><span>🏅 7</span><a href="#">여신강림</a> </li>
                               </ul>
                               <div class="btn_main">
                                  <!-- <div class="buy_bt"><a href="#">Buy Now</a></div>

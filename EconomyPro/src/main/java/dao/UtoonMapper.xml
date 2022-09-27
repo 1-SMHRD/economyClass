@@ -35,9 +35,9 @@
 	
 	<!-- 커뮤니티 게시글 쓰기 -->
 	<insert id="postInsert" parameterType="dao.PostVO">
-		insert into tbl_comm(
-		mem_id,post_title, post_ctnt)
-		values(#{mem_id},#{post_title},#{post_ctnt})
+		insert into
+		tbl_comm(post_num, mem_id, post_title, post_ctnt, post_date, wt_id)
+		values(TBL_COMM_SEQ.nextval,#{mem_id},#{post_title},#{post_ctnt},sysdate,#{wt_id})
 	</insert>
 	
 	<!-- 커뮤니티 게시글 상세보기 -->
@@ -63,8 +63,6 @@
 		post_vcnt=post_vcnt+1 where post_num=#{post_num}
 	</update>
 
-	<!-- test  -->
-	<!-- test  -->
 	<!-- 리뷰 전체 게시글 불러오기 -->
 	<select id="reviewAllList" resultType="dao.ReviewVO">
 		select * from tbl_wt_review order by rv_date desc
@@ -95,7 +93,9 @@
 		rv_ctnt= #{rv_ctnt} where rv_num = #{rv_num}
 	</update>
 	
-	
+	<!-- 리뷰 평점 입력하기@#(*&@#(*%&@#(*%&@#(*%&@#(*%&  -->
+	<insert id="">
+	</insert>
 	
 	<!-- 내 게시글 불러오기 -->
 	<select id="myPost" resultType="dao.PostVO">
