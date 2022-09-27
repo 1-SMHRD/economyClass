@@ -218,7 +218,7 @@ button {
     width: 100%;
     float: left;
     /* background-image: url(../images/banner-bg.png); */
-    background-color: #5e27cd2a;
+    /* background-color: #5e27cd2a; */
     height: 100%;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -606,13 +606,15 @@ a:hover {
 }
 .community_taital {
     padding-top: 20px;
-    width: 100%;
-    font-size: 23px;
+    width: 260px;
+    font-size: 20px;
     color: #303952;
     font-family : Impact, Charcoal, sans-serif;
     text-align: left;
     font-weight: bold;
     margin-left : 8px;
+    border : 2px solid #5e17eb;
+    border-radius: 30px;
     /* background-color: #192a56; */
 }
 
