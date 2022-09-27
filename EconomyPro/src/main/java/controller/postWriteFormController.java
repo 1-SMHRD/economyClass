@@ -22,7 +22,6 @@ public class postWriteFormController implements Controller {
 		String post_title = request.getParameter("post_title");
 		String post_ctnt = request.getParameter("post_ctnt");
 		int wt_id = Integer.parseInt(request.getParameter("wt_id"));
-		
 
 		UtoonDAO dao = new UtoonDAO();
 		MemberVO vo = (MemberVO) session.getAttribute("lvo");
