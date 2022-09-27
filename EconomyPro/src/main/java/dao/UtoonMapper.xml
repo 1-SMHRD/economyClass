@@ -36,8 +36,8 @@
 	<!-- 커뮤니티 게시글 쓰기 -->
 	<insert id="postInsert" parameterType="dao.PostVO">
 		insert into
-		tbl_comm(mem_id, post_title, post_ctnt, post_date, wt_id)
-		values(#{mem_id},#{post_title},#{post_ctnt},sysdate,#{wt_id})
+		tbl_comm(post_num, mem_id, post_title, post_ctnt, post_date, wt_id)
+		values(TBL_COMM_SEQ.nextval,#{mem_id},#{post_title},#{post_ctnt},sysdate,#{wt_id})
 	</insert>
 	
 	<!-- 커뮤니티 게시글 상세보기 -->
