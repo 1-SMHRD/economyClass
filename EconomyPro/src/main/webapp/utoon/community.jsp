@@ -260,22 +260,39 @@
 			</div>
 		</div>
 
-		<div class="text-center">
+      <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
+         <i class="fa fa-angle-right"></i>
+      </a>
+      <br>
+      <div class="container">
+         <div id="c_box">
+            <table id="c_box_table">
+               <tr id="c_box_tr1">
+                  <th id="c_box_rv"> 내 댓글</th>
+                  <th id="c_box_th"><a href="box2_댓글_p1.html">0개</a></th>
+               </tr>
+               <tr id="c_box_tr2">
+                  <th id="c_box_rv"> 내 게시글</th>
+                  <th id="c_box_th"><a href="0개">0개</a></th>
+               </tr>
+            </table>
+         </div>
 
-			<div class="communitywrite">
-				<a href="community_write.html"></a>
-				<button type="button" class="btn btn-secondary disabled">글쓰기</button>
-			</div>
-			<a class="carousel-control-next" href="#main_slider" role="button"
-				data-slide="next"> <i class="fa fa-angle-right"></i>
-			</a> <a class="carousel-control-prev" href="#main_slider" role="button"
-				data-slide="next"> <i class="fa fa-angle-left"></i>
-			</a>
+         <div id="write2">
+            <input id="write3" type="text" placeholder="짧게라도좋으니글을작성해주세요!">
+            <a href="#" type="button" class="btn33">글쓰기</a>
+         </div>
 
+         <div class="text-center">
+            <div class="communitywrite"><a href="community_write.html">
+                  <!-- <button type="button" class="btn_c_box">글쓰기</button></div> -->
 
-
-		</div>
-	</div>
+                  <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
+                     <i class="fa fa-angle-left"></i>
+                  </a>
+            </div>
+         </div>
+         
 	<!-- fashion section end -->
 
 
