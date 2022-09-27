@@ -142,16 +142,16 @@ public class UtoonDAO {
 	}
 ////////////////////////////////////////////////////////////////////////////////////////////
 	// 내 게시글
-	public List<PostVO> myPost() {
+	public List<PostVO> myPost(String mem_id) {
 		SqlSession session = sqlSessionFactory.openSession();
-		List<PostVO> list = session.selectList("myPost");
+		List<PostVO> list = session.selectList("myPost",mem_id);
 		session.close();// 반납
 		return list;
 	}
 	// 내 리뷰
-	public List<ReviewVO> myReview() {
+	public List<ReviewVO> myReview(String mem_id) {
 		SqlSession session = sqlSessionFactory.openSession();
-		List<ReviewVO> list = session.selectList("myReview");
+		List<ReviewVO> list = session.selectList("myReview",mem_id);
 		session.close();// 반납
 		return list;
 	}
