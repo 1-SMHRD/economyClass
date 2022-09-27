@@ -162,25 +162,26 @@ button {
 			<div>일부 정보가 Utoon 서비스를 사용하는 다른 사람에게 표기될 수 있습니다.</div>
 			<br>
 			<div id="pictur">
-				<div style="border-bottom: 1px solid purple; padding-bottom: 20px;">
-					사진을 추가하여 계정을 맞춤설정합니다. <input type="file" name="mem_img"accept="image/*"
-						placeholder="프로필사진" /> <br>
-					<!-- <button>변경</button> -->
-				</div>
-				<div class="aa">
-					<form>
-						<div class="imf_name" style="border-bottom: 1px solid purple;">
-							<div id="name_t">아이디</div>
+				<form action="${cpath}/editProfileForm.do">
+					<div style="border-bottom: 1px solid purple; padding-bottom: 20px;">
+						사진을 추가하여 계정을 맞춤설정합니다. <input type="text" name="mem_img"
+							value="${mem_img}" accept="image/*" placeholder="프로필사진" /> <br>
+						<!-- <button>변경</button> -->
+					</div>
+					<div class="aa">
 
-							<input type="text" name="mem_id" size="20px"
-								placeholder="아이디를 입력해주세요">
+						<div class="imf_name" style="border-bottom: 1px solid purple;">
+							<div id="name_t">닉네임</div>
+
+							<input type="text" name="mem_nick" value="${mem_nick}"
+								size="20px" placeholder="닉네임을 입력해주세요">
 							<!-- <button>확인</button> -->
 
 						</div>
 						<div class="imf_password" style="border-bottom: 1px solid purple;">
-							<div id="password_t">비밀번호 재설정</div>
+							<div id="password_t">비밀번호</div>
 
-							<input type="text" name="mem_pw" size="20px"
+							<input type="text" name="mem_pw" value="${mem_pw}" size="20px"
 								placeholder="비밀번호를 입력해주세요">
 							<!-- <button>확인</button> -->
 
@@ -193,18 +194,28 @@ button {
 						<!-- <br> -->
 						<div id="birth_t">이메일</div>
 
-						<input type="text" name="mem_sns" size="35"
+						<input type="text" name="mem_sns" value="${mem_sns}" size="35"
 							placeholder="이메일을 입력해주세요">
 						<!-- <button>확인</button> -->
 
 						<div id="birth_t">자기소개</div>
 
-						<textarea rows="10" name="mem_cmt" placeholder="자기소개를 입력해주세요"></textarea>
+						<textarea rows="10" name="mem_cmt"
+							placeholder="자기소개를 입력해주세요">${mem_cmt}</textarea>
 						<!-- <input type="text" name="introduction" size="35"
 								placeholder="자기소개를 입력해주세요"> -->
 						<!-- <button>확인</button> -->
-					</form>
-					<!-- </div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-offset-2 col-lg-7">
+							<button type="submit" class="btn btn-sm btn-success">수정</button>
+							<button type="reset" class="btn btn-sm btn-info">초기화</button>
+							<button type="button" class="btn btn-sm btn-info"
+								onclick="history.back()">취소</button>
+						</div>
+					</div>
+				</form>
+				<!-- </div>
                             <div class="imf_sex">
                                 <div id="sex_t">성별</div>
                                 <form method="get" action="form-action.html">
@@ -213,19 +224,13 @@ button {
                                     <label><input type="radio" name="check_sex" value="비공개" checked> 비공개</label>
                                 </form>
                             </div> -->
-				</div>
 			</div>
+
 		</div>
-		
+
+
 	</section>
-	<div class="form-group">
-		<div class="col-sm-offset-2 col-lg-7">
-			<button type="submit" class="btn btn-sm btn-success">수정</button>
-			<button type="reset" class="btn btn-sm btn-info">초기화</button>
-			<button type="button" class="btn btn-sm btn-info"
-				onclick="location.href='${cpath}/myPage.do'">취소</button>
-		</div>
-	</div>
+
 
 
 

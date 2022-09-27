@@ -21,9 +21,7 @@ public class myPageController implements Controller {
 			throws ServletException, IOException {
 		
 		HttpSession session = request.getSession();
-		
-//		session.getAttribute("lvo");
-		
+				
 		UtoonDAO dao = new UtoonDAO();
 		MemberVO vo = (MemberVO)session.getAttribute("lvo");
 		String mem_id = vo.getMem_id();

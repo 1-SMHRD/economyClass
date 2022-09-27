@@ -107,17 +107,7 @@
 							인기글🔥</h1>
 
 
-						<%-- 		<table>
-							<tr>
-								<td>${post.post_num}</td>
-								<td><a
-									href="${cpath}/postDetail.do?post_num=${post.post_num}">${post.post_title}</a></td>
-								<td>${post.mem_id}</td>
-								<td>${post.post_ctnt}</td>
-								<td>${post.vcount}</td>
-							</tr>
-						</table>
- --%>
+
 						<div class="fashion_section_2">
 							<div class="row">
 								<c:forEach var="post" items="${list}">

@@ -58,7 +58,7 @@ public class HandlerMapping {
 		
 		// 프로필 수정, 내 게시글, 내 리뷰, 내 게시글 댓글, 내 리뷰 댓글, 스크랩 리스트 맵핑		
 		mappings.put("/editProfile.do",new editProfileController());
-		mappings.put("editProfileForm.do",new editProfileFormController());
+		mappings.put("/editProfileForm.do",new editProfileFormController());
 		mappings.put("/myScrap.do",new myScrapController());
 		mappings.put("/myPost.do",new myPostController());
 		mappings.put("/myReview.do",new myReviewController());
