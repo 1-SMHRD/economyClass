@@ -503,7 +503,7 @@
 
 
 	커뮤니티
-
+	<button onclick="location.href='${cpath}/postWrite.do'">글쓰기</button>
 	<button onclick="location.href='${cpath}/myPost.do'">내글보기</button>
 	<br>
 
