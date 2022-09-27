@@ -107,7 +107,6 @@
 							인기글🔥</h1>
 
 
-
 						<div class="fashion_section_2">
 							<div class="row">
 								<c:forEach var="post" items="${list}">
