@@ -188,6 +188,19 @@
 				<!-- UTOON 지수(가로그래프) end -->
 
 				<hr>
+				
+				<!-- 리뷰 글 작성 START-->
+                <div class="collection__details__form">
+                    <div class="section-title">
+                        <h5>내가 작성한 리뷰</h5>
+                    </div>
+                    <form action="#">
+                        <textarea placeholder="짧게라도 좋으니 작품에 대한 감상을 기록해보세요"></textarea>
+                        <button type="submit"><i class="comment-btn"></i> 리뷰 작성하기</button>
+                    </form>
+                </div> <br>
+                <hr>
+                <!-- 리뷰 글 작성 END-->
 
 
 				<!-- 리뷰 글 내역 START-->

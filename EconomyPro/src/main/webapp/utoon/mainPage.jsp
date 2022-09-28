@@ -163,9 +163,12 @@
 									<div class="col-lg-4 col-md-4">
 										<div class="box_main_lank">
 											<ul class="shirt_text">
-												<c:forEach var="rankAllWT" items="${rankAllWT}" begin="0"
-													end="9" step="1" varStatus="status">
+												<c:forEach var="rankAllWT" items="${rankAllWT}" begin="0" end="9" step="1" varStatus="status">
 													<li><span>${status.index+1} 위</span><a href="${cpath}/toonDetail.do">${rankAllWT.wt_title}</a></li>
+=======
+													end="9" step="1" varStatus="status" >
+													<li><span>${status.index+1} 위</span><a href="${cpath}/toonDetail.do?wt_id=${rankAllWT.wt_id}">${rankAllWT.wt_title}</a></li>
+>>>>>>> branch 'master' of https://github.com/1-SMHRD/economyClass.git
 												</c:forEach>
 											</ul>
 										</div>

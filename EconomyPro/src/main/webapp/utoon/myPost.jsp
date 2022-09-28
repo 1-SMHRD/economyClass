@@ -19,9 +19,11 @@
 <title>Document</title>
 
 <!-- bootstrap css -->
-<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css"
+	href="${cpath}/utoon/css/bootstrap.min.css">
 <!-- style css -->
-<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css"
+	href="${cpath}/utoon/css/style.css">
 
 </head>
 
@@ -34,6 +36,12 @@
 			<div class="header_section_top">
 				<div class="row">
 					<div class="col-sm-12">
+						<div class="header__logo" style="margin-left: 30px;">
+							<a href="${cpath}/mainPage.do"> <img
+								src="${cpath}/utoon/images/logo2.png"
+								style="height: 50px; width: 60px; border-radius: 50%;" alt="">
+							</a>
+						</div>
 						<div class="custom_menu" style="font-size: 15;">
 							<ul>
 								<li><a href="${cpath}/mainPage.do">홈</a></li>
@@ -53,25 +61,28 @@
 	<br>
 	<br>
 	<br>
+	
+	<br>
 
 	<div class="container">
 
 		<div>
-			<h3 class="hm_comment">
+			<h3 class="hm_comment"">
 				<a href="mypage.html">마이페이지</a> > 내 게시글
 			</h3>
 		</div>
 
 		<h3 class="head_comment">📰 내 게시글</h3>
+		<div class="spc"></div>
 
-		<button onclick="history.back()">뒤로가기</button>
-		<br>
 	</div>
 
 
 	<!-- 내 게시글 시작 -->
 
-	<div class="container">
+
+
+	<div class="container" style="margin-top: 10px;">
 		<div class="story_text_head">
 			<div class="story_title">
 				<div class="rv_name_t">게시글 제목</div>
