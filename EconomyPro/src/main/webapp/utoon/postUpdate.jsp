@@ -3,7 +3,6 @@
 <%@page import="dao.PCommentVO"%>
 <%@page import="java.util.List"%>
 
-
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
@@ -14,24 +13,27 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<script type="text/javascript">
+	function pU(post_num){
+		location.href="${cpath}/postUpdate.do?post_num="+post_num;
+	}
+	
+</script>
 </head>
 <body>
-		<form action="${cpath}/postUpdateForm.do">
-			<h1>UToon</h1>
-			<!-- <div class="social-container">
-				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-			</div> -->
-			<!-- <span>or use your email for registration</span> -->
-			 <!-- 아이디 -->
-			<input type="text" name="mem_id" placeholder="" />
-			<!-- 비밀번호 -->
-			<input type="password" name="mem_pw" placeholder="비밀번호" />
-			<!-- 이름 -->
-			<input type="text" name="mem_nick" placeholder="이름" />
-			
-			<button>가입하기</button>
-		</form>
+	<form action="${cpath}/postUpdate.do">
+		<h1>UToon</h1>
+		<input type="text" name="post_num" value="${post.post_num}" disabled="disabled" />
+		<!-- 제목 -->
+		<input type="text" name="post_title" placeholder="제목" />
+		<!-- 내용 -->
+		<input type="text" name="post_ctnt" placeholder="내용" />
+		<!-- 웹툰태그 -->
+		<input type="text" name="wt_id" placeholder="웹툰태그(숫자입력)" />
+
+		<button type="submit" >등록</button>
+		<button type="reset" >초기화</button>
+		<button type="button" onclick="history.back()">취소</button>
+	</form>
 </body>
 </html>

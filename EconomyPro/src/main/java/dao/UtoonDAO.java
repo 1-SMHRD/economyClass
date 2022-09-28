@@ -155,9 +155,9 @@ public class UtoonDAO {
 
 ////////////////////////////////////////////////////////////////////////////////////////////
 	// 게시글 댓글 가져오기
-	public List<PCommentVO> pcAllList() {
+	public List<PCommentVO> pcAllList(int post_num) {
 		SqlSession session = sqlSessionFactory.openSession();
-		List<PCommentVO> list = session.selectList("pcAllList");
+		List<PCommentVO> list = session.selectList("pcAllList", post_num);
 		session.close();// 반납
 		return list;
 	}

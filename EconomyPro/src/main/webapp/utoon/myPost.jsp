@@ -15,7 +15,7 @@
 </head>
 <body>
 
-
+	<button onclick="location.href='${cpath}/postWrite.do'">글쓰기</button>
 
 
 
