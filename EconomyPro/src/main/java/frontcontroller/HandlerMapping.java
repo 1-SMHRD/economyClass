@@ -22,6 +22,8 @@ import controller.newProfileController;
 import controller.newToonController;
 import controller.postDeleteController;
 import controller.postDetailController;
+import controller.postUpdateController;
+import controller.postUpdateFormController;
 import controller.postWriteController;
 import controller.postWriteFormController;
 import controller.reviewDetailController;
@@ -71,6 +73,8 @@ public class HandlerMapping {
 		mappings.put("/postWrite.do",new postWriteController());
 		mappings.put("/postWriteForm.do",new postWriteFormController());
 		mappings.put("/postDelete.do",new postDeleteController());
+		mappings.put("/postUpdate.do",new postUpdateController());
+		mappings.put("/postUpdateForm.do",new postUpdateFormController());
 		
 		
 		// 에이잭스 맵핑

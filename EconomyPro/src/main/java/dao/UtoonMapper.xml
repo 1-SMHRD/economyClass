@@ -54,14 +54,41 @@
 	
 	<!-- 커뮤니티 게시글 수정하기 -->
 	<update id="postUpdate" parameterType="dao.PostVO">
-		update tbl_comm set post_title
-		= #{post_title}, post_ctnt= #{post_ctnt} where post_num = #{post_num}
+		update tbl_comm
+		set post_title = #{post_title},
+			post_ctnt = #{post_ctnt},
+			wt_id = #{wt_id}
+		where post_num = #{post_num}
 	</update>
 	<!-- 커뮤니티 뷰 카운트 -->
 	<update id="postView" parameterType="int">
 		update tbl_comm set
 		post_vcnt=post_vcnt+1 where post_num=#{post_num}
 	</update>
+	
+	
+	
+	
+	
+	<!-- 게시글 댓글 불러오기 -->
+	<select id="pcAllList" resultType="dao.PCommentVO">
+		select * from tbl_comm_cmt where post_num = #{post_num} order by cmt_date desc
+	</select>
+	<!-- 커뮤니티 게시글 댓글 수정하기 -->
+	<update id="pcUpdate" parameterType="dao.PostVO">
+		update tbl_comm_cmt set post_title
+		= #{post_title}, post_ctnt= #{post_ctnt} where post_num = #{post_num}
+	</update>
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
 
 	<!-- 리뷰 전체 게시글 불러오기 -->
 	<select id="reviewAllList" resultType="dao.ReviewVO">

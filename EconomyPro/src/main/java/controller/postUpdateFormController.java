@@ -13,12 +13,12 @@ import dao.PCommentVO;
 import dao.PostVO;
 import dao.UtoonDAO;
 
-public class postDetailController implements Controller {
+public class postUpdateFormController implements Controller {
 
 	@Override
 	public String requestHandler(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-
+		
 		HttpSession session = request.getSession();
 		UtoonDAO dao = new UtoonDAO();
 		MemberVO vo = (MemberVO) session.getAttribute("lvo");
@@ -26,12 +26,8 @@ public class postDetailController implements Controller {
 		int post_num = Integer.parseInt(request.getParameter("post_num"));
 		PostVO post = dao.postGet(post_num);
 		request.setAttribute("post", post);
-		List<PCommentVO> pc = dao.pcAllList(post_num);
-		request.setAttribute("pc", pc);
-		
-		System.out.println("게시글 정보 " + post);
-
-		return "postDetail";
+		System.out.println("게시글업데이트 정보 " + post);
+		return "postUpdate";
 	}
 
 }
