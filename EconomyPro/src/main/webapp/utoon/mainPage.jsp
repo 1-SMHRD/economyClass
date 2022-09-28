@@ -138,259 +138,247 @@
 
 
    <!-- banner bg main end -->
-   <!-- fashion section start -->
+  		<!-- 1. WEBTOON RANK section start 5개 플랫폼 10개씩 인기작품-->
 
-   
-   <div class="fashion_section">
-      <div id="electronic_main_slider" class="carousel slide" data-ride="carousel">
-         <div class="carousel-inner">
-            <div class="carousel-item active">
-               <div class="container">
-                  <h1 class="community_taital" style="color : #303952">오늘의 '네이버웹툰' 랭킹 🏆</h1>
-                  <div class="fashion_section_2">
-                     <div class="row">
-                        <div class="col-lg-4 col-md-4">
-                           <div class="box_main_lank">
-                              <ul class="shirt_text">
-                                 <li><span>🥇 1</span><a href="#">여신강림</a> </li>
-                                 <li><span>🥈 2</span><a href="#">여신강림</a> </li>
-                                 <li><span>🥉 3</span><a href="#">여신강림</a> </li>
-                                 <li><span>🏅 4</span><a href="#">여신강림</a> </li>
-                                 <li><span>🏅 5</span><a href="#">여신강림</a> </li>
-                                 <li><span>🏅 6</span><a href="#">여신강림</a> </li>
-                                 <li><span>🏅 7</span><a href="#">여신강림</a> </li>
-                              </ul>
-                              
-                              <!-- <div class="electronic_img"><img src="images/laptop-img.png"></div> -->
-                              <div class="btn_main">
-                                 <!-- <div class="buy_bt"><a href="#">Buy Now</a></div>
-                                 <div class="seemore_bt"><a href="#">See More</a></div> -->
-                              </div>
-                           </div>
-                        </div>
-                        
-                  
-                     </div>
-                     
-                  </div>
-               </div>
-            </div>
-            
-            <div class="carousel-item">
-               <div class="container">
-                  <h1 class="community_taital" style="color : #303952">오늘의 '카카오웹툰' 랭킹 🏆</h1>
-                  <div class="fashion_section_2">
-                     <div class="row">
-                        <div class="col-lg-4 col-sm-4">
-                           <div class="box_main_lank">
-                              <ul class="shirt_text">
-                                 <li><span>🥇 1</span><a href="#">여신강림</a> </li>
-                                 <li><span>🥈 2</span><a href="#">여신강림</a> </li>
-                                 <li><span>🥉 3</span><a href="#">여신강림</a> </li>
-                                 <li><span>🏅 4</span><a href="#">여신강림</a> </li>
-                                 <li><span>🏅 5</span><a href="#">여신강림</a> </li>
-                                 <li><span>🏅 6</span><a href="#">여신강림</a> </li>
-                                 <li><span>🏅 7</span><a href="#">여신강림</a> </li>
-                              </ul>
-                              <div class="btn_main">
-                                 <!-- <div class="buy_bt"><a href="#">Buy Now</a></div>
-                                 <div class="seemore_bt"><a href="#">See More</a></div> -->
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="carousel-item">
-               <div class="container">
-                  <h1 class="community_taital" style="color : #303952">오늘의 '레진코믹스' 랭킹 🏆</h1>
-                  <div class="fashion_section_2">
-                     <div class="row">
-                        <div class="col-lg-4 col-sm-4">
-                           <div class="box_main_lank">
-                              <ul class="shirt_text">
-                                 <li><span>🥇 1</span><a href="#">여신강림</a> </li>
-                                 <li><span>🥈 2</span><a href="#">여신강림</a> </li>
-                                 <li><span>🥉 3</span><a href="#">여신강림</a> </li>
-                                 <li><span>🏅 4</span><a href="#">여신강림</a> </li>
-                                 <li><span>🏅 5</span><a href="#">여신강림</a> </li>
-                                 <li><span>🏅 6</span><a href="#">여신강림</a> </li>
-                                 <li><span>🏅 7</span><a href="#">여신강림</a> </li>
-                              </ul>
-                              <div class="btn_main">
-                                 <!-- <div class="buy_bt"><a href="#">Buy Now</a></div>
-                                 <div class="seemore_bt"><a href="#">See More</a></div> -->
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="carousel-item">
-               <div class="container">
-                  <h1 class="community_taital" style="color : #303952">오늘의 '탑툰' 랭킹 🏆</h1>
-                  <div class="fashion_section_2">
-                     <div class="row">
-                        <div class="col-lg-4 col-sm-4">
-                           <div class="box_main_lank">
-                              <ul class="shirt_text">
-                                 <li><span>🥇 1</span><a href="#">여신강림</a> </li>
-                                 <li><span>🥈 2</span><a href="#">여신강림</a> </li>
-                                 <li><span>🥉 3</span><a href="#">여신강림</a> </li>
-                                 <li><span>🏅 4</span><a href="#">여신강림</a> </li>
-                                 <li><span>🏅 5</span><a href="#">여신강림</a> </li>
-                                 <li><span>🏅 6</span><a href="#">여신강림</a> </li>
-                                 <li><span>🏅 7</span><a href="#">여신강림</a> </li>
-                              </ul>
-                              <div class="btn_main">
-                                 <!-- <div class="buy_bt"><a href="#">Buy Now</a></div>
-                                 <div class="seemore_bt"><a href="#">See More</a></div> -->
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="carousel-item">
-               <div class="container">
-                  <h1 class="community_taital" style="color : #303952">오늘의 '투믹스' 랭킹 🏆</h1>
-                  <div class="fashion_section_2">
-                     <div class="row">
-                        <div class="col-lg-4 col-sm-4">
-                           <div class="box_main_lank">
-                              <ul class="shirt_text">
-                                 <li><span>🥇 1</span><a href="#">여신강림</a> </li>
-                                 <li><span>🥈 2</span><a href="#">여신강림</a> </li>
-                                 <li><span>🥉 3</span><a href="#">여신강림</a> </li>
-                                 <li><span>🏅 4</span><a href="#">여신강림</a> </li>
-                                 <li><span>🏅 5</span><a href="#">여신강림</a> </li>
-                                 <li><span>🏅 6</span><a href="#">여신강림</a> </li>
-                                 <li><span>🏅 7</span><a href="#">여신강림</a> </li>
-                              </ul>
-                              <div class="btn_main">
-                                 <!-- <div class="buy_bt"><a href="#">Buy Now</a></div>
-                                 <div class="seemore_bt"><a href="#">See More</a></div> -->
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <a class="carousel-control-next" href="#electronic_main_slider" role="button" data-slide="next">
-            <i class="fa fa-angle-right"></i>
-         </a>
-         <a class="carousel-control-prev" href="#electronic_main_slider" role="button" data-slide="prev">
-            <i class="fa fa-angle-left"></i>
-         </a>
-      </div>
-   </div>
 
-   <!-- fashion section start -->
-   <div class="fashion_section">
-      <div id="main_slider" class="carousel slide" data-ride="carousel">
-         <div class="carousel-inner">
-            <div class="carousel-item active">
-               <div class="container">
-                  <h1 class="community_taital" style="color : #303952">커뮤니티 인기글 🔥</h1>
-                  <div class="fashion_section_2">
-                     <div class="row">
-                        
-                        <div class="col-md-4 col-sm-4">
-                           <div class="box_main container">
-                              <h4 class="communitybox_text">1번째 글</h4>
-                              <p class="community_text">커뮤니티 1</p>
+		<div class="fashion_section">
+			<div id="electronic_main_slider" class="carousel slide"
+				data-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="container">
+							<h1 class="community_taital" style="color: #303952">오늘의
+								'통합웹툰' 랭킹 🏆</h1>
+							<div class="fashion_section_2">
+								<div class="row">
+									<div class="col-lg-4 col-md-4">
+										<div class="box_main_lank">
+											<ul class="shirt_text">
+												<c:forEach var="rankAllWT" items="${rankAllWT}" begin="0" end="9"
+													step="1" varStatus="status"> 
+													<li><span>${status.index+1} 위</span><a href="#">${rankAllWT.wt_title}</a></li>
+												</c:forEach>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="container">
+							<h1 class="community_taital" style="color: #303952">오늘의
+								'네이버웹툰' 랭킹 🏆</h1>
+							<div class="fashion_section_2">
+								<div class="row">
+									<div class="col-lg-4 col-sm-4">
+										<div class="box_main_lank">
+											<ul class="shirt_text">
+												<c:forEach var="rankNVWT" items="${rankNVWT}" begin="0" end="9"
+													step="1" varStatus="status"> 
+													<li><span>${status.index+1} 위</span><a href="#">${rankNVWT.wt_title}</a></li>
+												</c:forEach>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="container">
+							<h1 class="community_taital" style="color: #303952">오늘의
+								'카카오웹툰' 랭킹 🏆</h1>
+							<div class="fashion_section_2">
+								<div class="row">
+									<div class="col-lg-4 col-sm-4">
+										<div class="box_main_lank">
+											<ul class="shirt_text">
+												<c:forEach var="rankKKWT" items="${rankKKWT}" begin="0" end="9"
+													step="1" varStatus="status"> 
+													<li><span>${status.index+1} 위</span><a href="#">${rankKKWT.wt_title}</a></li>
+												</c:forEach>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="container">
+							<h1 class="community_taital" style="color: #303952">오늘의 '레진코믹스'
+								랭킹 🏆</h1>
+							<div class="fashion_section_2">
+								<div class="row">
+									<div class="col-lg-4 col-sm-4">
+										<div class="box_main_lank">
+											<ul class="shirt_text">
+												<c:forEach var="rankLZWT" items="${rankLZWT}" begin="0" end="9"
+													step="1" varStatus="status"> 
+													<li><span>${status.index+1} 위</span><a href="#">${rankLZWT.wt_title}</a></li>
+												</c:forEach>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="container">
+							<h1 class="community_taital" style="color: #303952">오늘의
+								'탑툰' 랭킹 🏆</h1>
+							<div class="fashion_section_2">
+								<div class="row">
+									<div class="col-lg-4 col-sm-4">
+										<div class="box_main_lank">
+											<ul class="shirt_text">
+												<c:forEach var="rankTTWT" items="${rankTTWT}" begin="0" end="9"
+													step="1" varStatus="status"> 
+													<li><span>${status.index+1} 위</span><a href="#">${rankTTWT.wt_title}</a></li>
+												</c:forEach>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="container">
+							<h1 class="community_taital" style="color: #303952">오늘의
+								'투믹스' 랭킹 🏆</h1>
+							<div class="fashion_section_2">
+								<div class="row">
+									<div class="col-lg-4 col-sm-4">
+										<div class="box_main_lank">
+											<ul class="shirt_text">
+												<c:forEach var="rankTMWT" items="${rankTMWT}" begin="0" end="9"
+													step="1" varStatus="status"> 
+													<li><span>${status.index+1} 위</span><a href="#">${rankTMWT.wt_title}</a></li>
+												</c:forEach>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a class="carousel-control-next" href="#electronic_main_slider"
+					role="button" data-slide="next"> <i class="fa fa-angle-right"></i>
+				</a> <a class="carousel-control-prev" href="#electronic_main_slider"
+					role="button" data-slide="prev"> <i class="fa fa-angle-left"></i>
+				</a>
+			</div>
+		</div>
+		<!-- 1. WEBTOON RANK section start 5개 플랫폼 10개씩 인기작품 END-->
 
-                              <div class="btn_main">
-                                 <div class="write_bt"><a href="#">글쓴이1</a></div>
-                                 <div class="seemore_bt"><a href="#">See More</a></div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-md-4 col-sm-4">
-                           <div class="box_main container">
-                              <h4 class="communitybox_text">2번째 글</h4>
-                              <p class="community_text">커뮤니티 2</p>
+		<!--2. popular post section start 1~9개-->
+		<div class="fashion_section">
+			<div id="main_slider" class="carousel slide" data-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="container">
+							<h1 class="community_taital" style="color: #303952">커뮤니티 인기글
+								🔥</h1>
+							<div class="fashion_section_2">
+								<div class="row">
+								
+									<c:forEach var="popPost" items="${popPost}" begin="0" end="2"
+													step="1" varStatus="status"> 
+										<div class="col-md-4 col-sm-4">
+											<div class="box_main container">
+												<h4 class="communitybox_text">${status.index+1}번째 글</h4>
+												<p class="community_text">${popPost.post_title}</p>
 
-                              <div class="btn_main">
-                                 <div class="write_bt"><a href="#">글쓴이2</a></div>
-                                 <div class="seemore_bt"><a href="#">See More</a></div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-md-4 col-sm-4">
-                           <div class="box_main container">
-                              <h4 class="communitybox_text">3번째 글</h4>
-                              <p class="community_text">커뮤니티 3</p>
+												<div class="btn_main">
+													<div class="write_bt">
+														<a href="#">${popPost.mem_id}</a>
+													</div>
+													<div class="seemore_bt">
+														<a href="#">See More</a>
+													</div>
+												</div>
+											</div>
+										</div>		
+									</c:forEach>
 
-                              <div class="btn_main">
-                                 <div class="write_bt"><a href="#">글쓴이3</a></div>
-                                 <div class="seemore_bt"><a href="#">See More</a></div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="carousel-item">
-               <div class="container">
-                  <h1 class="community_taital" style="color : #303952">커뮤니티 인기글 🔥</h1>
-                  <div class="fashion_section_2">
-                     <div class="row">
-                        <div class="col-md-4 col-sm-4">
-                           <div class="box_main container">
-                              <h4 class="communitybox_text">4번째 글</h4>
-                              <p class="community_text">커뮤니티 4</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="container">
+							<h1 class="community_taital" style="color: #303952">커뮤니티 인기글
+								🔥</h1>
+							<div class="fashion_section_2">
+								<div class="row">
+								
+										<c:forEach var="popPost" items="${popPost}" begin="3" end="5"
+													step="1" varStatus="status"> 
+											<div class="col-md-4 col-sm-4">
+												<div class="box_main container">
+													<h4 class="communitybox_text">${status.index+1}번째 글</h4>
+													<p class="community_text">${popPost.post_title}</p>
 
-                              <div class="btn_main">
-                                 <div class="write_bt"><a href="#">글쓴이4</a></div>
-                                 <div class="seemore_bt"><a href="#">See More</a></div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-md-4 col-sm-4">
-                           <div class="box_main container">
-                              <h4 class="communitybox_text">5번째 글</h4>
-                              <p class="community_text">커뮤니티 5</p>
+													<div class="btn_main">
+														<div class="write_bt">
+															<a href="#">${popPost.mem_id}</a>
+														</div>
+														<div class="seemore_bt">
+														<a href="#">See More</a>
+														</div>
+													</div>
+												</div>
+											</div>		
+										</c:forEach>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="container">
+							<h1 class="community_taital" style="color: #303952">커뮤니티 인기글
+								🔥</h1>
+							<div class="fashion_section_2">
+								<div class="row">
+								
+										<c:forEach var="popPost" items="${popPost}" begin="6" end="8"
+													step="1" varStatus="status"> 
+											<div class="col-md-4 col-sm-4">
+												<div class="box_main container">
+													<h4 class="communitybox_text">${status.index+1}번째 글</h4>
+													<p class="community_text">${popPost.post_title}</p>
 
-                              <div class="btn_main">
-                                 <div class="write_bt"><a href="#">글쓴이5</a></div>
-                                 <div class="seemore_bt"><a href="#">See More</a></div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-md-4 col-sm-4">
-                           <div class="box_main container">
-                              <h4 class="communitybox_text">6번째 글</h4>
-                              <p class="community_text">커뮤니티 6</p>
+													<div class="btn_main">
+														<div class="write_bt">
+															<a href="#">${popPost.mem_id}</a>
+														</div>
+														<div class="seemore_bt">
+														<a href="#">See More</a>
+														</div>
+													</div>
+												</div>
+											</div>		
+										</c:forEach>
+									
+								</div>
+							</div>
+						</div>
+					</div>
 
-                              <div class="btn_main">
-                                 <div class="write_bt"><a href="#">글쓴이6</a></div>
-                                 <div class="seemore_bt"><a href="#">See More</a></div>
-                              </div>
-                           </div>
-                        </div>
-
-                     </div>
-                  </div>
-               </div>
-            </div>
-            
-         </div>
-         <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
-            <i class="fa fa-angle-right"></i>
-         </a>
-         <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
-            <i class="fa fa-angle-left"></i>
-         </a>
-      </div>
-   </div>
-   <!-- fashion section end -->
+				</div>
+				<a class="carousel-control-next" href="#main_slider" role="button"
+					data-slide="next"> <i class="fa fa-angle-right"></i>
+				</a> <a class="carousel-control-prev" href="#main_slider" role="button"
+					data-slide="prev"> <i class="fa fa-angle-left"></i>
+				</a>
+			</div>
+		</div>
+		<!-- 2. popular post section start 1~9개 END -->
    <!-- electronic section start -->
    <div class="fashion_section">
       <div id="electronic_main_slider" class="carousel slide" data-ride="carousel">
