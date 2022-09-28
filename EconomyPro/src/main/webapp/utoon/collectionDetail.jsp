@@ -95,6 +95,8 @@
 	<!---------------------------
         collection section start 
     ------------------------------>
+    
+    <!--0000  -->
 	<section class="collection-details spad">
 		<div class="container">
 			<div class="collection__details__content">
