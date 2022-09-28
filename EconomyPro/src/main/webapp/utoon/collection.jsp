@@ -77,10 +77,7 @@
       </div>
       <!-- banner bg main end -->
       <!-- fashion section start -->
-      <div class="fashion_section">
-         <div id="main_slider" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-               <div class="carousel-item active">
+      <div class="fashion_section7" style="margin-top: 130px;">
                   <div class="container">
                      <h2 class="community_taital">테마 리스트 ✍🏻</h2>
                      <div class="fashion_section_2">
@@ -179,19 +176,14 @@
                                  <!-- <h4 class="shirt_text">에디터 추천👍🏻</h4> -->
                                  <!-- <p class="price_text">Price  <span style="color: #262626;">$ 30</span></p> -->
                                  <div class="tshirt_img"><img src="${cpath}/utoon/images/웹툰1.PNG"></div>
-                                 <div class="btn_main">
-                                    <!-- <div class="buy_bt"><a href="#">Buy Now</a></div>
-                                    <div class="seemore_bt"><a href="#">See More</a></div> -->
-                                 </div>
+                                 
                               </div>
                            </div>
                         </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
+                        </div>
+                        </div>
+                        </div>
+                     
       <!-- Javascript files-->
       <script src="${cpath}/utoon/js/jquery.min.js"></script>
       <script src="${cpath}/utoon/js/popper.min.js"></script>
