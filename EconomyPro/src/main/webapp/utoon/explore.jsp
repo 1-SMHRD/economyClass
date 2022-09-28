@@ -21,7 +21,7 @@
 <!-- bootstrap css -->
 <link rel="stylesheet" type="text/css"
 	href="${cpath}/utoon/css/bootstrap.min.css">
-<!-- style css --> 
+<!-- style css -->
 <link rel="stylesheet" type="text/css"
 	href="${cpath}/utoon/css/style.css">
 <!-- Responsive-->
@@ -63,12 +63,13 @@
 				<div class="row">
 					<div class="col-sm-12">
 						<!-- 왼쪽 최상단 로고 START-->
-               <div class="header__logo" style="margin-left: 30px;">
-                  <a href="${cpath}/mainPage.do">
-                      <img src="${cpath}/utoon/images/logo2.png" style="height: 50px; width: 60px; border-radius: 50%;" alt="">
-                  </a>
-               </div>
-               <!-- 왼쪽 최상단 로고 END-->
+						<div class="header__logo" style="margin-left: 30px;">
+							<a href="${cpath}/mainPage.do"> <img
+								src="${cpath}/utoon/images/logo2.png"
+								style="height: 50px; width: 60px; border-radius: 50%;" alt="">
+							</a>
+						</div>
+						<!-- 왼쪽 최상단 로고 END-->
 						<div class="custom_menu" style="font-size: 15;">
 							<ul>
 								<li><a href="${cpath}/mainPage.do">홈</a></li>
@@ -97,23 +98,24 @@
 		<br>
 		<!-- 필터 시작 -->
 		<div class="filter container" style="font-size: 17px;">
-   <label for="platform-select" style="font-weight: bold;">플랫폼  </label>
-			<input type="checkbox"value="naver-webtoon">네이버웹툰
-			<input type="checkbox" value="kakao-webtoon">카카오웹툰
-			<input type="checkbox" value="lezin-webtoon">레진코믹스
-			<input type="checkbox" value="top-webtoon">탑툰
-			<input type="checkbox" value="toomics-webtoon">투믹스
-			 <br> 
-			<label for="point-select">UToon평점</label> 
-			<select name="points" id="point-select" style="background-color: #5e27cd2a; border-radius: 30px;">
+			<label for="platform-select" style="font-weight: bold;">플랫폼 </label>
+			<input type="checkbox" value="naver-webtoon">네이버웹툰 <input
+				type="checkbox" value="kakao-webtoon">카카오웹툰 <input
+				type="checkbox" value="lezin-webtoon">레진코믹스 <input
+				type="checkbox" value="top-webtoon">탑툰 <input
+				type="checkbox" value="toomics-webtoon">투믹스 <br> <label
+				for="point-select">UToon평점</label> <select name="points"
+				id="point-select"
+				style="background-color: #5e27cd2a; border-radius: 30px;">
 				<option value="" disabled selected>--선택해주세요--</option>
 				<option value="5points">5점 이하</option>
 				<option value="4points">4점 이하</option>
 				<option value="3points">3점 이하</option>
 				<option value="2points">2점 이하</option>
 				<option value="1point">1점 이하</option>
-			</select> <label for="theme-select">장르/테마</label> 
-			<select name="themes" id="theme-select" style="background-color: #5e27cd2a; border-radius: 30px;">
+			</select> <label for="theme-select">장르/테마</label> <select name="themes"
+				id="theme-select"
+				style="background-color: #5e27cd2a; border-radius: 30px;">
 				<option value="" disabled selected>--선택해주세요--</option>
 				<option value="horror">공포</option>
 				<option value="action">액션</option>
@@ -121,137 +123,49 @@
 				<option value="pure">순정</option>
 				<option value="fantasy">판타지</option>
 				<option value="bl/gl">BL/GL</option>
-			</select> 
-			<input type="button" value="검색" onclick="check()" style="background-color: #5e27cd2a; border-radius: 30px; border-color: #5e27cd2a;"/>
+			</select> <input type="button" value="검색" onclick="check()"
+				style="background-color: #5e27cd2a; border-radius: 30px; border-color: #5e27cd2a;" />
 		</div>
-		
+
 		<!--필터 끝 -->
 
 
 		<br> <br>
 		<h1 class="new_title">작품 탐색 🔍</h1>
 		<br>
-		<div class="tl">
-			<div class="card">
-				<div class="up_webtoon">
-					<div class="new_box">
-						<a href="Home.html"><img src="./images/독립일기.PNG"></a> <span
-							class="new_box_title">독립일기</span>
-					</div>
-					<div class="new_box">
-						<a href="#"><img src="./images/여신강림.PNG"></a>
-						<div class="new_box_title">여신강림</div>
-					</div>
-					<div class="new_box">
-						<a href="#"><img src="./images/싸움독학.PNG"></a>
-						<div class="new_box_title">싸움독학</div>
-					</div>
-					<div class="new_box">
-						<a href="#"><img src="./images/이상한변호사 우영우.PNG"></a>
-						<div class="new_box_title">이상한변호사우영우</div>
-					</div>
-					<div class="new_box">
-						<a href="#"><img src="./images/별이삼샵.PNG"></a>
-						<div class="new_box_title">별이삼샵</div>
-					</div>
+
+		<div class="script">
+			<div class="script_box1">
+				<div class="new_box">
+					<a href="#"><img src="./images/독립일기.PNG"></a> <span
+						class="new_box_title">독립일기</span>
 				</div>
 			</div>
-			<div class="card">
-				<div class="up_webtoon">
-					<div class="new_box">
-						<a href="Home.html"><img src="./images/독립일기.PNG"></a> <span
-							class="new_box_title">독립일기</span>
-					</div>
-					<div class="new_box">
-						<a href="#"><img src="./images/여신강림.PNG"></a>
-						<div class="new_box_title">여신강림</div>
-					</div>
-					<div class="new_box">
-						<a href="#"><img src="./images/싸움독학.PNG"></a>
-						<div class="new_box_title">싸움독학</div>
-					</div>
-					<div class="new_box">
-						<a href="#"><img src="./images/이상한변호사 우영우.PNG"></a>
-						<div class="new_box_title">이상한변호사우영우</div>
-					</div>
-					<div class="new_box">
-						<a href="#"><img src="./images/별이삼샵.PNG"></a>
-						<div class="new_box_title">별이삼샵</div>
-					</div>
+			<div class="script_box1">
+				<div class="new_box">
+					<a href="#"><img src="./images/여신강림.PNG"></a>
+					<div class="new_box_title">여신강림</div>
 				</div>
 			</div>
-			<div class="card">
-				<div class="up_webtoon">
-					<div class="new_box">
-						<a href="Home.html"><img src="./images/독립일기.PNG"></a> <span
-							class="new_box_title">독립일기</span>
-					</div>
-					<div class="new_box">
-						<a href="#"><img src="./images/여신강림.PNG"></a>
-						<div class="new_box_title">여신강림</div>
-					</div>
-					<div class="new_box">
-						<a href="#"><img src="./images/싸움독학.PNG"></a>
-						<div class="new_box_title">싸움독학</div>
-					</div>
-					<div class="new_box">
-						<a href="#"><img src="./images/이상한변호사 우영우.PNG"></a>
-						<div class="new_box_title">이상한변호사우영우</div>
-					</div>
-					<div class="new_box">
-						<a href="#"><img src="./images/별이삼샵.PNG"></a>
-						<div class="new_box_title">별이삼샵</div>
-					</div>
+			<div class="script_box1">
+				<div class="new_box">
+					<a href="#"><img src="./images/싸움독학.PNG"></a>
+					<div class="new_box_title">싸움독학</div>
 				</div>
 			</div>
-			<div class="card">
-				<div class="up_webtoon">
-					<div class="new_box">
-						<a href="Home.html"><img src="./images/독립일기.PNG"></a> <span
-							class="new_box_title">독립일기</span>
-					</div>
-					<div class="new_box">
-						<a href="#"><img src="./images/여신강림.PNG"></a>
-						<div class="new_box_title">여신강림</div>
-					</div>
-					<div class="new_box">
-						<a href="#"><img src="./images/싸움독학.PNG"></a>
-						<div class="new_box_title">싸움독학</div>
-					</div>
-					<div class="new_box">
-						<a href="#"><img src="./images/이상한변호사 우영우.PNG"></a>
-						<div class="new_box_title">이상한변호사우영우</div>
-					</div>
-					<div class="new_box">
-						<a href="#"><img src="./images/별이삼샵.PNG"></a>
-						<div class="new_box_title">별이삼샵</div>
-					</div>
+			<div class="script_box1">
+				<div class="new_box">
+					<a href="#"><img src="./images/속도위반로맨스.PNG"></a>
+					<div class="new_box_title">속도위반로맨스</div>
 				</div>
 			</div>
-			<div class="card">
-				<div class="up_webtoon">
-					<div class="new_box">
-						<a href="Home.html"><img src="./images/독립일기.PNG"></a> <span
-							class="new_box_title">독립일기</span>
-					</div>
-					<div class="new_box">
-						<a href="#"><img src="./images/여신강림.PNG"></a>
-						<div class="new_box_title">여신강림</div>
-					</div>
-					<div class="new_box">
-						<a href="#"><img src="./images/싸움독학.PNG"></a>
-						<div class="new_box_title">싸움독학</div>
-					</div>
-					<div class="new_box">
-						<a href="#"><img src="./images/이상한변호사 우영우.PNG"></a>
-						<div class="new_box_title">이상한변호사우영우</div>
-					</div>
-					<div class="new_box">
-						<a href="#"><img src="./images/별이삼샵.PNG"></a>
-						<div class="new_box_title">별이삼샵</div>
-					</div>
+			<div class="script_box1">
+				<div class="new_box">
+					<a href="#"><img src="./images/별이삼샵.PNG"></a>
+					<div class="new_box_title">별이삼샵</div>
 				</div>
 			</div>
+
 		</div>
 		<!-- 타임라인 종료 -->
 
@@ -265,7 +179,6 @@
 	<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 	<script src="js/custom.js"></script>
 
-	- 사용자가 설정한 필터를 기반으로 웹툰을 나열한다. 
-	- 사용자가 웹툰을 선택시 작품에 대한 정보를 조회한다.
+
 </body>
 </html>
