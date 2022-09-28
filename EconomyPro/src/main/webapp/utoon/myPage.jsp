@@ -72,7 +72,7 @@
 						<!-- 왼쪽 최상단 로고 START-->
 						<div class="header__logo" style="margin-left: 30px;">
 							<a href="${cpath}/mainPage.do"> <img
-								src="${cpath}/utoon/images/logo.png" style="height: 50px; width: 60px; border-radius: 50%;" alt="">
+								src="${cpath}/utoon/images/logo2.png" style="height: 50px; width: 60px; border-radius: 50%;" alt="">
 							</a>
 						</div>
 						<!-- 왼쪽 최상단 로고 END-->
