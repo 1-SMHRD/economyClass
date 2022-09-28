@@ -152,7 +152,7 @@
 									<div class="col-lg-6 col-md-6">
 										<ul>
 											<li><span>분류:</span> ${wt.wt_gen}장르</li>
-											<li><span>플랫폼:</span>${wt.wt_plat}플랫폼</li>
+											<li><span>플랫폼:</span>${wt.plat_id}플랫폼</li>
 											<li><span>연재:</span> ${wt.up_date}월요일|독점</li>
 											<li><span>글, 그림:</span>${wt.wt_auth}작가</li>
 											<li><span>열람 등급:</span>${wt.wt_grd}등급</li>
