@@ -22,7 +22,7 @@
 <div class="container" id="container">
 	<div class="form-container sign-up-container">
 		<form action="${cpath}/newProfile.do">
-			<img src="${cath}/utoon/images/logo.png" style="height: 200px; width: 200px;" alt=""><br><br>
+			<img src="${cpath}/utoon/images/logo.png" style="height: 200px; width: 200px;" alt=""><br><br>
 			<!-- <div class="social-container">
 				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
 				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>

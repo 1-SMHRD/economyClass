@@ -87,7 +87,7 @@
          <div class="container">
             <div class="row">
                <div class="col-sm-12">
-                  <div class="logo"><a href="Home.html"><img src="images/logo.png"></a></div>
+                  <div class="logo"><a href="Home.html"><img src="${cpath}/utoon/images/logo.png"></a></div>
                </div>
             </div>
          </div>

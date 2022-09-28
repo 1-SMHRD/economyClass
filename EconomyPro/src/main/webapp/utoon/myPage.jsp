@@ -72,7 +72,7 @@
 						<!-- 왼쪽 최상단 로고 START-->
 						<div class="header__logo" style="margin-left: 30px;">
 							<a href="${cpath}/mainPage.do"> <img
-								src="${cpath}/utoon/images/logo.png" alt="">
+								src="${cpath}/utoon/images/logo.png" style="height: 50px; width: 60px; border-radius: 50%;" alt="">
 							</a>
 						</div>
 						<!-- 왼쪽 최상단 로고 END-->
@@ -136,7 +136,7 @@
 
 
 
-	<div class="banner_section layout_padding">
+	<div class="banner_section layout_padding" style="border-top: 1px solid #d3d3d3; border-bottom: 1px solid #d3d3d3;">
 		<div class="container">
 			<div id="my_slider" class="carousel slide" data-ride="carousel">
 				<div class="carousel-inner">
@@ -183,9 +183,25 @@
 								</div>
 
 								<br> <br> <br> <br>
-								<!-- 스크랩 리스트가 있을 때 -->
+								
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	
+	<!-- 스크랩 리스트가 있을 때 -->
+								
+								
+								<div style="margin-top: 40px; height: 200px;" >
+								<div class="container">
 								<c:if test="${!empty list}">
-								<div id="wantlist">
+								<div id="id_email">
 									<h4 id="wantlist_h">내 스크랩리스트</h4>
 									<button id="wantlist_btn"
 										onclick="location.href='${cpath}/myScrap.do'">버튼이 H4내
@@ -223,50 +239,12 @@
 									</ul>
 								</div>
 								</c:if>
-
+								</div>
+								</div>
 								<br> <br>
-
-
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-	</div>
 	<!-- banner section end -->
 
-	<!-- electronic section end -->
-	<!-- footer section start -->
-	<!-- <div class="footer_section layout_padding">
-               <div class="container">
-                  <div class="footer_logo"><a href="index.html"><img src="images/footer-logo.png"></a></div>
-                  <div class="input_bt">
-                     <input type="text" class="mail_bt" placeholder="Your Email" name="Your Email">
-                     <span class="subscribe_bt" id="basic-addon2"><a href="#">Subscribe</a></span>
-                  </div>
-                  <div class="footer_menu">
-                     <ul>
-                        <li><a href="#">Best Sellers</a></li>
-                        <li><a href="#">Gift Ideas</a></li>
-                        <li><a href="#">New Releases</a></li>
-                        <li><a href="#">Today's Deals</a></li>
-                        <li><a href="#">Customer Service</a></li>
-                     </ul>
-                  </div>
-                  <div class="location_main">Help Line Number : <a href="#">+1 1800 1200 1200</a></div>
-               </div>
-            </div> -->
-	<!-- footer section end -->
-	<!-- copyright section start -->
-	<!-- <div class="copyright_section">
-               <div class="container">
-                  <p class="copyright_text">© 2020 All Rights Reserved. Design by <a href="https://html.design">Free
-                        html Templates</a></p>
-               </div>
-            </div> -->
-	<!-- copyright section end -->
+	
 	<!-- Javascript files-->
 	<script src="${cpath}/utoon/js/jquery.min.js"></script>
 	<script src="${cpath}/utoon/js/popper.min.js"></script>
