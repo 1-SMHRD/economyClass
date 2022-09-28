@@ -106,9 +106,9 @@ public class UtoonDAO {
 
 ////////////////////////////////////////////////////////////////////////////////////////////
 	// 리뷰 전체 글 가져오기
-	public List<ReviewVO> reviewAllList() {
+	public List<ReviewVO> reviewAllList(int wt_id) {
 		SqlSession session = sqlSessionFactory.openSession();
-		List<ReviewVO> list = session.selectList("reviewAllList");
+		List<ReviewVO> list = session.selectList("reviewAllList", wt_id);
 		session.close();// 반납
 		return list;
 	}
@@ -188,9 +188,9 @@ public class UtoonDAO {
 
 ////////////////////////////////////////////////////////////////////////////////////////////
 	// 리뷰 댓글 가져오기
-	public List<RCommentVO> rcAllList() {
+	public List<RCommentVO> rcAllList(int rv_id) {
 		SqlSession session = sqlSessionFactory.openSession();
-		List<RCommentVO> list = session.selectList("rcAllList");
+		List<RCommentVO> list = session.selectList("rcAllList", rv_id);
 		session.close();// 반납
 		return list;
 	}
@@ -366,49 +366,56 @@ public class UtoonDAO {
 		session.close();// 반납
 		return list;
 	}
-	
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////최신 연재 웹툰 정렬/////////////////////////////////////////////////////////////////////
-	
-	
-	//  네이버 최신 연재
-		public List<WebtoonVO> NewNVWT() {
-			SqlSession session = sqlSessionFactory.openSession();
-			List<WebtoonVO> list = session.selectList("NewNVWT");
-			session.close();// 반납
-			return list;
-		}
+
+	// 네이버 최신 연재
+	public List<WebtoonVO> NewNVWT() {
+		SqlSession session = sqlSessionFactory.openSession();
+		List<WebtoonVO> list = session.selectList("NewNVWT");
+		session.close();// 반납
+		return list;
+	}
 
 	// 카카오 최신 연재
-		public List<WebtoonVO> NewKKWT() {
-			SqlSession session = sqlSessionFactory.openSession();
-			List<WebtoonVO> list = session.selectList("NewKKWT");
-			session.close();// 반납
-			return list;
-		}
+	public List<WebtoonVO> NewKKWT() {
+		SqlSession session = sqlSessionFactory.openSession();
+		List<WebtoonVO> list = session.selectList("NewKKWT");
+		session.close();// 반납
+		return list;
+	}
 
 	// 레진 최신 연재
-		public List<WebtoonVO> NewLZWT() {
-			SqlSession session = sqlSessionFactory.openSession();
-			List<WebtoonVO> list = session.selectList("NewLZWT");
-			session.close();// 반납
-			return list;
-		}
+	public List<WebtoonVO> NewLZWT() {
+		SqlSession session = sqlSessionFactory.openSession();
+		List<WebtoonVO> list = session.selectList("NewLZWT");
+		session.close();// 반납
+		return list;
+	}
 
 	// 탑툰 최신 연재
-		public List<WebtoonVO> NewTTWT() {
-			SqlSession session = sqlSessionFactory.openSession();
-			List<WebtoonVO> list = session.selectList("NewTTWT");
-			session.close();// 반납
-			return list;
-		}
+	public List<WebtoonVO> NewTTWT() {
+		SqlSession session = sqlSessionFactory.openSession();
+		List<WebtoonVO> list = session.selectList("NewTTWT");
+		session.close();// 반납
+		return list;
+	}
 
 	// 투믹스 최신 연재
-		public List<WebtoonVO> NewTMWT() {
-			SqlSession session = sqlSessionFactory.openSession();
-			List<WebtoonVO> list = session.selectList("NewTMWT");
-			session.close();// 반납
-			return list;
-		}
+	public List<WebtoonVO> NewTMWT() {
+		SqlSession session = sqlSessionFactory.openSession();
+		List<WebtoonVO> list = session.selectList("NewTMWT");
+		session.close();// 반납
+		return list;
+	}
+
+	// 웹툰 상세페이지
+	public WebtoonVO wtGet(int wt_id) {
+		SqlSession session = sqlSessionFactory.openSession();
+		WebtoonVO wt = session.selectOne("wtGet", wt_id);
+		session.close();
+		return wt;
+	}
 
 }

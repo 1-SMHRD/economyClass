@@ -119,17 +119,17 @@
 						<div class="collection__details__pic set-bg">
 							<img src="${cpath}/utoon/images/anime/details-pic.jpg">
 							<div class="comment">
-								<i class="fa fa-comments"></i> 16
+								<i class="fa fa-comments">16</i>
 							</div>
 							<div class="view">
-								<i class="fa fa-eye"></i> 67.7만
+								<i class="fa fa-eye">조회수</i>
 							</div>
 						</div>
 					</div>
 					<div class="col-lg-9">
 						<div class="collection__details__text">
 							<div class="collection__details__title">
-								<h3>망할 가문을 살려보겠습니다</h3>
+								<h3>${wt.wt_title}제목</h3>
 
 							</div>
 							<!--레이팅넣는곳  -->
@@ -143,44 +143,31 @@
 								<span>1.029 Votes</span>
 							</div>
 							<p>
-								그것도 몇 장 나오지 않았던 엘리어스 가문의 다섯째 딸, <br> 고도비반 히키코모리 영애인 테라
-								엘리어스. <br> 산넘어 산이라고 이 가문은 곧 역적으로 몰려 멸문하고, <br> 직계가족은
-								모두 단두대 행! <br> 고로, 곧 테라도 죽는다.
+								그것도 몇 장 나오지 않았던 엘리어스 가문의 다섯째 딸, 고도비반 히키코모리 영애인 테라
+								엘리어스. 산넘어 산이라고 이 가문은 곧 역적으로 몰려 멸문하고, 직계가족은
+								모두 단두대 행! 고로, 곧 테라도 죽는다.${wt.wt_detail}
 							</p>
 							<div class="collection__details__widget">
 								<div class="row">
 									<div class="col-lg-6 col-md-6">
 										<ul>
-											<li><span>분류:</span> 웹툰|로판</li>
-											<li><span>플랫폼:</span> 카카오웹툰</li>
-											<li><span>연재:</span> 월요일|독점</li>
-											<li><span>글, 그림:</span> 무늬랑, NU</li>
+											<li><span>분류:</span> ${wt.wt_gen}장르</li>
+											<li><span>플랫폼:</span>${wt.wt_plat}플랫폼</li>
+											<li><span>연재:</span> ${wt.up_date}월요일|독점</li>
+											<li><span>글, 그림:</span>${wt.wt_auth}작가</li>
+											<li><span>열람 등급:</span>${wt.wt_grd}등급</li>
 
 										</ul>
-									</div>
-									<div class="col-lg-6 col-md-6">
-										<ul>
-											<li><span>발행자:</span> 케나즈</li>
-											<li><span>연령등급:</span> 전체이용가</li>
-											<li><span>Views:</span> 131,541</li>
-										</ul>
-									</div>
+									</div>			
 								</div>
 							</div>
 							<div class="collection__details__btn">
-								<a href="#" class="follow-btn"> &#128544; 별로에요</a> <a href="#"
-									class="follow-btn"> &#128522; 좋아요</a> <a href="#"
-									class="follow-btn"><i class="fa fa-heart-o"></i> Follow</a> <a
-									href="#" class="follow-btn"><span>Watch Now</span></a>
+								<a href="#" class="follow-btn"> &#128544; ${wt.wt_d_cnt} 별로에요</a>
+								<a href="#"	class="follow-btn"> &#128522; ${wt.wt_l_cnt} 좋아요</a>
+								<a href="에이잭스로 값만보내주고 리다이렉트"	class="follow-btn"><i class="fa fa-heart-o"></i> 스크랩하기</a>
+								<a href="플랫폼링크" target="_blank" class="follow-btn"><span>Watch Now</span></a>
 							</div>
-							<br>
-							<div class="collection__details__btn">
-								<a href="#" class="book-btn"> &#128681; 책갈피</a> <a href="#"
-									class="book-btn"> &#128374; 보는 중</a> <a href="#"
-									class="book-btn"> &#9989; 봤어요</a> <a href="#" class="book-btn">
-									&#128214; 리뷰</a>
-
-							</div>
+							<br>	
 							<br>
 						</div>
 					</div>
@@ -190,7 +177,7 @@
 					<div class="section-title">
 						<h5>Your Comment</h5>
 					</div>
-					<form action="#">
+					<form action="에이잭스로 밑에 쓰기페이지 보여주기">
 						<textarea placeholder="Your Comment"></textarea>
 						<button type="submit">
 							<i class="comment-btn"></i> Review
@@ -206,81 +193,27 @@
 							<div class="section-title">
 								<h5>Reviews</h5>
 							</div>
+							<c:forEach var="rv" items="${rv}">
 							<div class="collection__review__item">
 								<div class="collection__review__item__pic">
 									<img src="images/anime/review-1.jpg" alt="">
 								</div>
 								<div class="collection__review__item__text">
 									<h6>
-										Chris Curry - <span>1 Hour ago</span>
+										${rv.mem_id}<span>${rv.rv_date}작성일</span>
 									</h6>
-									<p>whachikan Just noticed that someone categorized this as
-										belonging to the genre "demons" LOL</p>
+									<p>${rv.rv_ctnt}내용</p>
 								</div>
 							</div>
-							<div class="collection__review__item">
-								<div class="collection__review__item__pic">
-									<img src="images/anime/review-2.jpg" alt="">
-								</div>
-								<div class="collection__review__item__text">
-									<h6>
-										Lewis Mann - <span>5 Hour ago</span>
-									</h6>
-									<p>Finally it came out ages ago</p>
-								</div>
-							</div>
-							<div class="collection__review__item">
-								<div class="collection__review__item__pic">
-									<img src="images/anime/review-3.jpg" alt="">
-								</div>
-								<div class="collection__review__item__text">
-									<h6>
-										Louis Tyler - <span>20 Hour ago</span>
-									</h6>
-									<p>Where is the episode 15 ? Slow update! Tch</p>
-								</div>
-							</div>
-							<div class="collection__review__item">
-								<div class="collection__review__item__pic">
-									<img src="images/anime/review-4.jpg" alt="">
-								</div>
-								<div class="collection__review__item__text">
-									<h6>
-										Chris Curry - <span>1 Hour ago</span>
-									</h6>
-									<p>whachikan Just noticed that someone categorized this as
-										belonging to the genre "demons" LOL</p>
-								</div>
-							</div>
-							<div class="collection__review__item">
-								<div class="collection__review__item__pic">
-									<img src="images/anime/review-5.jpg" alt="">
-								</div>
-								<div class="collection__review__item__text">
-									<h6>
-										Lewis Mann - <span>5 Hour ago</span>
-									</h6>
-									<p>Finally it came out ages ago</p>
-								</div>
-							</div>
-							<div class="collection__review__item">
-								<div class="collection__review__item__pic">
-									<img src="images/anime/review-6.jpg" alt="">
-								</div>
-								<div class="collection__review__item__text">
-									<h6>
-										Louis Tyler - <span>20 Hour ago</span>
-									</h6>
-									<p>Where is the episode 15 ? Slow update! Tch</p>
-								</div>
-							</div>
+							</c:forEach>
+							
 						</div>
 
 					</div>
 					<!-- 리뷰 글 내역 END-->
 
 					<!-- 작품 컬렉션 모듬 START-->
-					<div class="col-lg-4 col-md-4">
+					<!-- <div class="col-lg-4 col-md-4">
 						<div class="collection__details__sidebar">
 							<div class="section-title">
 								<h5>인기 Top 5 웹툰</h5>
@@ -327,7 +260,7 @@
 								</h5>
 							</div>
 						</div>
-					</div>
+					</div> -->
 					<!-- 작품 컬렉션 모듬 END-->
 
 

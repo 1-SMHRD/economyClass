@@ -17,7 +17,7 @@
 <body>
 	<form action="${cpath}/postUpdate.do?post_num=${post.post_num}" method="post">
 		<h1>UToon</h1>
-		<input type="text" name="post_num" value="${post.post_num}" disabled="disabled" />
+		<input type="hidden" name="post_num" value="${post.post_num}" disabled="disabled" />
 		<!-- 제목 -->
 		<input type="text" name="post_title" placeholder="제목" />
 		<!-- 내용 -->
