@@ -1,5 +1,5 @@
 <%@page import="dao.MemberVO"%>
-<%@page import="dao.ReviewVO"%>
+<%@page import="dao.PostVO"%>
 <%@page import="java.util.List"%>
 
 <%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -8,39 +8,41 @@
 <%@taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <c:set var="cpath" value="${pageContext.request.contextPath}" />
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<title>Utoon - 웹툰 보기 전 필수 앱</title>
 
-    <!-- bootstrap css -->
-    <link rel="stylesheet" type="text/css" href="${cpath}/utoon/cpacss/bootstrap.min.css">
-    <!-- style css -->
-    <link rel="stylesheet" type="text/css" href="${cpath}/utoon/css/style.css">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
 
+<!-- bootstrap css -->
+<link rel="stylesheet" type="text/css"
+	href="${cpath}/utoon/css/bootstrap.min.css">
+<!-- style css -->
+<link rel="stylesheet" type="text/css"
+	href="${cpath}/utoon/css/style.css">
 
 </head>
 
 <body>
 
-    <!-- banner bg main start -->
-    <div class="banner_bg_main">
+	<!-- banner bg main start -->
+	<div class="banner_bg_main">
 		<!-- header top section start -->
 		<div class="container">
-			<div class="header_section_top container">
+			<div class="header_section_top">
 				<div class="row">
 					<div class="col-sm-12">
-						<!-- 왼쪽 최상단 로고 START-->
 						<div class="header__logo" style="margin-left: 30px;">
 							<a href="${cpath}/mainPage.do"> <img
-								src="${cpath}/utoon/images/logo2.png" style="height: 50px; width: 60px; border-radius: 50%;" alt="">
+								src="${cpath}/utoon/images/logo2.png"
+								style="height: 50px; width: 60px; border-radius: 50%;" alt="">
 							</a>
 						</div>
-						<!-- 왼쪽 최상단 로고 END-->
-						<div class="custom_menu">
+						<div class="custom_menu" style="font-size: 15;">
 							<ul>
 								<li><a href="${cpath}/mainPage.do">홈</a></li>
 								<li><a href="${cpath}/collection.do">컬렉션</a></li>
@@ -54,64 +56,59 @@
 				</div>
 			</div>
 		</div>
-     
-     <br>
-     <br>
-    
-     
-     <br>
-     
-    </div>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	
+	<br>
 
-    <br><br><br><br><br>
+	<div class="container">
 
-    <div class="container">
-        <div>
-            <h3 class="hm_comment"><a href="${cpath}/myPage.do">마이페이지</a> > 내 리뷰 </h3>
-        </div>
-        <br>
+		<div>
+			<h3 class="hm_comment"">
+				<a href="mypage.html">마이페이지</a> > 내 리뷰
+			</h3>
+		</div>
 
-        <h3 class="head_comment"> 👍 내가 작성한 리뷰 </h3>
+		<h3 class="head_comment"> 👍 내 리뷰</h3>
+		<div class="spc"></div>
 
-        <div class="page_ment">
-            <span class="rv_1">
-                <h6 class="rv_data"> -현재 1페이지 입니다-</h6>
-            </span>
-        </div>
+	</div>
 
-        <!-- 찜한 작품 박스 시작 -->
-        <section class="box_review container">
-            <div class="review_text">
-                <span class="rv_1">
-                    <h6 class="rv_name"> 독립일기</h6><br>
-                    <h6 class="rv_data"> 2022-09-30</h6>
-                    매 회차마다 공감이 정말 잘 되는 만화
-                </span>
-            </div>
-            <div class="review_text">
-                <span class="rv_1">
-                    <h6 class="rv_name"> 여신강림</h6><br>
-                    <h6 class="rv_data"> 2022-09-30</h6>
-                    초반에는 탄탄한 스토리와  빠른 전개로 재미있으나 후반에는 끄는 듯한 느낌
-                </span>
-            </div>
 
-        </section>
-         <button class="rv_btn"><a href="${cpath}/community.do">리뷰쓰러가기 👀</a></button>
-       </div>
+	<!-- 내 게시글 시작 -->
 
 
 
-        <!-- 하단 페이지 버튼 -->
-        <!-- <form class="page_btn">
-            <a>-</a>
-            <a href="box2_댓글_p1.html">1</a>
-            <a href="box2_댓글_p2.html">2</a>
-            <a>-</a>
-        </form> -->
+	<div class="container" style="margin-top: 10px;">
+		<div class="story_text_head">
+			<div class="story_title">
+				<div class="rv_name_t">리뷰 제목</div>
+				<div class="rv_view_t">조회수</div>
+				<div class="rv_date_t">작성일자</div>
+			</div>
+		</div>
+	</div>
+
+	<c:forEach var="post" items="${myPost}">
+		<div class="container">
+			<div class="story_text_content">
+				<div class="st">
+					<h6 class="rv_name">
+						<a href="${cpath}/postDetail.do?post_num=${post.post_num}">${post.post_title}</a>
+					</h6>
+
+					<h6 class="rv_view">작성일 ${post.post_date}</h6>
+					<h6 class="rv_date">조회수 ${post.post_vcnt}명</h6>
+				</div>
+			</div>
+		</div>
+
+	</c:forEach>
 
 
 
 </body>
-
 </html>
