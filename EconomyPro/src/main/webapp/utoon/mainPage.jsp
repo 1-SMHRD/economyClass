@@ -176,7 +176,7 @@
 											<ul class="shirt_text">
 												<c:forEach var="rankNVWT" items="${rankNVWT}" begin="0" end="9"
 													step="1" varStatus="status"> 
-													<li><span>${status.index+1} 위</span><a href="#">${rankNVWT.wt_title}</a></li>
+													<li><span>${status.index+1} 위</span><a href="https://comic.naver.com/webtoon/weekday">${rankNVWT.wt_title}</a></li>
 												</c:forEach>
 											</ul>
 										</div>
@@ -196,7 +196,7 @@
 											<ul class="shirt_text">
 												<c:forEach var="rankKKWT" items="${rankKKWT}" begin="0" end="9"
 													step="1" varStatus="status"> 
-													<li><span>${status.index+1} 위</span><a href="#">${rankKKWT.wt_title}</a></li>
+													<li><span>${status.index+1} 위</span><a href="https://page.kakao.com/menu/10/screen/5">${rankKKWT.wt_title}</a></li>
 												</c:forEach>
 											</ul>
 										</div>
@@ -216,7 +216,7 @@
 											<ul class="shirt_text">
 												<c:forEach var="rankLZWT" items="${rankLZWT}" begin="0" end="9"
 													step="1" varStatus="status"> 
-													<li><span>${status.index+1} 위</span><a href="#">${rankLZWT.wt_title}</a></li>
+													<li><span>${status.index+1} 위</span><a href="https://www.lezhin.com/ko/ranking/detail?genre=_all&type=realtime">${rankLZWT.wt_title}</a></li>
 												</c:forEach>
 											</ul>
 										</div>
@@ -236,7 +236,7 @@
 											<ul class="shirt_text">
 												<c:forEach var="rankTTWT" items="${rankTTWT}" begin="0" end="9"
 													step="1" varStatus="status"> 
-													<li><span>${status.index+1} 위</span><a href="#">${rankTTWT.wt_title}</a></li>
+													<li><span>${status.index+1} 위</span><a href="https://toptoon.com/ranking">${rankTTWT.wt_title}</a></li>
 												</c:forEach>
 											</ul>
 										</div>
@@ -256,7 +256,7 @@
 											<ul class="shirt_text">
 												<c:forEach var="rankTMWT" items="${rankTMWT}" begin="0" end="9"
 													step="1" varStatus="status"> 
-													<li><span>${status.index+1} 위</span><a href="#">${rankTMWT.wt_title}</a></li>
+													<li><span>${status.index+1} 위</span><a href="https://www.toomics.com/webtoon/weekly">${rankTMWT.wt_title}</a></li>
 												</c:forEach>
 											</ul>
 										</div>

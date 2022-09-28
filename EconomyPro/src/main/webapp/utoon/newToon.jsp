@@ -115,76 +115,89 @@
         <a class="dropdown-item" href="#">코믹스</a>
      </div>
    </div>
-    <h1 class="new_title">신작 업데이트 ❗❗</h1><br>
+    <h1 class="new_title">최신 연재 웹툰 ❗❗</h1><br>
  <!-- 타임라인 시작 -->
  <div class="tl">
    <div class="timeline">
       <div class="outer">
          <div class="dot"></div>
          <!-- 상단 업데이트 된 날짜 -->
-         <h3 class="title_date">2022-09-21</h3>
+         <h3 class="title_date"></h3>
          <div class="card">
             <div class="info">
                <!-- 업데이트 된 만화 플렛폼 -->
-               <h3 class="title_site">네이버</h3>
+               <h3 class="title_site">네이버웹툰</h3>
                <!-- 업데이트 된 갯수 -->
-               <h3 class="title">> 5화 업데이트 됐습니다</h3>
+               <h3 class="title">> 최신 연재 웹툰</h3>
             </div>
             <div class="up_webtoon">
-               <div class="new_box">
-                  <a href="Home.html"><img src="./images/독립일기.PNG"></a>
-                  <span class="new_box_title">독립일기</span>
+               <div>
+               <c:forEach var="NewNVWT" items="${NewNVWT}" begin="0" end="9" step="1" varStatus="status">
+                <div class="new_box">   
+                  <a href="#"><img src="${NewNVWT.wt_thum}"/></a>
+                  <div class="new_box_title">${NewNVWT.wt_title}</div>
                </div>
-               <div class="new_box">
-                  <a href="#"><img src="./images/여신강림.PNG"></a>
-                  <div class="new_box_title">여신강림</div>
+               </c:forEach>
                </div>
-               <div class="new_box">
-                  <a href="#"><img src="./images/싸움독학.PNG"></a>
-                  <div class="new_box_title">싸움독학</div>
-               </div>
-               <div class="new_box">
-                  <a href="#"><img src="./images/이상한변호사 우영우.PNG"></a>
-                  <div class="new_box_title">이상한변호사우영우</div>
-               </div>
-               <div class="new_box">
-                  <a href="#"><img src="./images/별이삼샵.PNG"></a>
-                  <div class="new_box_title">별이삼샵</div>
-               </div>
+            </div>
             </div>
          </div>
          <div class="card">
             <div class="info">
-               <h3 class="title_site">봄툰</h3>
-               <h3 class="title">> 3화 업데이트 됐습니다</h3>
+               <h3 class="title_site">카카오웹툰</h3>
+               <h3 class="title">> 최신 연재 웹툰</h3>
             </div>
             <div>
-               <div class="new_box">
-                  <a href="#"><img src="./images/라온의남자.PNG"></a>
-                  <div class="new_box_title">라온의남자</div>
+               <c:forEach var="NewKKWT" items="${NewKKWT}" begin="0" end="9" step="1" varStatus="status">
+                <div class="new_box">   
+                  <a href="#"><img src="${NewKKWT.wt_thum}"/></a>
+                  <div class="new_box_title">${NewKKWT.wt_title}</div>
                </div>
-               <div class="new_box">
-                  <a href="#"><img src="./images/속도위반로맨스.PNG"></a>
-                  <div class="new_box_title">속도위반로맨스</div>
-               </div>
-               <div class="new_box">
-                  <a href="#"> <img src="./images/햇빛은쨍쨍.PNG"></a>
-                  <div class="new_box_title">햇빛은쨍쨍</div>
-               </div>
+               </c:forEach>
             </div>
          </div>
          <div class="dot"></div>
-         <h3 class="title_date">2022-09-20</h3>
+         <h3 class="title_date"></h3>
          <div class="card">
             <div class="info">
-               <h3 class="title_site">카카오</h3>
-               <h3 class="title">> 1화 업데이트 됐습니다</h3>
+               <h3 class="title_site">레진코믹스</h3>
+               <h3 class="title">> 최신 연재 웹툰</h3>
             </div>
             <div>
-               <div class="new_box">
-                  <a href="#"><img src="./images/카카오1.PNG"></a>
-                  <div class="new_box_title">우정으로결혼한소꿉친구</div>
+               <c:forEach var="NewLZWT" items="${NewLZWT}" begin="0" end="9" step="1" varStatus="status">
+                <div class="new_box">   
+                  <a href="#"><img src="${NewLZWT.wt_thum}"/></a>
+                  <div class="new_box_title">${NewLZWT.wt_title}</div>
                </div>
+               </c:forEach>
+            </div>
+         </div>
+         <div class="card">
+            <div class="info">
+               <h3 class="title_site">탑툰</h3>
+               <h3 class="title">> 최신 연재 웹툰</h3>
+            </div>
+            <div>
+               <c:forEach var="NewTTWT" items="${NewTTWT}" begin="0" end="9" step="1" varStatus="status">
+                <div class="new_box">   
+                  <a href="#"><img src="${NewTTWT.wt_thum}"/></a>
+                  <div class="new_box_title">${NewTTWT.wt_title}</div>
+               </div>
+               </c:forEach>
+            </div>
+         </div>
+         <div class="card">
+            <div class="info">
+               <h3 class="title_site">투믹스</h3>
+               <h3 class="title">> 최신 연재 웹툰</h3>
+            </div>
+            <div>
+               <c:forEach var="NewTMWT" items="${NewTMWT}" begin="0" end="9" step="1" varStatus="status">
+                <div class="new_box">   
+                  <a href="#"><img src="${NewTMWT.wt_thum}"/></a>
+                  <div class="new_box_title">${NewTMWT.wt_title}</div>
+               </div>
+               </c:forEach>
             </div>
          </div>
       </div>

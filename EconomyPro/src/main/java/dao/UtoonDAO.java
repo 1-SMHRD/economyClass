@@ -366,4 +366,49 @@ public class UtoonDAO {
 		session.close();// 반납
 		return list;
 	}
+	
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////최신 연재 웹툰 정렬/////////////////////////////////////////////////////////////////////
+	
+	
+	//  네이버 최신 연재
+		public List<WebtoonVO> NewNVWT() {
+			SqlSession session = sqlSessionFactory.openSession();
+			List<WebtoonVO> list = session.selectList("NewNVWT");
+			session.close();// 반납
+			return list;
+		}
+
+	// 카카오 최신 연재
+		public List<WebtoonVO> NewKKWT() {
+			SqlSession session = sqlSessionFactory.openSession();
+			List<WebtoonVO> list = session.selectList("NewKKWT");
+			session.close();// 반납
+			return list;
+		}
+
+	// 레진 최신 연재
+		public List<WebtoonVO> NewLZWT() {
+			SqlSession session = sqlSessionFactory.openSession();
+			List<WebtoonVO> list = session.selectList("NewLZWT");
+			session.close();// 반납
+			return list;
+		}
+
+	// 탑툰 최신 연재
+		public List<WebtoonVO> NewTTWT() {
+			SqlSession session = sqlSessionFactory.openSession();
+			List<WebtoonVO> list = session.selectList("NewTTWT");
+			session.close();// 반납
+			return list;
+		}
+
+	// 투믹스 최신 연재
+		public List<WebtoonVO> NewTMWT() {
+			SqlSession session = sqlSessionFactory.openSession();
+			List<WebtoonVO> list = session.selectList("NewTMWT");
+			session.close();// 반납
+			return list;
+		}
+
 }
