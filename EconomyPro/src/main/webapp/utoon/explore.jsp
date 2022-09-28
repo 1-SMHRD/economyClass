@@ -96,8 +96,8 @@
 	<div class="new_section container">
 		<br>
 		<!-- 필터 시작 -->
-		<div class="filter container">
-			<label for="platform-select">플랫폼 </label> 
+		<div class="filter container" style="font-size: 17px;">
+   <label for="platform-select" style="font-weight: bold;">플랫폼  </label>
 			<input type="checkbox"value="naver-webtoon">네이버웹툰
 			<input type="checkbox" value="kakao-webtoon">카카오웹툰
 			<input type="checkbox" value="lezin-webtoon">레진코믹스
@@ -121,7 +121,8 @@
 				<option value="pure">순정</option>
 				<option value="fantasy">판타지</option>
 				<option value="bl/gl">BL/GL</option>
-			</select> <input type="button" value="검색" onclick="check()" />
+			</select> 
+			<input type="button" value="검색" onclick="check()" style="background-color: #5e27cd2a; border-radius: 30px; border-color: #5e27cd2a;"/>
 		</div>
 		
 		<!--필터 끝 -->
