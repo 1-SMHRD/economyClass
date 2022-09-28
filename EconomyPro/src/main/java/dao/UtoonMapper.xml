@@ -233,11 +233,11 @@
 	</select>
 	<!-- 최신연재웹툰 탑툰 끌어오기 -->
 	<select id="NewTTWT" resultType="dao.WebtoonVO">
-		select * from tbl_wtoon where plat_id = 'TT01' order by wt_f_date desc
+		select * from tbl_wtoon where plat_id = 'TM01' order by wt_f_date desc
 	</select>
 	<!-- 최신연재웹툰 투믹스 끌어오기 -->
 	<select id="NewTMWT" resultType="dao.WebtoonVO">
-		select * from tbl_wtoon where plat_id = 'TM01' order by wt_f_date desc
+		select * from tbl_wtoon where plat_id = 'TT01' order by wt_f_date desc
 	</select>
 	
 </mapper>

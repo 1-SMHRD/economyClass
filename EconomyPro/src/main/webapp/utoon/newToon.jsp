@@ -47,7 +47,13 @@
    <link rel="stylesoeet" href="${cpath}/utoon/css/owl.theme.default.min.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
       media="screen">
-
+	<style type="text/css">
+	.new_box_title{
+	overflow: hidden;
+  	white-space: nowrap;
+  	text-overflow: ellipsis;
+	}
+	</style>
 
 </head>
 <body>
@@ -61,9 +67,10 @@
             <div class="col-sm-12">
                <!-- 왼쪽 최상단 로고 START-->
                <div class="header__logo" style="margin-left: 30px;">
-                  <a href="${cpath}/mainPage.do">
-                      <img src="images/logo2.png" style="height: 50px; width: 60px; border-radius: 50%;" alt="">
-                  </a>
+                  <a href="${cpath}/mainPage.do"> <img
+								src="${cpath}/utoon/images/logo2.png"
+								style="height: 50px; width: 60px; border-radius: 50%;" alt="">
+							</a>
                </div>
                <!-- 왼쪽 최상단 로고 END-->
                 <div class="custom_menu" style="font-size: 15;">
@@ -121,7 +128,7 @@
                <div>
                <c:forEach var="NewNVWT" items="${NewNVWT}" begin="0" end="9" step="1" varStatus="status">
                 <div class="new_box">   
-                  <a href="#"><img src="${NewNVWT.wt_thum}"/></a>
+                  <a href="https://comic.naver.com/webtoon/weekday"><img src="${NewNVWT.wt_thum}"/></a>
                   <div class="new_box_title">${NewNVWT.wt_title}</div>
                </div>
                </c:forEach>
@@ -140,7 +147,7 @@
             <div>
                <c:forEach var="NewKKWT" items="${NewKKWT}" begin="0" end="9" step="1" varStatus="status">
                 <div class="new_box">   
-                  <a href="#"><img src="${NewKKWT.wt_thum}"/></a>
+                  <a href="https://page.kakao.com/menu/10/screen/5"><img src="${NewKKWT.wt_thum}"/></a>
                   <div class="new_box_title">${NewKKWT.wt_title}</div>
                </div>
                </c:forEach>
@@ -159,7 +166,7 @@
             <div>
                <c:forEach var="NewLZWT" items="${NewLZWT}" begin="0" end="9" step="1" varStatus="status">
                 <div class="new_box">   
-                  <a href="#"><img src="${NewLZWT.wt_thum}"/></a>
+                  <a href="https://www.lezhin.com/ko/ranking/detail?genre=_all&type=realtime"><img src="${NewLZWT.wt_thum}"/></a>
                   <div class="new_box_title">${NewLZWT.wt_title}</div>
                </div>
                </c:forEach>
@@ -178,7 +185,7 @@
             <div>
                <c:forEach var="NewTTWT" items="${NewTTWT}" begin="0" end="9" step="1" varStatus="status">
                 <div class="new_box">   
-                  <a href="#"><img src="${NewTTWT.wt_thum}"/></a>
+                  <a href="https://toptoon.com/ranking"><img src="${NewTTWT.wt_thum}"/></a>
                   <div class="new_box_title">${NewTTWT.wt_title}</div>
                </div>
                </c:forEach>
@@ -197,7 +204,7 @@
             <div>
                <c:forEach var="NewTMWT" items="${NewTMWT}" begin="0" end="9" step="1" varStatus="status">
                 <div class="new_box">   
-                  <a href="#"><img src="${NewTMWT.wt_thum}"/></a>
+                  <a href="https://www.toomics.com/webtoon/weekly"><img src="${NewTMWT.wt_thum}"/></a>
                   <div class="new_box_title">${NewTMWT.wt_title}</div>
                </div>
                </c:forEach>
