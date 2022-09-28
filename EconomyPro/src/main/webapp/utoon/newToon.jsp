@@ -61,8 +61,8 @@
             <div class="col-sm-12">
                <!-- 왼쪽 최상단 로고 START-->
                <div class="header__logo" style="margin-left: 30px;">
-                  <a href="Home.html">
-                      <img src="images/logo.png" alt="">
+                  <a href="${cpath}/mainPage.do">
+                      <img src="images/logo2.png" style="height: 50px; width: 60px; border-radius: 50%;" alt="">
                   </a>
                </div>
                <!-- 왼쪽 최상단 로고 END-->
@@ -80,18 +80,6 @@
           </div>
        </div>
     </div>
-
-    <div class="logo_section">
-        <div class="container">
-           <div class="row">
-              <div class="col-sm-12">
-              </div>
-           </div>
-        </div>
-     </div>
-  </div>
-  </div>
-  </div>
   </div>
 
 <br>
@@ -101,20 +89,19 @@
 <br>
 <br>
 
-
+<div class="filter container" style="font-size: 17px;">
+   <label for="platform-select" style="font-weight: bold;">플랫폼  </label>
+<!-- <select name="platforms" id="platform-select"> -->
+   <!-- <input type="checkbox" value="" disabled selected>--선택해주세요--</option> -->
+   <input type="checkbox" value="naver-webtoon">네이버웹툰</option>
+   <input type="checkbox" value="kakao-webtoon">카카오웹툰</option>
+   <input type="checkbox" value="lezin-webtoon">레진코믹스</option>
+   <input type="checkbox" value="top-webtoon">탑툰</option>
+   <input type="checkbox" value="toomics-webtoon">투믹스</option>
+</select>
+   <input type="button" value="검색" onclick="check()" style="background-color: #5e27cd2a; border-radius: 30px; border-color: #5e27cd2a;"/>
+</div>
 <div class="new_section container"><br>
-   <div class="dropdown">
-      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">플랫폼
-     </button> 
-     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="#">네이버웹툰</a>
-        <a class="dropdown-item" href="#">카카오웹툰</a>
-        <a class="dropdown-item" href="#">레진코믹스</a>
-        <a class="dropdown-item" href="#">탑툰</a>
-        <a class="dropdown-item" href="#">코믹스</a>
-     </div>
-   </div>
     <h1 class="new_title">최신 연재 웹툰 ❗❗</h1><br>
  <!-- 타임라인 시작 -->
  <div class="tl">
@@ -142,6 +129,9 @@
             </div>
             </div>
          </div>
+         <div class="outer">
+         <div class="dot"></div>
+         <h3 class="title_date"></h3>
          <div class="card">
             <div class="info">
                <h3 class="title_site">카카오웹툰</h3>
@@ -156,6 +146,9 @@
                </c:forEach>
             </div>
          </div>
+         </div>
+         
+         <div class="outer">
          <div class="dot"></div>
          <h3 class="title_date"></h3>
          <div class="card">
@@ -172,6 +165,11 @@
                </c:forEach>
             </div>
          </div>
+         </div>
+         
+         <div class="outer">
+         <div class="dot"></div>
+         <h3 class="title_date"></h3>
          <div class="card">
             <div class="info">
                <h3 class="title_site">탑툰</h3>
@@ -186,6 +184,11 @@
                </c:forEach>
             </div>
          </div>
+         </div>
+         
+         <div class="outer">
+         <div class="dot"></div>
+         <h3 class="title_date"></h3>
          <div class="card">
             <div class="info">
                <h3 class="title_site">투믹스</h3>
@@ -201,8 +204,8 @@
             </div>
          </div>
       </div>
+      </div>
    </div>
-</div>
 <!-- 타임라인 종료 -->
 
 
