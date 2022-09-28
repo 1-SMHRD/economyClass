@@ -63,12 +63,12 @@
 				<div class="row">
 					<div class="col-sm-12">
 						<!-- 왼쪽 최상단 로고 START-->
-						<div class="header__logo" style="margin-left: 30px;">
-							<a href="Home.html"> <img
-								src="${cpath}/utoon/images/logo.png" alt="">
-							</a>
-						</div>
-						<!-- 왼쪽 최상단 로고 END-->
+               <div class="header__logo" style="margin-left: 30px;">
+                  <a href="${cpath}/mainPage.do">
+                      <img src="${cpath}/utoon/images/logo2.png" style="height: 50px; width: 60px; border-radius: 50%;" alt="">
+                  </a>
+               </div>
+               <!-- 왼쪽 최상단 로고 END-->
 						<div class="custom_menu" style="font-size: 15;">
 							<ul>
 								<li><a href="${cpath}/mainPage.do">홈</a></li>
@@ -95,62 +95,25 @@
 
 	<div class="new_section container">
 		<br>
-
-		<!-- <div class="dropdown">
-			<button class="btn btn-secondary dropdown-toggle" type="button"
-				id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-				aria-expanded="false">플랫폼</button>
-			<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-				<a class="dropdown-item" href="#">네이버웹툰</a> <a class="dropdown-item"
-					href="#">카카오웹툰</a> <a class="dropdown-item" href="#">레진코믹스</a> <a
-					class="dropdown-item" href="#">탑툰</a> <a class="dropdown-item"
-					href="#">코믹스</a>
-			</div>
-			<button class="btn btn-secondary dropdown-toggle" type="button"
-				id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-				aria-expanded="false">UToon평점</button>
-			<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-				<a class="dropdown-item" href="#">소년</a> <a class="dropdown-item"
-					href="#">드라마</a> <a class="dropdown-item" href="#">로맨스</a> <a
-					class="dropdown-item" href="#">로판</a> <a class="dropdown-item"
-					href="#">액션무협</a> <a class="dropdown-item" href="#">BL</a>
-			</div>
-
-			<button class="btn btn-secondary dropdown-toggle" type="button"
-				id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-				aria-expanded="false">장르/테마</button>
-			<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-				<a class="dropdown-item" href="#">공포</a> <a class="dropdown-item"
-					href="#">액션</a> <a class="dropdown-item" href="#">코믹</a> <a
-					class="dropdown-item" href="#">순정</a> <a class="dropdown-item"
-					href="#">판타지</a> <a class="dropdown-item" href="#">BL/GL</a>
-			</div>
-		</div> -->
-
+		<!-- 필터 시작 -->
 		<div class="filter container">
-			<label for="platform-select">플랫폼 : </label> <input type="checkbox"
-				value="naver-webtoon">네이버웹툰
-			</option>
+			<label for="platform-select">플랫폼 </label> 
+			<input type="checkbox"value="naver-webtoon">네이버웹툰
 			<input type="checkbox" value="kakao-webtoon">카카오웹툰
-			</option>
 			<input type="checkbox" value="lezin-webtoon">레진코믹스
-			</option>
 			<input type="checkbox" value="top-webtoon">탑툰
-			</option>
 			<input type="checkbox" value="toomics-webtoon">투믹스
-			</option>
-			</select> <br> <label for="point-select">UToon평점</label> <select
-				name="points" id="point-select"
-				style="background-color: #5e27cd2a; border-radius: 30px;">
+			 <br> 
+			<label for="point-select">UToon평점</label> 
+			<select name="points" id="point-select" style="background-color: #5e27cd2a; border-radius: 30px;">
 				<option value="" disabled selected>--선택해주세요--</option>
 				<option value="5points">5점 이하</option>
 				<option value="4points">4점 이하</option>
 				<option value="3points">3점 이하</option>
 				<option value="2points">2점 이하</option>
 				<option value="1point">1점 이하</option>
-			</select> <label for="theme-select">장르/테마</label> <select name="themes"
-				id="theme-select"
-				style="background-color: #5e27cd2a; border-radius: 30px;">
+			</select> <label for="theme-select">장르/테마</label> 
+			<select name="themes" id="theme-select" style="background-color: #5e27cd2a; border-radius: 30px;">
 				<option value="" disabled selected>--선택해주세요--</option>
 				<option value="horror">공포</option>
 				<option value="action">액션</option>
@@ -160,6 +123,8 @@
 				<option value="bl/gl">BL/GL</option>
 			</select> <input type="button" value="검색" onclick="check()" />
 		</div>
+		
+		<!--필터 끝 -->
 
 
 		<br> <br>

@@ -73,12 +73,12 @@
 				<div class="row">
 					<div class="col-sm-12">
 						<!-- 왼쪽 최상단 로고 START-->
-						<div class="header__logo" style="margin-left: 30px;">
-							<a href="${cpath}/mainPage.do"> <img
-								src="${cpath}/utoon/images/logo.png" alt="">
-							</a>
-						</div>
-						<!-- 왼쪽 최상단 로고 END-->
+               <div class="header__logo" style="margin-left: 30px;">
+                  <a href="${cpath}/mainPage.do">
+                      <img src="${cpath}/utoon/images/logo2.png" style="height: 50px; width: 60px; border-radius: 50%;" alt="">
+                  </a>
+               </div>
+               <!-- 왼쪽 최상단 로고 END-->
 						<div class="custom_menu">
 							<ul>
 								<li><a href="${cpath}/mainPage.do">홈</a></li>
@@ -203,61 +203,14 @@
 			</a>
 		</div>
 	</div>
-
-	<!-- 						<div class="col-lg-6 col-sm-6">
-									<div class="box_main">
-										<h4 class="communitybox_text">2번째 글</h4>
-										<p class="community_text">커뮤니티 2</p>
-
-										<div class="btn_main">
-											<div class="write_bt">
-												<a href="#">글쓴이2</a>
-											</div>
-											<div class="seemore_bt">
-												<a href="#">See More</a>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-6 col-sm-6">
-									<div class="box_main">
-										<h4 class="communitybox_text">3번째 글</h4>
-										<p class="community_text">커뮤니티 3</p>
-
-										<div class="btn_main">
-											<div class="write_bt">
-												<a href="#">글쓴이3</a>
-											</div>
-											<div class="seemore_bt">
-												<a href="#">See More</a>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-6 col-sm-6">
-									<div class="box_main">
-										<h4 class="communitybox_text">4번째 글</h4>
-										<p class="community_text">커뮤니티 4</p>
-
-										<div class="btn_main">
-											<div class="write_bt">
-												<a href="#">글쓴이3</a>
-											</div>
-											<div class="seemore_bt">
-												<a href="#">See More</a>
-											</div>
-										</div>
-									</div>
-								</div> -->
-
-
-
-
-	<a class="carousel-control-prev" href="#main_slider" role="button"
-		data-slide="prev"> <i class="fa fa-angle-right"></i>
-	</a>
-	<br>
-	<div class="container">
+	
+	<div class="container"><div class="text-center">
+               <div class="communitywrite">
+               <a href="community_write.html">
+                  <button type="button" class="btn btn-secondary disabled">글쓰기</button></div>
+            </div>
+         </div>
+	<%-- <div class="container">
 		<div id="c_box">
 			<table id="c_box_table">
 				<tr id="c_box_tr1">
@@ -287,8 +240,7 @@
 		</div>
 
 
-	</div>
-	<!-- fashion section end -->
+	</div> --%>
 
 
 
