@@ -39,7 +39,7 @@ public class loginController implements Controller {
 			HttpSession session = request.getSession();
 			// 객체 바인딩
 			session.setAttribute("lvo", lvo);
-			return "mainPage";
+			return "redirect:/mainPage.do";
 		}
 		else {
 			System.out.println("실패");

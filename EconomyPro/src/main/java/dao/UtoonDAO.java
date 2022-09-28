@@ -185,6 +185,7 @@ public class UtoonDAO {
 		session.commit();
 		session.close();
 	}
+
 ////////////////////////////////////////////////////////////////////////////////////////////
 	// 리뷰 댓글 가져오기
 	public List<RCommentVO> rcAllList() {
@@ -217,6 +218,7 @@ public class UtoonDAO {
 		session.commit();
 		session.close();
 	}
+
 ////////////////////////////////////////////////////////////////////////////////////////////
 	// 내 게시글
 	public List<PostVO> myPost(String mem_id) {
@@ -237,7 +239,7 @@ public class UtoonDAO {
 	// 내 게시글 댓글
 	public List<PCommentVO> myPComment(String mem_id) {
 		SqlSession session = sqlSessionFactory.openSession();
-		List<PCommentVO> list = session.selectList("myPComment",mem_id);
+		List<PCommentVO> list = session.selectList("myPComment", mem_id);
 		session.close();// 반납
 		return list;
 	}
@@ -245,7 +247,7 @@ public class UtoonDAO {
 	// 내 리뷰 댓글
 	public List<RCommentVO> myRComment(String mem_id) {
 		SqlSession session = sqlSessionFactory.openSession();
-		List<RCommentVO> list = session.selectList("myRComment",mem_id);
+		List<RCommentVO> list = session.selectList("myRComment", mem_id);
 		session.close();// 반납
 		return list;
 	}
@@ -289,5 +291,79 @@ public class UtoonDAO {
 		session.close();// 반납
 		return myRCC;
 	}
+
 ////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////신현범0927//////////////////////////////////////////////////////////
+// 메인 페이지 웹툰 랭킹 1-1	전체
+	public List<WebtoonVO> rankAllWT() {
+		SqlSession session = sqlSessionFactory.openSession();
+		List<WebtoonVO> list = session.selectList("rankAllWT");
+		session.close();// 반납
+		return list;
+	}
+
+// 메인 페이지 웹툰 랭킹 1-2	네이버
+	public List<WebtoonVO> rankNVWT() {
+		SqlSession session = sqlSessionFactory.openSession();
+		List<WebtoonVO> list = session.selectList("rankNVWT");
+		session.close();// 반납
+		return list;
+	}
+
+// 메인 페이지 웹툰 랭킹 1-3 카카오
+	public List<WebtoonVO> rankKKWT() {
+		SqlSession session = sqlSessionFactory.openSession();
+		List<WebtoonVO> list = session.selectList("rankKKWT");
+		session.close();// 반납
+		return list;
+	}
+
+// 메인 페이지 웹툰 랭킹 1-4	레진
+	public List<WebtoonVO> rankLZWT() {
+		SqlSession session = sqlSessionFactory.openSession();
+		List<WebtoonVO> list = session.selectList("rankLZWT");
+		session.close();// 반납
+		return list;
+	}
+
+// 메인 페이지 웹툰 랭킹 1-5	탑툰
+	public List<WebtoonVO> rankTTWT() {
+		SqlSession session = sqlSessionFactory.openSession();
+		List<WebtoonVO> list = session.selectList("rankTTWT");
+		session.close();// 반납
+		return list;
+	}
+
+// 메인 페이지 웹툰 랭킹 1-6	투믹스
+	public List<WebtoonVO> rankTMWT() {
+		SqlSession session = sqlSessionFactory.openSession();
+		List<WebtoonVO> list = session.selectList("rankTMWT");
+		session.close();// 반납
+		return list;
+	}
+
+// 메인 페이지 인기 게시글 2-1
+
+	public List<PostVO> popPost() {
+		SqlSession session = sqlSessionFactory.openSession();
+		List<PostVO> list = session.selectList("popPost");
+		session.close();// 반납
+		return list;
+	}
+// 메인 페이지 플랫폼 이벤트 배너 3-1
+
+	public List<EventVO> platEvent() {
+		SqlSession session = sqlSessionFactory.openSession();
+		List<EventVO> list = session.selectList("platEvent");
+		session.close();// 반납
+		return list;
+	}
+// 메인 페이지 추천컬렉션 4-1
+
+	public List<CollectionVO> colList() {
+		SqlSession session = sqlSessionFactory.openSession();
+		List<CollectionVO> list = session.selectList("colList");
+		session.close();// 반납
+		return list;
+	}
 }
