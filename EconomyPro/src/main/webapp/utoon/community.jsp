@@ -262,7 +262,7 @@
 			<table id="c_box_table">
 				<tr id="c_box_tr1">
 					<th id="c_box_rv">내 댓글</th>
-					<th id="c_box_th"><a href="${cpath}/myComment.do">${myPCC}개</a></th>
+					<th id="c_box_th"><a href="${cpath}/myPComment.do">${myPCC}개</a></th>
 				</tr>
 				<tr id="c_box_tr2">
 					<th id="c_box_rv">내 게시글</th>
@@ -319,7 +319,7 @@
 								<div class="author-avator set-bg">
 									<img src="${cpath}/utoon/images/authors/8.jpg">
 								</div>
-								<div class="post-content">
+								<div class="post-content" onclick="location.href='${cpath}/postDetail.do?post_num=${list.post_num}'">
 									<h5>
 										<span>${list.mem_id}</span>
 									</h5>
