@@ -563,6 +563,8 @@ a:hover {
     top: 40px;
 }
 
+
+
 #my_slider .carousel-control-next,
 #my_slider .carousel-control-prev {
     width: 45px;
@@ -588,10 +590,10 @@ a:hover {
 /* fashion section start */
 
 .fashion_section {
-	height: 650px;
+	height: 400px;
     width: 100%;
     float: left;
-	padding-bottom: 300px;
+/* 	padding-bottom: 300px; */
     background-color: white;
 }
 
@@ -599,15 +601,15 @@ a:hover {
     height: 480px;
     width: 100%;
     float: left;
-    padding-bottom: 300px;
+/*     padding-bottom: 300px; */
     background-color: white;
 }
 
 .fashion_section5 {
-    height: 480px;
+    height: 450px;
     width: 100%;
     float: left;
-    padding-bottom: 300px;
+/*     padding-bottom: 300px; */
     background-color: white;
 }
 
@@ -772,7 +774,7 @@ a:hover {
     opacity: 1;
     font-size: 30px;
     color: #ffffff;
-    margin-top: 100px;
+	margin-top: 30px;
     border-radius: 50%;
 }
 
@@ -816,7 +818,7 @@ a:hover {
 .electronic_img {
     width: 100%;
     text-align: center;
-    margin: 50px 0px;
+    margin: 20px 0px;
     min-height: 293px;
 }
 
@@ -848,6 +850,37 @@ a:hover {
     color: #fff;
     background-color: #596275;
 }
+
+/* 광고배너 시작*/
+#electronic_main_slider2 a.carousel-control-next {
+    right: 615px;
+    top: 105%;
+}
+
+#electronic_main_slider2 a.carousel-control-prev {
+    left: 615px;
+    top: 105%;
+}
+
+#electronic_main_slider2 .carousel-control-next,
+#electronic_main_slider2 .carousel-control-prev {
+    width: 55px;
+    height: 55px;
+    background-color: #30302e;
+    border-radius: 50%;
+    opacity: 1;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+#electronic_main_slider2 .carousel-control-next:focus,
+#electronic_main_slider2 .carousel-control-next:hover,
+#electronic_main_slider2 .carousel-control-prev:focus,
+#electronic_main_slider2 .carousel-control-prev:hover {
+    color: #fff;
+    background-color: #596275;
+}
+/* 광고배너 종료 */
 
 
 /* electronic section end */

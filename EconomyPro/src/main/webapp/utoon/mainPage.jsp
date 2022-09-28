@@ -399,7 +399,7 @@
 		<!-- 3. 광고배너입니다 start-->
 		<div class="fashion_section5"
 			style="border-bottom: 1px solid #d3d3d3;">
-			<div id="electronic_main_slider" class="carousel slide"
+			<div id="electronic_main_slider2" class="carousel slide"
 				data-ride="carousel">
 				<div class="container">
 					<h1 class="community_taital" style="color: #303952">광고 배너 👀</h1>
@@ -447,12 +447,19 @@
 						</div>
 					</c:forEach>
 
-					<a class="carousel-control-next" href="#electronic_main_slider"
+					<a class="carousel-control-next" href="#electronic_main_slider2"
 						role="button" data-slide="next"> <i class="fa fa-angle-right"></i>
-					</a> <a class="carousel-control-prev" href="#electronic_main_slider"
+					</a> <a class="carousel-control-prev" href="#electronic_main_slider2"
 						role="button" data-slide="prev"> <i class="fa fa-angle-left"></i>
 					</a>
 				</div>
+
+				<a class="carousel-control-next" href="#electronic_main_slider2" role="button"
+					data-slide="next"> <i class="fa fa-angle-right"></i>
+				</a> <a class="carousel-control-prev" href="#electronic_main_slider2" role="button"
+					data-slide="prev"> <i class="fa fa-angle-left"></i>
+				</a>
+
 			</div>
 		</div>
 
@@ -491,7 +498,7 @@
 					</div>
 					<div class="carousel-item">
 						<div class="container">
-<!-- 							<h1 class="community_taital" style="color: #303952">추천 리스트
+							<!-- 							<h1 class="community_taital" style="color: #303952">추천 리스트
 								💖</h1> -->
 							<div class="fashion_section_2">
 								<div class="row">
@@ -516,7 +523,7 @@
 				</div>
 				<div class="carousel-item">
 					<div class="container">
-<!-- 						<h1 class="community_taital" style="color: #303952">추천 리스트 💖</h1> -->
+						<!-- 						<h1 class="community_taital" style="color: #303952">추천 리스트 💖</h1> -->
 						<div class="fashion_section_2">
 							<div class="row">
 								<c:forEach var="colList" items="${colList}" begin="6" end="8"
