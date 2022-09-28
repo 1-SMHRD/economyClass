@@ -2378,3 +2378,86 @@ button, input, optgroup, select, textarea {
 /*-------------------------
   커뮤니티 글쓰기란 end
 ---------------------------*/
+
+---------------------------------------------------------------------------------
+
+/*---------------------
+  내 게시글 start
+-----------------------*/
+/* --------------------------------------------------상단 상자  */
+.story_text,
+.story_text_head,
+.story_text_content {
+    color: white;
+    margin: auto;
+    height: 60px;
+    background-color: #5e27cd8c;
+    margin-bottom: 1px;
+    border-bottom: 1px solid white;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 25px;
+    padding: 2px 5px 15px 5px;
+    /* border: 1px solid blue; */
+}
+
+.story_text,
+.story_text_content {
+    padding: 20px 5px 15px 5px;
+    background-color: #5e27cd23;
+    margin-bottom: 1px;
+    border-bottom: 1px solid white;
+}
+/* --------------------------------------------------상단 제목  */
+.rv_name_t,
+.rv_view_t,
+.rv_date_t {
+    font-size: 23px;
+    float: left;
+    padding-top: 5px;
+}
+/* --------------------------------------------------하단 내용 */
+.rv_name,
+.rv_view,
+.rv_date {
+    float: left;
+    padding-left: 20px;
+    font-size: 14px;
+}
+/* --------------------------------------------------작성일자 상,하단 조정*/
+.rv_date,
+.rv_date_t {
+
+    text-align: center;
+    padding-left: 40px;
+}
+/* --------------------------------------------------제목 상,하단 조정 */
+.rv_name,
+.rv_name_t {
+
+    float: left;
+    padding-left: 50px;
+    width: 700px;
+}
+/* --------------------------------------------------조회수 상,하단 조정 */
+.rv_view,
+.rv_view_t {
+
+    float: left;
+    width: 180px;
+    text-align: center;
+}
+/* --------------------------------------------------조회수 하단 조정 */
+.rv_view {
+    text-align: center;
+    padding-right: 30px;
+}
+
+
+/*---------------------
+  내 게시글 end
+-----------------------*/
+
+
+
+
