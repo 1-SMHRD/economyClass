@@ -19,9 +19,9 @@
 <title>Document</title>
 
 <!-- bootstrap css -->
-<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="${cpath}/utoon/css/bootstrap.min.css">
 <!-- style css -->
-<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="${cpath}/utoon/css/style.css">
 
 </head>
 
