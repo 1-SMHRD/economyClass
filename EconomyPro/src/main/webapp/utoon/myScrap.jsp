@@ -33,20 +33,20 @@
                     <div class="col-sm-12">
                          <!-- 왼쪽 최상단 로고 START-->
                   <div class="header__logo" style="margin-left: 30px;">
-                    <a href="Home.html">
-                        <img src="images/logo.png" alt="">
-                    </a>
-                 </div>
-                 <!-- 왼쪽 최상단 로고 END-->
-                        <div class="custom_menu" style="font-size: 15;">
-                            <ul>
-                                <li><a href="Home.html">홈</a></li>
-                                <li><a href="collection.html">컬렉션</a></li>
-                                <li><a href="community.html">커뮤니티</a></li>
-                                <li><a href="quest.html">탐색</a></li>
-                                <li><a href="new.html">신작</a></li>
-                                <li><a href="mypage.html">마이페이지</a></li>
-                            </ul>
+							<a href="${cpath}/mainPage.do"> <img
+								src="${cpath}/utoon/images/logo2.png"
+								style="height: 50px; width: 60px; border-radius: 50%;" alt="">
+							</a>
+						</div>
+						<div class="custom_menu" style="font-size: 15;">
+							<ul>
+								<li><a href="${cpath}/mainPage.do">홈</a></li>
+								<li><a href="${cpath}/collection.do">컬렉션</a></li>
+								<li><a href="${cpath}/community.do">커뮤니티</a></li>
+								<li><a href="${cpath}/explore.do">탐색</a></li>
+								<li><a href="${cpath}/newToon.do">신작</a></li>
+								<li><a href="${cpath}/myPage.do">마이페이지</a></li>
+							</ul>
                         </div>
                     </div>
                 </div>
@@ -54,68 +54,69 @@
         </div>
     </div>
 
-    <div class="logo_section">
-        <div class="container">
-           <div class="row">
-              <div class="col-sm-12">
-              </div>
-           </div>
+  </div>
+  </div>
+  </div>
+  </div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+    <div class="container" id="script_box1_line">
+
+        <div>
+            <h3 class="hm_comment"><a href="${cpath}/mypage.do">마이페이지</a> > 내 스크랩리스트 </h3>
         </div>
-     </div>
-  </div>
-  </div>
-  </div>
-  </div>
 
-<br>
-<br>
-<br>
+        <h3 class="head_comment"> ✔내 스크랩리스트 </h3>
 
-    <div class="container">
-    <h3 class="hm_want"><a href="mypage.html">마이페이지</a> > 찜했어요 </h3>
-    <!-- 찜한 작품 박스 시작 -->
-    <section class="box_want">
-        <h3 class="head_title_w">💎 내가 찜한 작품 </h3>
-        <!-- 🧨🧨🧨기능구현 어떻게 해야 되는지 확인하기 🧨🧨🧨 -->
-        <div class="want_text">찜한목록이 없습니다.ㅠㅠ</div>
-    </section>
 
-    </div>
+        <!-- 타임라인 시작 -->
+
+
+        <div class="script">
+            <div class="script_box1">
+                <div class="new_box">
+                    <a href="#"><img src="./images/독립일기.PNG"></a>
+                    <span class="new_box_title">독립일기</span>
+                </div>
+            </div>
+            <div class="script_box1">
+                <div class="new_box">
+                    <a href="#"><img src="./images/여신강림.PNG"></a>
+                    <div class="new_box_title">여신강림</div>
+                </div>
+            </div>
+            <div class="script_box1">
+                <div class="new_box">
+                    <a href="#"><img src="./images/싸움독학.PNG"></a>
+                    <div class="new_box_title">싸움독학</div>
+                </div>
+            </div>
+            <div class="script_box1">
+                <div class="new_box">
+                    <a href="#"><img src="./images/속도위반로맨스.PNG"></a>
+                    <div class="new_box_title">속도위반로맨스</div>
+                </div>
+            </div>
+            <div class="script_box1">
+                <div class="new_box">
+                    <a href="#"><img src="./images/별이삼샵.PNG"></a>
+                    <div class="new_box_title">별이삼샵</div>
+                </div>
+            </div>
+
+        </div>
+        <!-- 타임라인 종료 -->
+
+
+
+        <!-- 웹툰 홈으로 이동 -->
+        <button class="rv_btn"><a href="${cpath}/explore.do">더 스크랩하러가기 👀</a></button><br><br>
     
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<button onclick="history.back()">Back</button> <br>
-스크랩
-
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <button onclick="location.href='${cpath}/mainPage.do'">홈</button>
-  <button onclick="location.href='${cpath}/collection.do'">컬렉션</button>
-  <button onclick="location.href='${cpath}/community.do'">커뮤니티</button>
-  <button onclick="location.href='${cpath}/explore.do'">탐색</button>
-  <button onclick="location.href='${cpath}/newToon.do'">신작</button>
-  <button onclick="location.href='${cpath}/myPage.do'">마이페이지</button>
-  <br>
- 
 </body>
 </html>
