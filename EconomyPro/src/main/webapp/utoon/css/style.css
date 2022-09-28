@@ -1446,6 +1446,17 @@ button, input, optgroup, select, textarea {
 
 /* -------------------------------------------------------- 커뮤니티 */
 
+/* -------------------------------------------------------- 커뮤니티 인기글 박스*/
+
+.fashion_section_box {
+	height: 400px;
+    width: 100%;
+    float: left;
+/* 	padding-bottom: 300px; */
+    background-color: white;
+}
+
+
 
 /*------------------------------
   Breadcrumb section (분류 표기)
