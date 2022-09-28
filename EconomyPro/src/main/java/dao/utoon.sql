@@ -54,3 +54,6 @@ values('juhee','대유잼','저 죽어요',sysdate)
 
 insert into	tbl_comm(mem_id,post_title,post_ctnt,post_date)
 values('juhee','딸기잼','살려줘',sysdate)
+
+
+desc tbl_wtoon
