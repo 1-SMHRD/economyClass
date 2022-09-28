@@ -73,12 +73,13 @@
 				<div class="row">
 					<div class="col-sm-12">
 						<!-- 왼쪽 최상단 로고 START-->
-               <div class="header__logo" style="margin-left: 30px;">
-                  <a href="${cpath}/mainPage.do">
-                      <img src="${cpath}/utoon/images/logo2.png" style="height: 50px; width: 60px; border-radius: 50%;" alt="">
-                  </a>
-               </div>
-               <!-- 왼쪽 최상단 로고 END-->
+						<div class="header__logo" style="margin-left: 30px;">
+							<a href="${cpath}/mainPage.do"> <img
+								src="${cpath}/utoon/images/logo2.png"
+								style="height: 50px; width: 60px; border-radius: 50%;" alt="">
+							</a>
+						</div>
+						<!-- 왼쪽 최상단 로고 END-->
 						<div class="custom_menu">
 							<ul>
 								<li><a href="${cpath}/mainPage.do">홈</a></li>
@@ -101,11 +102,13 @@
 
 	<div class="fashion_section">
 		<div id="main_slider" class="carousel slide" data-ride="carousel">
+			<div class="container">
+				<h1 class="community_taital" style="color: #303952">커뮤니티 인기글🔥</h1>
+			</div>
+
 			<div class="carousel-inner">
 				<div class="carousel-item active">
 					<div class="container">
-						<h1 class="community_taital" style="color: #303952">커뮤니티 인기글
-							🔥</h1>
 						<div class="fashion_section_2">
 							<div class="row">
 
@@ -134,8 +137,6 @@
 				</div>
 				<div class="carousel-item">
 					<div class="container">
-						<h1 class="community_taital" style="color: #303952">커뮤니티 인기글
-							🔥</h1>
 						<div class="fashion_section_2">
 							<div class="row">
 
@@ -165,8 +166,6 @@
 				</div>
 				<div class="carousel-item">
 					<div class="container">
-						<h1 class="community_taital" style="color: #303952">커뮤니티 인기글
-							🔥</h1>
 						<div class="fashion_section_2">
 							<div class="row">
 
@@ -203,13 +202,15 @@
 			</a>
 		</div>
 	</div>
-	
-	<div class="container"><div class="text-center">
-               <div class="communitywrite">
-               <a href="community_write.html">
-                  <button type="button" class="btn btn-secondary disabled">글쓰기</button></div>
-            </div>
-         </div>
+
+	<div class="container">
+		<div class="text-center">
+			<div class="communitywrite" >
+				<a href="community_write.html">
+					<button type="button" class="btn btn-secondary disabled">글쓰기</button>
+			</div>
+		</div>
+	</div>
 	<%-- <div class="container">
 		<div id="c_box">
 			<table id="c_box_table">
@@ -248,7 +249,8 @@
 
 	<!-- Page section -->
 	<section class="page-section community-page set-bg"
-		data-setbg="images/community-bg.jpg">
+		data-setbg="images/community-bg.jpg"
+		style="border-top: 1px solid #d3d3d3; border-top: 1px solid #d3d3d3; margin-top:25px">
 		<div class="community-warp spad">
 			<div class="container">
 				<!-- <div class="row">
@@ -271,7 +273,8 @@
 								<div class="author-avator set-bg">
 									<img src="${cpath}/utoon/images/authors/8.jpg">
 								</div>
-								<div class="post-content" onclick="location.href='${cpath}/postDetail.do?post_num=${list.post_num}'">
+								<div class="post-content"
+									onclick="location.href='${cpath}/postDetail.do?post_num=${list.post_num}'">
 									<h5>
 										<span>${list.mem_id}</span>
 									</h5>

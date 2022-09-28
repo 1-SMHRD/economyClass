@@ -97,14 +97,11 @@
 
 <div class="filter container" style="font-size: 17px;">
    <label for="platform-select" style="font-weight: bold;">플랫폼  </label>
-<!-- <select name="platforms" id="platform-select"> -->
-   <!-- <input type="checkbox" value="" disabled selected>--선택해주세요--</option> -->
-   <input type="checkbox" value="naver-webtoon">네이버웹툰</option>
-   <input type="checkbox" value="kakao-webtoon">카카오웹툰</option>
-   <input type="checkbox" value="lezin-webtoon">레진코믹스</option>
-   <input type="checkbox" value="top-webtoon">탑툰</option>
-   <input type="checkbox" value="toomics-webtoon">투믹스</option>
-</select>
+   <input type="checkbox" value="naver-webtoon">네이버웹툰
+   <input type="checkbox" value="kakao-webtoon">카카오웹툰
+   <input type="checkbox" value="lezin-webtoon">레진코믹스
+   <input type="checkbox" value="top-webtoon">탑툰
+   <input type="checkbox" value="toomics-webtoon">투믹스
    <input type="button" value="검색" onclick="check()" style="background-color: #5e27cd2a; border-radius: 30px; border-color: #5e27cd2a;"/>
 </div>
 <div class="new_section container"><br>
@@ -228,49 +225,9 @@
     <script src="${cpath}/utoon/js/custom.js"></script>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-<%-- 신작
-
-네이버 카카오 오마이걸 <br>
-
-신작 웹툰~ <br>
-
-<button onclick="location.href='${cpath}/toonDetail.do'">우엉우엉우</button> <br>
-오마이걸 <br>
-ac/dc <br>
-
   <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <button onclick="location.href='${cpath}/mainPage.do'">홈</button>
-  <button onclick="location.href='${cpath}/collection.do'">컬렉션</button>
-  <button onclick="location.href='${cpath}/community.do'">커뮤니티</button>
-  <button onclick="location.href='${cpath}/explore.do'">탐색</button>
-  <button onclick="location.href='${cpath}/newToon.do'">신작</button>
-  <button onclick="location.href='${cpath}/myPage.do'">마이페이지</button> --%>
-  <br>
- 
-
-
-
-
-- 사용자는 신작을 클릭한다.
-- 사용자는 다섯 개의 웹툰 사이트 중 원하는 플랫폼을 선택한다. [중복 가능]
-- 신작 웹툰 작품을 등록일 기준 최신순으로 나열해서 사용자에게 보여준다.
+  
 - 사용자가 원하는 신작 작품을 선택하면 웹툰에 대한 정보와 해당 웹툰을 제공하는 플랫폼으로 연결해준다. 
+
 </body>
 </html>
