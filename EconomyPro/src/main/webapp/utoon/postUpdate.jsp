@@ -13,15 +13,9 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<script type="text/javascript">
-	function pU(post_num){
-		location.href="${cpath}/postUpdate.do?post_num="+post_num;
-	}
-	
-</script>
 </head>
 <body>
-	<form action="${cpath}/postUpdate.do">
+	<form action="${cpath}/postUpdate.do?post_num=${post.post_num}" method="post">
 		<h1>UToon</h1>
 		<input type="text" name="post_num" value="${post.post_num}" disabled="disabled" />
 		<!-- 제목 -->
