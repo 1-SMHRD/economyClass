@@ -130,6 +130,7 @@
 			<li>${lvo.mem_cmt}</li>
 		</ul>
 	</div>
+	<br><br>
 
 	<!-- header section end -->
 	<!-- banner section start -->
@@ -143,23 +144,6 @@
 					<div class="carousel-item active">
 						<div class="row">
 							<div class="col-sm-12">
-
-								<div class="box_1th">
-									<table class="box_1th_table">
-										<tr class="box_1th_tr_1">
-											<th><a href="box1_찜.html">0개</a></th>
-											<th><a href="box1_보는중.html">0개</a></th>
-											<th><a href="box1_봤어요.html">0개</a></th>
-										</tr>
-										<tr class="box_1th_tr_2">
-											<td>찜했어요</td>
-											<td>보는중</td>
-											<td>봤어요</td>
-										</tr>
-									</table>
-								</div>
-
-								<br> <br>
 
 								<div id="box_2th">
 									<table id="box_2th_table">
@@ -181,9 +165,6 @@
 										</tr>
 									</table>
 								</div>
-
-								<br> <br> <br> <br>
-								
 
 
 							</div>
@@ -282,34 +263,5 @@
 		</tr>
 
 	</c:forEach> --%>
-
-	마이페이지 프사, 오마이걸, 찾았다 오마이걸, omg.com
-	<button onclick="location.href='${cpath}/editProfile.do'">프로필수정</button>
-	<br>
-
-	<button onclick="location.href='${cpath}/myComment.do'">내 댓글</button>
-	<br>
-
-	<button onclick="location.href='${cpath}/myReview.do'">내 리뷰</button>
-	<br>
-
-	<button onclick="location.href='${cpath}/myPost.do'">내 게시글</button>
-	<br>
-
-	<!-- 에이잭스로 삭제 1,2,3,4,5페이지화-->
-	<button onclick="location.href='${cpath}/myScrap.do'">내 스크랩리스트</button>
-	<br>
-
-	<button onclick="location.href='${cpath}/mainPage.do'">홈</button>
-	<button onclick="location.href='${cpath}/collection.do'">컬렉션</button>
-	<button onclick="location.href='${cpath}/community.do'">커뮤니티</button>
-	<button onclick="location.href='${cpath}/explore.do'">탐색</button>
-	<button onclick="location.href='${cpath}/newToon.do'">신작</button>
-	<button onclick="location.href='${cpath}/myPage.do'">마이페이지</button>
-	<br> - 사용자는 마이페이지를 클릭한다. - 클릭시 마이페이지로 이동한다. - 프로필사진, 닉네임 ,자기소개
-	,sns주소, 스크랩 작품 리스트, 내 댓글을 출력한다. - 프로필 수정을 클릭하여 사진, 닉네임, 소개, sns를 수정한다.
-	- 1)작품리스트를 클릭하여 사용자가 스크랩한 전체 작품리스트를 확인하고 삭제하고 싶은 항목을 삭제한다. - 2)내댓글을
-	클릭하여 전체 사용자 댓글을 확인하고 삭제하고 싶은 댓글을 삭제한다. - 1) 2) 페이지 이동 후 뒤로가기 버튼을 클릭하여
-	마이페이지로 되돌아온다.
 </body>
 </html>
