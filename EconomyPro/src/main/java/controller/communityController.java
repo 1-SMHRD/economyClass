@@ -27,6 +27,12 @@ public class communityController implements Controller {
 		List<PostVO> list = dao.postAllList();
 		request.setAttribute("list", list);
 		
+		int myPC = dao.myPC(mem_id);
+		request.setAttribute("myPC", myPC);
+		
+		int myPCC = dao.myPCC(mem_id);
+		request.setAttribute("myPCC", myPCC);
+		
 		System.out.println("마이페이지 세션정보 "+session.getAttribute("lvo"));
 		System.out.println("마이페이지 게시글정보 "+list);
 		

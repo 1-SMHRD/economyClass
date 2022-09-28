@@ -66,6 +66,12 @@
          <div class="header_section_top">
             <div class="row">
                <div class="col-sm-12">
+						<div class="header__logo" style="margin-left: 30px;">
+							<a href="${cpath}/mainPage.do"> <img
+								src="${cpath}/utoon/images/logo2.png" style="height: 50px; width: 60px; border-radius: 50%;" alt="">
+							</a>
+						</div>
+						<!-- 왼쪽 최상단 로고 END-->
                   <div class="custom_menu">
                      <ul>
                         <li><a href="${cpath}/mainPage.do">홈</a></li>
@@ -87,7 +93,7 @@
          <div class="container">
             <div class="row">
                <div class="col-sm-12">
-                  <div class="logo"><a href="Home.html"><img src="images/logo.png"></a></div>
+                  <div class="logo"><a href="Home.html"><img src="${cpath}/utoon/images/logo.png"></a></div>
                </div>
             </div>
          </div>
@@ -97,22 +103,13 @@
       <div class="header_section">
          <div class="container">
             <div class="containt_main">
-               <div id="mySidenav" class="sidenav">
-                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                  <a href="Home.html">홈</a>
-                  <a href="collection.html">컬렉션</a>
-                  <a href="community.html">커뮤니티</a>
-                  <a href="quest.html">탐색</a>
-                  <a href="new.html">신작</a>
-                  <a href="mypage.html">마이페이지</a>
-               </div>
                <div class="main">
                   <!-- Another variation with a button -->
                    <div class="input-group">
                      <input type="text" class="form-control" placeholder="작품명 / 작가 검색하기">
                      <div class="input-group-append">
                         <button class="btn btn-secondary" type="button"
-                           style="background-color: #5e17eb; border-color:#5e17eb ">
+                           style="background-color: #6e3ecd; border-color: #6e3ecd ">
                            <i class="fa fa-search"></i>
                         </button>
                      </div>
@@ -123,7 +120,7 @@
                      <ul>
                         <li><a href="#">
                               <i class="fa fa-user" aria-hidden="true"></i>
-                              <span class="padding_10">로그인</span></a>
+                              <span class="padding_10">로그아웃</span></a>
                         </li>
                      </ul>
                   </div>
@@ -141,12 +138,12 @@
   		<!-- 1. WEBTOON RANK section start 5개 플랫폼 10개씩 인기작품-->
 
 
-		<div class="fashion_section">
+		<div class="fashion_section" style="border-bottom: 1px solid #d3d3d3; border-top: 1px solid #d3d3d3;">
 			<div id="electronic_main_slider" class="carousel slide"
 				data-ride="carousel">
 				<div class="carousel-inner">
 					<div class="carousel-item active">
-						<div class="container">
+						<div class="container" style="border-radius: 30px;">
 							<h1 class="community_taital" style="color: #303952">오늘의
 								'통합웹툰' 랭킹 🏆</h1>
 							<div class="fashion_section_2">
@@ -276,7 +273,7 @@
 		<!-- 1. WEBTOON RANK section start 5개 플랫폼 10개씩 인기작품 END-->
 
 		<!--2. popular post section start 1~9개-->
-		<div class="fashion_section">
+		<div class="fashion_section" style="border-bottom: 1px solid #d3d3d3;">
 			<div id="main_slider" class="carousel slide" data-ride="carousel">
 				<div class="carousel-inner">
 					<div class="carousel-item active">
@@ -379,48 +376,60 @@
 			</div>
 		</div>
 		<!-- 2. popular post section start 1~9개 END -->
-   <!-- electronic section start -->
-   <div class="fashion_section">
-      <div id="electronic_main_slider" class="carousel slide" data-ride="carousel">
-         <div class="carousel-inner">
-            <div class="carousel-item active">
-               <div class="container">
-                  <h1 class="community_taital" style="color : #303952">오늘 이걸 볼까요? 👀</h1>
-                  <div class="fashion_section_2">
-                     <div class="row">
-                        <div class="col-lg-4 col-sm-4">
-                           <div class="box_main">
-                              <h4 class="shirt_text">Laptop</h4>
-                              <p class="price_text">Start Price <span style="color: #262626;">$ 100</span></p>
-                              <div class="electronic_img">
-                                 <a href="#"><img src="images/laptop-img.png"></a></div>
-                              <div class="btn_main">
-                                 <!-- <div class="buy_bt"><a href="#">Buy Now</a></div>
-                                 <div class="seemore_bt"><a href="#">See More</a></div> -->
+  		
+  		<!-- 3. 광고배너입니다 start-->
+  		<div class="fashion_section5" style="border-bottom: 1px solid #d3d3d3;">
+         <div id="electronic_main_slider" class="carousel slide" data-ride="carousel">
+            <div class="container">
+               <h1 class="community_taital" style="color : #303952">광고 배너 👀</h1>
+            </div>
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <div class="container">
+                     <div class="fashion_section_2">
+                        <div class="row">
+                           <div class="col-lg-4 col-sm-4">
+                              <div class="advertisement_box">
+                                 <p>광고배너입니다 </p>
+                                 <div class="electronic_img">
+                                    <a href="#"><img src="images/computer-img.png"></a>
+                                 </div>
                               </div>
                            </div>
                         </div>
-                        <div class="col-lg-4 col-sm-4">
-                           <div class="box_main">
-                              <h4 class="shirt_text">Mobile</h4>
-                              <p class="price_text">Start Price <span style="color: #262626;">$ 100</span></p>
-                              <div class="electronic_img">
-                                 <a href="#"><img src="images/mobile-img.png"></a></div>
-                              <div class="btn_main">
-                                 <!-- <div class="buy_bt"><a href="#">Buy Now</a></div>
-                                 <div class="seemore_bt"><a href="#">See More</a></div> -->
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="container">
+                     <div class="fashion_section_2">
+                        <div class="row">
+                           <div class="col-lg-4 col-sm-4">
+                              <div class="advertisement_box">
+                                 <p>광고배너입니다</p>
+                                 <div class="electronic_img">
+                                    <a href="#"><img src="images/computer-img.png"></a>
+                                 </div>
+                                 <div class="btn_main">
+                                 </div>
                               </div>
                            </div>
                         </div>
-                        <div class="col-lg-4 col-sm-4">
-                           <div class="box_main">
-                              <h4 class="shirt_text">Computers</h4>
-                              <p class="price_text">Start Price <span style="color: #262626;">$ 100</span></p>
-                              <div class="electronic_img">
-                                 <a href="#"><img src="images/computer-img.png"></a></div>
-                              <div class="btn_main">
-                                 <!-- <div class="buy_bt"><a href="#">Buy Now</a></div>
-                                 <div class="seemore_bt"><a href="#">See More</a></div> -->
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="container">
+                     <div class="fashion_section_2">
+                        <div class="row">
+                           <div class="col-lg-4 col-sm-4">
+                              <div class="advertisement_box">
+                                 <p>광고배너입니다</p>
+                                 <div class="electronic_img">
+                                    <a href="#"><img src="images/computer-img.png"></a>
+                                 </div>
+                                 <div class="btn_main">
+                                 </div>
                               </div>
                            </div>
                         </div>
@@ -428,288 +437,106 @@
                   </div>
                </div>
             </div>
-            <div class="carousel-item">
-               <div class="container">
-                  <h1 class="community_taital" style="color : #303952">오늘 이걸 볼까요? 👀</h1>
-                  <div class="fashion_section_2">
-                     <div class="row">
-                        <div class="col-lg-4 col-sm-4">
-                           <div class="box_main">
-                              <h4 class="shirt_text">Laptop</h4>
-                              <p class="price_text">Start Price <span style="color: #262626;">$ 100</span></p>
-                              <div class="electronic_img">
-                                 <a href="#"><img src="images/computer-img.png"></a></div>
-                              <div class="btn_main">
-                                 <!-- <div class="buy_bt"><a href="#">Buy Now</a></div>
-                                 <div class="seemore_bt"><a href="#">See More</a></div> -->
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-4">
-                           <div class="box_main">
-                              <h4 class="shirt_text">Mobile</h4>
-                              <p class="price_text">Start Price <span style="color: #262626;">$ 100</span></p>
-                              <div class="electronic_img">
-                                 <a href="#"><img src="images/computer-img.png"></a></div>
-                              <div class="btn_main">
-                                 <!-- <div class="buy_bt"><a href="#">Buy Now</a></div>
-                                 <div class="seemore_bt"><a href="#">See More</a></div> -->
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-4">
-                           <div class="box_main">
-                              <h4 class="shirt_text">Computers</h4>
-                              <p class="price_text">Start Price <span style="color: #262626;">$ 100</span></p>
-                              <div class="electronic_img">
-                                 <a href="#"><img src="images/computer-img.png"></a></div>
-                              <div class="btn_main">
-                                 <!-- <div class="buy_bt"><a href="#">Buy Now</a></div>
-                                 <div class="seemore_bt"><a href="#">See More</a></div> -->
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="carousel-item">
-               <div class="container">
-                  <h1 class="community_taital" style="color : #303952">오늘 이걸 볼까요? 👀</h1>
-                  <div class="fashion_section_2">
-                     <div class="row">
-                        <div class="col-lg-4 col-sm-4">
-                           <div class="box_main">
-                              <h4 class="shirt_text">Laptop</h4>
-                              <p class="price_text">Start Price <span style="color: #262626;">$ 100</span></p>
-                              <div class="electronic_img">
-                                 <a href="#"><img src="images/computer-img.png"></a></div>
-                              <div class="btn_main">
-                                 <!-- <div class="buy_bt"><a href="#">Buy Now</a></div>
-                                 <div class="seemore_bt"><a href="#">See More</a></div> -->
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-4">
-                           <div class="box_main">
-                              <h4 class="shirt_text">Mobile</h4>
-                              <p class="price_text">Start Price <span style="color: #262626;">$ 100</span></p>
-                              <div class="electronic_img">
-                                 <a href="#"><img src="images/computer-img.png"></a></div>
-                              <div class="btn_main">
-                                 <!-- <div class="buy_bt"><a href="#">Buy Now</a></div>
-                                 <div class="seemore_bt"><a href="#">See More</a></div> -->
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-4">
-                           <div class="box_main">
-                              <h4 class="shirt_text">Computers</h4>
-                              <p class="price_text">Start Price <span style="color: #262626;">$ 100</span></p>
-                              <div class="electronic_img">
-                                 <a href="#"><img src="images/computer-img.png"></a></div>
-                              <div class="btn_main">
-                                 <!-- <div class="buy_bt"><a href="#">Buy Now</a></div>
-                                 <div class="seemore_bt"><a href="#">See More</a></div> -->
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
+            <a class="carousel-control-next" href="#electronic_main_slider" role="button" data-slide="next">
+               <i class="fa fa-angle-right"></i>
+            </a>
+            <a class="carousel-control-prev" href="#electronic_main_slider" role="button" data-slide="prev">
+               <i class="fa fa-angle-left"></i>
+            </a>
          </div>
-         <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
-            <i class="fa fa-angle-right"></i>
-         </a>
-         <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
-            <i class="fa fa-angle-left"></i>
-         </a>
       </div>
-   </div>
-   <!-- electronic section end -->
-   <!-- jewellery  section start -->
-   <div class="jewellery_section">
-      <div id="jewellery_main_slider" class="carousel slide" data-ride="carousel">
-         <div class="carousel-inner">
-            <div class="carousel-item active">
-               <div class="container">
-                  <h1 class="community_taital" style="color : #303952">추천 리스트 💖</h1>
-                  <div class="fashion_section_2">
-                     <div class="row">
-                        <div class="col-lg-4 col-sm-4">
-                           <div class="box_main">
-                              <h4 class="shirt_text">Jumkas</h4>
-                              <p class="price_text">Start Price <span style="color: #262626;">$ 100</span></p>
-                              <div class="electronic_img">
-                                 <a href="#"><img src="images/computer-img.png"></a></div>
-                              <div class="btn_main">
-                                 <!-- <div class="buy_bt"><a href="#">Buy Now</a></div>
-                                 <div class="seemore_bt"><a href="#">See More</a></div> -->
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-4">
-                           <div class="box_main">
-                              <h4 class="shirt_text">Necklaces</h4>
-                              <p class="price_text">Start Price <span style="color: #262626;">$ 100</span></p>
-                              <div class="electronic_img">
-                                 <a href="#"><img src="images/computer-img.png"></a></div>
-                              <div class="btn_main">
-                                 <!-- <div class="buy_bt"><a href="#">Buy Now</a></div>
-                                 <div class="seemore_bt"><a href="#">See More</a></div> -->
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-4">
-                           <div class="box_main">
-                              <h4 class="shirt_text">Kangans</h4>
-                              <p class="price_text">Start Price <span style="color: #262626;">$ 100</span></p>
-                              <div class="electronic_img">
-                                 <a href="#"><img src="images/computer-img.png"></a></div>
-                              <div class="btn_main">
-                                 <!-- <div class="buy_bt"><a href="#">Buy Now</a></div>
-                                 <div class="seemore_bt"><a href="#">See More</a></div> -->
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="carousel-item">
-               <div class="container">
-                  <h1 class="community_taital" style="color : #303952">추천 리스트 💖</h1>
-                  <div class="fashion_section_2">
-                     <div class="row">
-                        <div class="col-lg-4 col-sm-4">
-                           <div class="box_main">
-                              <h4 class="shirt_text">Jumkas</h4>
-                              <p class="price_text">Start Price <span style="color: #262626;">$ 100</span></p>
-                              <div class="electronic_img">
-                                 <a href="#"><img src="images/computer-img.png"></a></div>
-                              <div class="btn_main">
-                                 <!-- <div class="buy_bt"><a href="#">Buy Now</a></div>
-                                 <div class="seemore_bt"><a href="#">See More</a></div> -->
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-4">
-                           <div class="box_main">
-                              <h4 class="shirt_text">Necklaces</h4>
-                              <p class="price_text">Start Price <span style="color: #262626;">$ 100</span></p>
-                              <div class="electronic_img">
-                                 <a href="#"><img src="images/computer-img.png"></a></div>
-                              <div class="btn_main">
-                                 <!-- <div class="buy_bt"><a href="#">Buy Now</a></div>
-                                 <div class="seemore_bt"><a href="#">See More</a></div> -->
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-4">
-                           <div class="box_main">
-                              <h4 class="shirt_text">Kangans</h4>
-                              <p class="price_text">Start Price <span style="color: #262626;">$ 100</span></p>
-                              <div class="electronic_img">
-                                 <a href="#"><img src="images/computer-img.png"></a></div>
-                              <div class="btn_main">
-                                 <!-- <div class="buy_bt"><a href="#">Buy Now</a></div>
-                                 <div class="seemore_bt"><a href="#">See More</a></div> -->
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="carousel-item">
-               <div class="container">
-                  <h1 class="community_taital" style="color : #303952">추천 리스트 💖</h1>
-                  <div class="fashion_section_2">
-                     <div class="row">
-                        <div class="col-lg-4 col-sm-4">
-                           <div class="box_main">
-                              <h4 class="shirt_text">Jumkas</h4>
-                              <p class="price_text">Start Price <span style="color: #262626;">$ 100</span></p>
-                              <div class="electronic_img">
-                                 <a href="#"><img src="images/computer-img.png"></a></div>
-                              <div class="btn_main">
-                                 <!-- <div class="buy_bt"><a href="#">Buy Now</a></div>
-                                 <div class="seemore_bt"><a href="#">See More</a></div> -->
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-4">
-                           <div class="box_main">
-                              <h4 class="shirt_text">Necklaces</h4>
-                              <p class="price_text">Start Price <span style="color: #262626;">$ 100</span></p>
-                              <div class="electronic_img">
-                                 <a href="#"><img src="images/computer-img.png"></a></div>
-                              <div class="btn_main">
-                                 <!-- <div class="buy_bt"><a href="#">Buy Now</a></div>
-                                 <div class="seemore_bt"><a href="#">See More</a></div> -->
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-4">
-                           <div class="box_main">
-                              <h4 class="shirt_text">Kangans</h4>
-                              <p class="price_text">Start Price <span style="color: #262626;">$ 100</span></p>
-                              <div class="electronic_img">
-                                 <a href="#"><img src="images/computer-img.png"></a></div>
-                              <div class="btn_main">
-                                 <!-- <div class="buy_bt"><a href="#">Buy Now</a></div>
-                                 <div class="seemore_bt"><a href="#">See More</a></div> -->
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <a class="carousel-control-next" href="#jewellery_main_slider" role="button" data-slide="next">
-            <i class="fa fa-angle-right"></i>
-         </a>
-         <a class="carousel-control-prev" href="#jewellery_main_slider" role="button" data-slide="prev">
-            <i class="fa fa-angle-left"></i>
-         </a>
-         <!-- <div class="loader_main">
-            <div class="loader"></div>
-         </div> -->
-      </div>
-   </div>
-   
-   <!-- jewellery  section end -->
-   <!-- footer section start -->
-   <!-- <div class="footer_section layout_padding">
-      <div class="container">
-         <div class="footer_logo"><a href="index.html"><img src="images/footer-logo.png"></a></div>
-         <div class="input_bt">
-            <input type="text" class="mail_bt" placeholder="Your Email" name="Your Email">
-            <span class="subscribe_bt" id="basic-addon2"><a href="#">Subscribe</a></span>
-         </div>
-         <div class="footer_menu">
-            <ul>
-               <li><a href="#">Best Sellers</a></li>
-               <li><a href="#">Gift Ideas</a></li>
-               <li><a href="#">New Releases</a></li>
-               <li><a href="#">Today's Deals</a></li>
-               <li><a href="#">Customer Service</a></li>
-            </ul>
-         </div>
-         <div class="location_main">Help Line Number : <a href="#">+1 1800 1200 1200</a></div>
-      </div>
-   </div> -->
-   <!-- footer section end -->
-   <!-- copyright section start -->
-   <!-- <div class="copyright_section">
-      <div class="container">
-         <p class="copyright_text">© 2020 All Rights Reserved. Design by <a href="https://html.design">Free html
-               Templates</a></p>
-      </div>
-   </div> -->
-   <!-- copyright section end -->
+  		
+  		
+  		<!-- 3. 광고배너입니다 end-->
+  		
+   		<!-- 4. 추천 컬렉션 리스트 section start -->
+		<div class="jewellery_section">
+			<div id="jewellery_main_slider" class="carousel slide"
+				data-ride="carousel">
+				<div class="carousel-inner">
+				
+					<div class="carousel-item active">
+						<div class="container">
+							<h1 class="community_taital" style="color: #303952">추천 리스트
+								💖</h1>
+							<div class="fashion_section_2">
+								<div class="row">
+									<c:forEach var="colList" items="${colList}" begin="0" end="2"
+													step="1" varStatus="status"> 
+										<div class="col-lg-4 col-sm-4">
+											<div class="box_main">
+												<h4 class="shirt_text">${colList.col_name}</h4>
+												<p class="price_text">
+												<span style="color: #262626;">${colList.col_content}</span>
+												</p>
+												<div class="electronic_img">
+													<a href="#"><img src="${colList.col_banner}"></a>
+												</div>
+											</div>
+										</div>
+									</c:forEach>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="container">
+							<h1 class="community_taital" style="color: #303952">추천 리스트
+								💖</h1>
+							<div class="fashion_section_2">
+								<div class="row">
+									<c:forEach var="colList" items="${colList}" begin="3" end="5"
+													step="1" varStatus="status"> 
+										<div class="col-lg-4 col-sm-4">
+											<div class="box_main">
+												<h4 class="shirt_text">${colList.col_name}</h4>
+												<p class="price_text">
+												<span style="color: #262626;">${colList.col_content}</span>
+												</p>
+												<div class="electronic_img">
+													<a href="#"><img src="${colList.col_banner}"></a>
+												</div>
+											</div>
+										</div>
+									</c:forEach>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="container">
+							<h1 class="community_taital" style="color: #303952">추천 리스트
+								💖</h1>
+							<div class="fashion_section_2">
+								<div class="row">
+									<c:forEach var="colList" items="${colList}" begin="6" end="8"
+													step="1" varStatus="status"> 
+										<div class="col-lg-4 col-sm-4">
+											<div class="box_main">
+												<h4 class="shirt_text">${colList.col_name}</h4>
+												<p class="price_text">
+												<span style="color: #262626;">${colList.col_content}</span>
+												</p>
+												<div class="electronic_img">
+													<a href="#"><img src="${colList.col_banner}"></a>
+												</div>
+											</div>
+										</div>
+									</c:forEach>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a class="carousel-control-next" href="#jewellery_main_slider"
+					role="button" data-slide="next"> <i class="fa fa-angle-right"></i>
+				</a> <a class="carousel-control-prev" href="#jewellery_main_slider"
+					role="button" data-slide="prev"> <i class="fa fa-angle-left"></i>
+				</a>
+			</div>
+		</div>
+		<!-- 4. 추천 컬렉션 리스트 section end -->
+		
    <!-- Javascript files-->
    <script src="${cpath}/utoon/js/jquery.min.js"></script>
    <script src="${cpath}/utoon/js/popper.min.js"></script>

@@ -22,7 +22,7 @@
 <div class="container" id="container">
 	<div class="form-container sign-up-container">
 		<form action="${cpath}/newProfile.do">
-			<h1>UToon</h1>
+			<img src="${cpath}/utoon/images/logo.png" style="height: 200px; width: 200px;" alt=""><br><br>
 			<!-- <div class="social-container">
 				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
 				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
@@ -41,7 +41,7 @@
 	</div>
 	<div class="form-container sign-in-container">
 		<form action="${cpath}/login.do">
-			<h1>Utoon</h1>
+			<img src="${cpath}/utoon/images/logo.png" style="height: 200px; width: 200px;" alt=""><br><br>
 			<!-- <div class="social-container">
 				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
 				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
@@ -57,12 +57,12 @@
 	<div class="overlay-container">
 		<div class="overlay">
 			<div class="overlay-panel overlay-left">
-				<h1>Welcome UToon!</h1>
+				<h1>Welcome, UToon!</h1>
 				<!-- <p>To keep connected with us please login with your personal info</p> -->
 				<button class="ghost" id="signIn">로그인</button>
 			</div>
 			<div class="overlay-panel overlay-right">
-				<h1>Hello, Friend!</h1>
+				<h1>Hello, UToon!</h1>
 				<!-- <p>Enter your personal details and start journey with us</p> -->
 				<button class="ghost" id="signUp">회원가입</button>
 			</div>
