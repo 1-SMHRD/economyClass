@@ -165,7 +165,7 @@
 											<ul class="shirt_text">
 												<c:forEach var="rankAllWT" items="${rankAllWT}" begin="0"
 													end="9" step="1" varStatus="status">
-													<li><span>${status.index+1} 위</span><a href="#">${rankAllWT.wt_title}</a></li>
+													<li><span>${status.index+1} 위</span><a href="${cpath}/toonDetail.do">${rankAllWT.wt_title}</a></li>
 												</c:forEach>
 											</ul>
 										</div>
