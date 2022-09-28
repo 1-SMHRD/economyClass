@@ -8,11 +8,20 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <c:set var="cpath" value="${pageContext.request.contextPath}" />
+
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>Utoon - 웹툰 보기 전 필수 앱</title>
+<script type="text/javascript">
+	function goDel(post_num){
+		location.href="${cpath}/postDelete.do?post_num="+post_num;
+	}
+	function goUpdate(post_num){
+		location.href="${cpath}/postUpdateForm.do?post_num="+post_num;
+	}	 
+</script>
 </head>
 <body>
 
@@ -23,39 +32,71 @@
 	<button onclick="history.back()">Back</button>
 	<br> 게시글 상세보기 페이지
 
-	
+
+	<table>
+		<tr>
+			<!-- 게시글ID(번호)  -->
+			<td>${post.post_num}</td>
+
+			<!-- 게시글제목(링크로 상세페이지연결) -->
+			<td>${post.post_title}</td>
+
+			<!-- 게시글작성자ID -->
+			<td>작성자 ${post.mem_id}</td>
+
+			<!-- 작성일 -->
+			<td>작성일 ${post.post_date}</td>
+
+			<!-- 내용  -->
+			<td>내용 ${post.post_ctnt}</td>
+
+			<!-- 조회수  -->
+			<td>조회수 ${post.post_vcnt}명</td>
+
+			<!-- 웹툰태그(링크로 상세페이지연결) -->
+			<td><a href="${cpath}/toonDetail.do?wt_id=${post.wt_id}">연결된웹툰
+					${post.wt_id} </a></td>
+
+		</tr>
+	</table>
+	<br>
+
+	<c:forEach var="pc" items="${pc}">
 		<table>
 			<tr>
-				<!-- 게시글ID(번호)  -->
-				<td>${post.post_num}</td>
-				
+
 				<!-- 게시글제목(링크로 상세페이지연결) -->
-				<td>${post.post_title}</td>
-				
-				<!-- 게시글작성자ID -->
-				<td>작성자 ${post.mem_id}</td>
-				
+				<td>${pc.mem_id}</td>
+
 				<!-- 작성일 -->
-				<td>작성일 ${post.post_date}</td>
-								
-				<!-- 내용  -->
-				<td>내용 ${post.post_ctnt}</td>
+				<td>작성일 ${pc.cmt_ctnt}</td>
 
 				<!-- 조회수  -->
-				<td>조회수 ${post.post_vcnt}명</td>
-				
-				<!-- 웹툰태그(링크로 상세페이지연결) -->
-				<td><a href="${cpath}/toonDetail.do?wt_id=${post.wt_id}">연결된웹툰 ${post.wt_id} </a></td>
-				
+				<td>조회수 ${pc.cmt_date}명</td>
+
 			</tr>
 		</table>
+	</c:forEach>
 
 
 
 
 
 	<br>
-	<br>
+	<c:if test="${vo.mem_id eq post.mem_id}">
+		<button onclick="goUpdate(${post.post_num})">수정</button>
+		<button onclick="goDel(${post.post_num})">삭제</button>
+	</c:if>
+	<c:if test="${vo.mem_id ne post.mem_id}">
+		<button class="btn btn-sm btn-success" disabled="disabled"
+			onclick="goUpdate(${post.post_num})">수정</button>
+		<button class="btn btn-sm btn-warning" disabled="disabled"
+			onclick="goDel(${post.post_num})">삭제</button>
+	</c:if>
+
+	<button type="button" class="btn btn-sm btn-info"
+		onclick="location.href='${cpath}/community.do'">리스트</button>
+	
 	<br>
 	<br>
 	<br>
