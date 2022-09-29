@@ -25,7 +25,7 @@ public class myRCommentController implements Controller {
 		String mem_id = vo.getMem_id();
 
 		List<RCommentVO> myRC = dao.myRComment(mem_id);
-		request.setAttribute("myPC", myRC);
+		request.setAttribute("myRC", myRC);
 		
 		return "myRComment";
 	}

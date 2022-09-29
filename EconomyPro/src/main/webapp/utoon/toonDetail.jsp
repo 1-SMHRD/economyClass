@@ -138,7 +138,7 @@
 							<!-- UTOON 선호도 표시(신호등) start -->
 							<div class="collection-light-wrap">
 								<div class="icon-light-green"></div>
-								<div class="collection-light-percent light-green">구현해봐</div>
+								<div class="collection-light-percent light-green">신호등!!</div>
 							</div>
 							<!-- UTOON 선호도 표시(신호등) end -->
 
@@ -170,9 +170,11 @@
 					<h3 class="title">UTOON 지수</h3>
 					<div class="indicator-bar-wrap">
 						<div class="bar-wrap">
-							<span class="indicator-bar_red"></span> <span
-								class="indicator-bar_green"></span>
+							<span class="indicator-bar_red"></span>
 						</div>
+						<div class="bar-wrap">
+							<span class="indicator-bar_green"></span>
+						</div>	
 					</div>
 					<div class="sub-description">
 						<span class="text red">별로예요 4%</span> <span class="text green">좋아요

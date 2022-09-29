@@ -67,8 +67,8 @@
 	<div class="container">
 
 		<div>
-			<h3 class="hm_comment"">
-				<a href="mypage.html">마이페이지</a> > 내 게시글
+			<h3 class="hm_comment">
+				<a onclick="history.back()">마이페이지</a> > 내 게시글
 			</h3>
 		</div>
 
@@ -100,8 +100,8 @@
 						<a href="${cpath}/postDetail.do?post_num=${post.post_num}">${post.post_title}</a>
 					</h6>
 
-					<h6 class="rv_view">작성일 ${post.post_date}</h6>
-					<h6 class="rv_date">조회수 ${post.post_vcnt}명</h6>
+					<h6 class="rv_view">${post.post_vcnt}</h6>
+					<h6 class="rv_date">${fn:split(post.post_date," ")[0]} ${fn:split(post.post_date," ")[1]} ${fn:split(post.post_date," ")[2]}</h6>
 				</div>
 			</div>
 		</div>

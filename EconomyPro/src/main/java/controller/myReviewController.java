@@ -21,7 +21,7 @@ public class myReviewController implements Controller {
 		HttpSession session = request.getSession();
 
 		UtoonDAO dao = new UtoonDAO();
-		MemberVO vo = (MemberVO) session.getAttribute("lvo");
+		MemberVO vo = (MemberVO)session.getAttribute("lvo");
 		String mem_id = vo.getMem_id();
 
 		List<ReviewVO> myReview = dao.myReview(mem_id);
