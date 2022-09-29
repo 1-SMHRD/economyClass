@@ -68,7 +68,7 @@
 
 		<div>
 			<h3 class="hm_comment">
-				<a onclick="history.back()">마이페이지</a> > 내 게시글
+				<a href="${cpath}/myPost.do">마이페이지</a> > 내 게시글
 			</h3>
 		</div>
 
