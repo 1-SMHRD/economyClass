@@ -17,6 +17,7 @@ public class WebtoonVO {
 	private int wt_d_cnt;
 	private String up_title;
 	private String up_date;
+	private int point; // 작품 좋아요수/(좋아요수+싫어요수) - 기존 테이블 속성이아니라 파생변수임
 	
 	public WebtoonVO() {
 		
@@ -151,6 +152,14 @@ public class WebtoonVO {
 
 	public void setUp_date(String up_date) {
 		this.up_date = up_date;
+	}
+
+	public int getPoint() {
+		return point;
+	}
+
+	public void setPoint(int point) {
+		this.point = point;
 	}
 	
 	

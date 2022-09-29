@@ -9,6 +9,7 @@ import controller.communityController;
 import controller.editProfileController;
 import controller.editProfileFormController;
 import controller.exploreController;
+import controller.exploreFilterController;
 import controller.loginController;
 import controller.loginFormController;
 import controller.mainPageController;
@@ -52,6 +53,7 @@ public class HandlerMapping {
 		mappings.put("/community.do",new communityController());
 		mappings.put("/collection.do",new collectionController());
 		mappings.put("/explore.do",new exploreController());
+		mappings.put("/exploreFilter.do",new exploreFilterController()); // 필터 콘트롤러 추가_현범
 		mappings.put("/newToon.do",new newToonController());
 		mappings.put("/myPage.do",new myPageController());
 				

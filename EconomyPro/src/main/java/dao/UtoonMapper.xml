@@ -221,6 +221,16 @@
 	<select id="colList" resultType="dao.CollectionVO">
 		select * from tbl_col
 	</select>
+	
+	<!-- 탐색 페이지*********현범0928************** -->
+	<!-- 1. 전체 작품 리스트(기본값 필터 없음) -->
+	<select id="allListWT" resultType="dao.WebtoonVO">
+		select * from tbl_wtoon
+	</select>
+	<!-- 2. 필터링된 값들 필터컨트롤러에서 받아서 고른 작품 리스트 -->
+	<select id="filtListWT" parameterType = "dao.WebtoonVO" resultType="dao.WebtoonVO">
+		select * from tbl_wtoon where plat_id IN (${plat_id}) AND (wt_l_cnt/(wt_l_cnt+wt_d_cnt))*100 >= ${point} and WT_GEN = #{wt_gen} 
+	</select>
 
 
 
