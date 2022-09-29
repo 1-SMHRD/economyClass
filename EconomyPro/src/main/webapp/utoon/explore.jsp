@@ -149,7 +149,7 @@
 
 								<div class="new_box">
 									<a href="Home.html"><img src="${list[j.index].wt_thum}"></a>
-									<span class="new_box_title">${list[j.index].wt_title}</span>
+									<span class="new_box_title" style=" display:block; overflow: hidden; white-space: nowrap;text-overflow: ellipsis; word-break: break-all; ">${list[j.index].wt_title}</span>
 								</div>
 							</c:forEach>
 						</div>
@@ -166,7 +166,7 @@
 
 								<div class="new_box">
 									<a href="Home.html"><img src="${allList[j.index].wt_thum}"></a>
-									<span class="new_box_title">${allList[j.index].wt_title}</span>
+									<span class="new_box_title" style="display:block; overflow: hidden; white-space: nowrap;text-overflow: ellipsis; word-break: break-all; ">${allList[j.index].wt_title}</span>
 								</div>
 							</c:forEach>
 						</div>

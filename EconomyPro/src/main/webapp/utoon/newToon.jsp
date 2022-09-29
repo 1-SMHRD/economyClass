@@ -47,13 +47,7 @@
    <link rel="stylesoeet" href="${cpath}/utoon/css/owl.theme.default.min.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
       media="screen">
-	<style type="text/css">
-	.new_box_title{
-	overflow: hidden;
-  	white-space: nowrap;
-  	text-overflow: ellipsis;
-	}
-	</style>
+	
 
 </head>
 <body>
@@ -68,7 +62,8 @@
                <!-- 왼쪽 최상단 로고 START-->
                <div class="header__logo" style="margin-left: 30px;">
                   <a href="${cpath}/mainPage.do">
-                      <img src="images/logo2.png" style="height: 50px; width: 60px; border-radius: 50%;" alt="">
+                      <img src="${cpath}/utoon/images/logo2.png"
+							style="height: 50px; width: 60px; border-radius: 50%;" alt="">
                   </a>
                </div>
                <!-- 왼쪽 최상단 로고 END-->
@@ -95,15 +90,7 @@
 <br>
 <br>
 
-<div class="filter container" style="font-size: 17px;">
-   <label for="platform-select" style="font-weight: bold;">플랫폼  </label>
-   <input type="checkbox" value="naver-webtoon">네이버웹툰
-   <input type="checkbox" value="kakao-webtoon">카카오웹툰
-   <input type="checkbox" value="lezin-webtoon">레진코믹스
-   <input type="checkbox" value="top-webtoon">탑툰
-   <input type="checkbox" value="toomics-webtoon">투믹스
-   <input type="button" value="검색" onclick="check()" style="background-color: #5e27cd2a; border-radius: 30px; border-color: #5e27cd2a;"/>
-</div>
+
 <div class="new_section container"><br>
     <h1 class="new_title">최신 연재 웹툰 ❗❗</h1><br>
  <!-- 타임라인 시작 -->
@@ -124,8 +111,8 @@
                <div>
                <c:forEach var="NewNVWT" items="${NewNVWT}" begin="0" end="9" step="1" varStatus="status">
                 <div class="new_box">   
-                  <a href="#"><img src="${NewNVWT.wt_thum}"/></a>
-                  <div class="new_box_title">${NewNVWT.wt_title}</div>
+                  <a href="${cpath}/toonDetail.do?wt_id=${NewNVWT.wt_id}"><img src="${NewNVWT.wt_thum}"/></a>
+                  <div class="new_box_title" style="overflow: hidden; white-space: nowrap;text-overflow: ellipsis;">${NewNVWT.wt_title}</div>
                </div>
                </c:forEach>
                </div>
@@ -143,8 +130,8 @@
             <div>
                <c:forEach var="NewKKWT" items="${NewKKWT}" begin="0" end="9" step="1" varStatus="status">
                 <div class="new_box">   
-                  <a href="#"><img src="${NewKKWT.wt_thum}"/></a>
-                  <div class="new_box_title">${NewKKWT.wt_title}</div>
+                  <a href="${cpath}/toonDetail.do?wt_id=${NewKKWT.wt_id}"><img src="${NewKKWT.wt_thum}"/></a>
+                  <div class="new_box_title" style="overflow: hidden; white-space: nowrap;text-overflow: ellipsis;">${NewKKWT.wt_title}</div>
                </div>
                </c:forEach>
             </div>
@@ -162,8 +149,8 @@
             <div>
                <c:forEach var="NewLZWT" items="${NewLZWT}" begin="0" end="9" step="1" varStatus="status">
                 <div class="new_box">   
-                  <a href="#"><img src="${NewLZWT.wt_thum}"/></a>
-                  <div class="new_box_title">${NewLZWT.wt_title}</div>
+                  <a href="${cpath}/toonDetail.do?wt_id=${NewLZWT.wt_id}"><img src="${NewLZWT.wt_thum}"/></a>
+                  <div class="new_box_title" style="overflow: hidden; white-space: nowrap;text-overflow: ellipsis;">${NewLZWT.wt_title}</div>
                </div>
                </c:forEach>
             </div>
@@ -181,8 +168,8 @@
             <div>
                <c:forEach var="NewTTWT" items="${NewTTWT}" begin="0" end="9" step="1" varStatus="status">
                 <div class="new_box">   
-                  <a href="#"><img src="${NewTTWT.wt_thum}"/></a>
-                  <div class="new_box_title">${NewTTWT.wt_title}</div>
+                  <a href="${cpath}/toonDetail.do?wt_id=${NewTTWT.wt_id}"><img src="${NewTTWT.wt_thum}"/></a>
+                  <div class="new_box_title" style="overflow: hidden; white-space: nowrap;text-overflow: ellipsis;">${NewTTWT.wt_title}</div>
                </div>
                </c:forEach>
             </div>
@@ -200,8 +187,8 @@
             <div>
                <c:forEach var="NewTMWT" items="${NewTMWT}" begin="0" end="9" step="1" varStatus="status">
                 <div class="new_box">   
-                  <a href="#"><img src="${NewTMWT.wt_thum}"/></a>
-                  <div class="new_box_title">${NewTMWT.wt_title}</div>
+                  <a href="${cpath}/toonDetail.do?wt_id=${NewTMWT.wt_id}"><img src="${NewTMWT.wt_thum}"/></a>
+                  <div class="new_box_title" style="overflow: hidden; white-space: nowrap;text-overflow: ellipsis;">${NewTMWT.wt_title}</div>
                </div>
                </c:forEach>
             </div>
