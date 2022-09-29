@@ -24,6 +24,83 @@
 <!-- style css -->
 <link rel="stylesheet" type="text/css"
 	href="${cpath}/utoon/css/style.css">
+<script type="text/javascript">
+	function contentView(idx){
+		if($("#ct"+idx).css("display")!="none"){
+			$("#ct"+idx).css("display", "none")
+		}else{
+			$("#ct"+idx).css("display", "table-row");
+			$.ajax({
+				url : "${cpath}/boardCountUpdate.do",
+				type : "get",
+				data : {"idx":idx},
+				success : function(count){
+					// 조회수 출력
+					$("#c"+idx).text(count);
+				},
+				error : function(){ alert("error");}
+			});
+		}
+		$("#ta"+idx).attr("readonly", true);
+	}
+	function goDel(idx){
+		$.ajax({
+			url : "${cpath}/boardDelete.do",
+			type : "get",
+			data : {"idx":idx},
+			success : function(){
+				// 메인페이지로 reflash
+				location.href="${cpath}/boardList.do";
+			},
+			error : function(){ alert("error"); }
+		});
+		
+	}
+	function goUpdateForm(idx){
+		$("#ta"+idx).attr("readonly", false);
+		var tmpTitle=$("#t"+idx).text();
+		var newTitle="<input type='text' id='nt"+idx+"' class='form-control' value='"+tmpTitle+"'/>";
+		$("#t"+idx).html(newTitle);
+		var newBtn="<button class='btn btn-sm btn-primary' onclick='goUpdate("+idx+")'>수정하기</button>";
+		$("#b"+idx).html(newBtn);
+		
+	}
+	function goUpdate(idx){
+		var title=$("#nt"+idx).val();
+		var content=$("#ta"+idx).val();
+		$.ajax({
+			url : "${cpath}/boardUpdate.do",
+			type : "post",
+			data : {"idx":idx, "title":title, "content":content},
+			success : function(){
+				location.href="${cpath}/boardList.do";
+			},
+			error : function() { alert("error");}
+		});
+	}
+	function goWrite(){
+		$("#vfrm").css("display", "none");
+		$("#wfrm").css("display", "block");
+	}
+	function goInsert(){
+		//frm->memId, title, content, writer
+		var frmData=$("#frm").serialize();
+		// alert(frmData);
+		$.ajax({
+			url : "${cpath}/boardWrite.do",
+			type : "post",
+			data : frmData,
+			success : function(){
+				location.href="${cpath}/boardList.do";
+			},
+			error : function() { alert("error");}
+			
+		});
+	}
+</script>
+
+
+
 
 </head>
 
@@ -96,9 +173,9 @@
 		<div class="container">
 			<div class="story_text_content">
 				<div class="st">
-					<h6 class="rv_name">
+					<a class="rv_name"  href="${cpath}/toonDetail.do">
 						${rv.rv_ctnt}
-					</h6>
+					</a>
 
 					<h6 class="rv_view">${rv.mem_id}</h6>
 					
