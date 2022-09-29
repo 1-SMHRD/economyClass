@@ -54,11 +54,11 @@
 	href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
 	media="screen">
 <script type="text/javascript">
-function goDel(idx){
+function goDel(rv_num){
 	$.ajax({
 		url : "${cpath}/reviewDelete.do",
 		type : "get",
-		data : {"idx":idx},
+		data : {"rv_num":rv_num},
 		success : function(){
 			// 메인페이지로 reflash
 			location.href="${cpath}/toonDetail.do";
@@ -102,7 +102,7 @@ function goInsert(){
 		type : "post",
 		data : frmData,
 		success : function(){
-			location.href="${cpath}toonDetail.do";
+			location.href="${cpath}/toonDetail.do";
 		},
 		error : function() { alert("error");}
 		
@@ -263,67 +263,25 @@ function goInsert(){
 			<div id="vfrm" class="panel-body">
 				<table class="table table-bordered table-hover">
 					<tr>
-						<td>번호</td>
 						<td>제목</td>
 						<td>작성자</td>
-						<td>작성일</td>
-						<td>조회수</td>
 					</tr>
-					<c:forEach var="vo" items="${list}">
-						<tr>
-							<td>${vo.idx}</td>
-							<td id="t${vo.idx}"><a
-								href="javascript:contentView(${vo.idx})">${vo.title}</a></td>
-							<td>${vo.writer}</td>
-							<td>${fn:split(vo.indate," ")[0]}</td>
-							<td id="c${vo.idx}">${vo.count}</td>
-						</tr>
-						<tr id="ct${vo.idx}" style="display: none">
-							<td>내용</td>
-							<td colspan="4"><textarea id="ta${vo.idx}" rows="7"
-									readonly="readonly" class="form-control">${vo.content}</textarea>
-								<br> <c:if test="${!empty mvo && vo.memId eq mvo.memId}">
-									<span id="b${vo.idx}"><button
-											class="btn btn-sm btn-success"
-											onclick="goUpdateForm(${vo.idx})">수정</button></span>
-									<button class="btn btn-sm btn-warning"
-										onclick="goDel(${vo.idx})">삭제</button>
-								</c:if> <c:if test="${empty mvo || vo.memId ne mvo.memId}">
-									<button disabled="disabled" class="btn btn-sm btn-success">수정</button>
-									<button disabled="disabled" class="btn btn-sm btn-warning">삭제</button>
-								</c:if></td>
-						</tr>
-					</c:forEach>
-					<c:if test="${!empty mvo}">
-						<tr>
-							<td colspan="5">
-								<button class="btn btn-sm btn-primary" onclick="goWrite()">글쓰기</button>
-							</td>
-						</tr>
-					</c:if>
 				</table>
 			</div>
 			<div id="wfrm" class="panel-body" style="display: none">
 				<form id="frm" class="form-horizontal">
-					<input type="hidden" name="memId" value="${mvo.memId}" />
-					<div class="form-group">
-						<label class="control-label col-sm-2" for="title">제목:</label>
-						<div class="col-sm-10">
-							<input type="text" class="form-control" name="title"
-								placeholder="Enter title">
-						</div>
-					</div>
+					<input type="hidden" name="mem_id" value="${vo.mem_id}" />
 					<div class="form-group">
 						<label class="control-label col-sm-2" for="content">내용:</label>
 						<div class="col-sm-10">
-							<textarea rows="10" class="form-control" name="content"></textarea>
+							<textarea rows="10" class="form-control" name="rv_ctnt"></textarea>
 						</div>
 					</div>
 					<div class="form-group">
 						<label class="control-label col-sm-2" for="writer">작성자:</label>
 						<div class="col-sm-10">
 							<input type="text" readonly="readonly" class="form-control"
-								name="writer" value="${mvo.memName}">
+								name="writer" value="${vo.mem_id}">
 						</div>
 					</div>
 					<div class="form-group">
@@ -335,11 +293,12 @@ function goInsert(){
 					</div>
 				</form>
 			</div>
-			<form action="#">
-				<textarea placeholder="짧게라도 좋으니 작품에 대한 감상을 기록해보세요"></textarea>
-				<button type="submit" style="background: #5e27cd8c;">
-					<i class="comment-btn"></i> 리뷰 작성하기
-				</button>
+			<form>
+				<!-- <textarea placeholder="짧게라도 좋으니 작품에 대한 감상을 기록해보세요"></textarea> -->
+				<button type="button" class="btn btn-sm btn-success" onclick="goInsert()">등록</button>
+				<button type="reset" class="btn btn-sm btn-info">취소</button>
+				<button class="btn btn-sm btn-primary" onclick="goWrite()" style="background: #5e27cd8c;">글쓰기</button>
+
 			</form>
 		</div>
 	</div>
