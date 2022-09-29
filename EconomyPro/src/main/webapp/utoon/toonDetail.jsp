@@ -95,18 +95,29 @@ function goWrite(){
 }
 function goInsert(){
 	//frm->memId, title, content, writer
-	var frmData=$("#frm").serialize();
+	//var frmData=$("#frm").serialize();
+	
+	var wt_id = '${wt.wt_id}';
+	var mem_id = '${vo.mem_id}';
+	var rv_ctnt = document.querySelector("#frm > textarea").value;
+	
+	console.log(wt_id, mem_id, rv_ctnt);
+	
 	// alert(frmData);
-	$.ajax({
+ 	$.ajax({
 		url : "${cpath}/reviewWrite.do?wt_id=${wt.wt_id}",
 		type : "post",
-		data : frmData,
+		data : {
+			wt_id : wt_id,
+			mem_id : mem_id,
+			rv_ctnt : rv_ctnt,
+		},
 		success : function(){
-			location.href="redirect:/toonDetail.do?wt_id=${rvw.wt_id}";
+			location.href="${cpath}/toonDetail.do?wt_id=${wt.wt_id}";
 		},
 		error : function() { alert("error");}
 		
-	});
+	}); 
 }
 
 </script>
