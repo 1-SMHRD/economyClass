@@ -268,7 +268,7 @@ function goInsert(){
 					</tr>
 				</table>
 			</div>
-			<div id="wfrm" class="panel-body" style="display: none">
+			<%-- <div id="wfrm" class="panel-body" style="display: none">
 				<form id="frm" class="form-horizontal">
 					<input type="hidden" name="mem_id" value="${vo.mem_id}" />
 					<div class="form-group">
@@ -292,12 +292,12 @@ function goInsert(){
 						</div>
 					</div>
 				</form>
-			</div>
+			</div> --%>
 			<form>
-				<!-- <textarea placeholder="짧게라도 좋으니 작품에 대한 감상을 기록해보세요"></textarea> -->
+				<textarea placeholder="짧게라도 좋으니 작품에 대한 감상을 기록해보세요"></textarea>
 				<button type="button" class="btn btn-sm btn-success" onclick="goInsert()">등록</button>
 				<button type="reset" class="btn btn-sm btn-info">취소</button>
-				<button class="btn btn-sm btn-primary" onclick="goWrite()" style="background: #5e27cd8c;">글쓰기</button>
+				<!-- <button class="btn btn-sm btn-primary" onclick="goWrite()" style="background: #5e27cd8c;">글쓰기</button> -->
 
 			</form>
 		</div>
