@@ -38,7 +38,7 @@ select * from tbl_wtoon
 
 
 insert into	tbl_scrap(wt_id,mem_id)
-values(4,'juhee')
+values(1816,'juhee')
 
 select * from tbl_plat
 
