@@ -87,7 +87,7 @@
                                  <div class="box_3th">
                                     <table class="box_1th_table">
                                        <tr class="box_1th_tr_3">
-                                          <th><a href="${cpath}/collectionDetail.do">에디터 추천👍🏻</a></th>
+                                          <th><a href="${cpath}/explore.do">에디터 추천👍🏻</a></th>
                                           <!-- 에디터추천에 컬렉션디테일 연결이 맞나   페이지 더만들어야될지도 -->
                                        </tr>
                                     </table>
@@ -106,7 +106,7 @@
                                  <div class="box_3th">
                                     <table class="box_1th_table">
                                        <tr class="box_1th_tr_3">
-                                          <th><a href="${cpath}/collectionDetail.do">신작 추천🔥</a></th>
+                                          <th><a href="${cpath}/explore.do">신작 추천🔥</a></th>
                                           
                                        </tr>
                                     </table>
@@ -126,7 +126,7 @@
                                  <div class="box_3th">
                                     <table class="box_1th_table">
                                        <tr class="box_1th_tr_3">
-                                          <th><a href="${cpath}/collectionDetail.do">드라마로 만들어진 웹툰📝</a></th>
+                                          <th><a href="${cpath}/explore.do">드라마로 만들어진 웹툰📝</a></th>
                                           
                                        </tr>
                                     </table>
@@ -146,7 +146,7 @@
                                  <div class="box_3th">
                                     <table class="box_1th_table">
                                        <tr class="box_1th_tr_3">
-                                          <th><a href="${cpath}/collectionDetail.do">취향껏 골라 GL/BL👀</a></th>
+                                          <th><a href="${cpath}/explore.do">취향껏 골라 GL/BL👀</a></th>
                                           
                                        </tr>
                                     </table>
@@ -167,7 +167,7 @@
                                  <div class="box_3th">
                                     <table class="box_1th_table">
                                        <tr class="box_1th_tr_3">
-                                          <th><a href="${cpath}/collectionDetail.do">지금만 무료 웹툰 💸</a></th>
+                                          <th><a href="${cpath}/explore.do">지금만 무료 웹툰 💸</a></th>
                                           
                                        </tr>
                                     </table>
