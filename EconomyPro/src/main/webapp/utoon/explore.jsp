@@ -131,7 +131,20 @@
 
 		</form>
 		<!-- 1. 탐색용 카테고리 선택 창 END-->
-
+		<!-- 1-2. 검색창 이용한 작품 선택 창 START -->
+						<form action="${cpath}/mainFinder.do">
+						<div class="input-group">
+							<input type="text" class="form-control"
+								placeholder="작품명 / 작가 검색하기" name ="keyWord">
+							<div class="input-group-append">
+								<button class="btn btn-secondary" type="submit"
+									style="background-color: #6e3ecd; border-color: #6e3ecd">
+									<i class="fa fa-search"></i>
+								</button>
+							</div>
+						</div>
+						</form>
+		<!-- 1-2. 검색창 이용한 작품 선택 창 END -->
 		<!-- 2. 탐색 필터링된 작품 선택 창 START-->
 		<br> <br>
 		<h1 class="new_title">작품 탐색 🔍</h1>
