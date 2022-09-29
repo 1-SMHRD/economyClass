@@ -56,12 +56,12 @@
 <script type="text/javascript">
 function goDel(idx){
 	$.ajax({
-		url : "${cpath}/boardDelete.do",
+		url : "${cpath}/reviewDelete.do",
 		type : "get",
 		data : {"idx":idx},
 		success : function(){
 			// 메인페이지로 reflash
-			location.href="${cpath}/boardList.do";
+			location.href="${cpath}/toonDetail.do";
 		},
 		error : function(){ alert("error"); }
 	});
@@ -80,11 +80,11 @@ function goUpdate(idx){
 	var title=$("#nt"+idx).val();
 	var content=$("#ta"+idx).val();
 	$.ajax({
-		url : "${cpath}/boardUpdate.do",
+		url : "${cpath}/reviewUpdate.do",
 		type : "post",
 		data : {"idx":idx, "title":title, "content":content},
 		success : function(){
-			location.href="${cpath}/boardList.do";
+			location.href="${cpath}/toonDetail.do";
 		},
 		error : function() { alert("error");}
 	});
@@ -98,11 +98,11 @@ function goInsert(){
 	var frmData=$("#frm").serialize();
 	// alert(frmData);
 	$.ajax({
-		url : "${cpath}/boardWrite.do",
+		url : "${cpath}/reviewWrite.do",
 		type : "post",
 		data : frmData,
 		success : function(){
-			location.href="${cpath}/boardList.do";
+			location.href="${cpath}toonDetail.do";
 		},
 		error : function() { alert("error");}
 		
@@ -257,10 +257,82 @@ function goInsert(){
 	<hr>
 
 	<!-- 리뷰 글 작성 START-->
+	
 	<div class="container">
 		<div class="collection__details__form">
 			<div class="section-title">
 				<h5>내가 작성한 리뷰</h5>
+			</div>
+			<div id="vfrm" class="panel-body">
+				<table class="table table-bordered table-hover">
+					<tr>
+						<td>번호</td>
+						<td>제목</td>
+						<td>작성자</td>
+						<td>작성일</td>
+						<td>조회수</td>
+					</tr>
+					<c:forEach var="vo" items="${list}">								
+					<tr>
+						<td>${vo.idx}</td>
+						<td id="t${vo.idx}"><a href="javascript:contentView(${vo.idx})">${vo.title}</a></td>
+						<td>${vo.writer}</td>
+						<td>${fn:split(vo.indate," ")[0]}</td>
+						<td id="c${vo.idx}">${vo.count}</td>
+					</tr>
+					<tr id ="ct${vo.idx}" style="display: none">
+					<td>내용</td>
+					<td colspan="4">
+						<textarea id = "ta${vo.idx}" rows="7" readonly="readonly" class = "form-control">${vo.content}</textarea>
+						<br>
+						<c:if test="${!empty mvo && vo.memId eq mvo.memId}">
+						<span id="b${vo.idx}"><button class = "btn btn-sm btn-success" onclick="goUpdateForm(${vo.idx})" >수정</button></span>
+						<button class = "btn btn-sm btn-warning" onclick="goDel(${vo.idx})">삭제</button>
+						</c:if>
+						<c:if test="${empty mvo || vo.memId ne mvo.memId}">
+						<button disabled="disabled" class = "btn btn-sm btn-success">수정</button>
+						<button disabled="disabled" class = "btn btn-sm btn-warning">삭제</button>
+						</c:if>
+					</td>
+					</tr>
+					</c:forEach>
+					<c:if test="${!empty mvo}">
+					<tr>
+						<td colspan="5">
+							<button class="btn btn-sm btn-primary" onclick="goWrite()">글쓰기</button>
+						</td>
+					</tr>
+					</c:if>
+				</table>
+			</div>
+			<div id="wfrm" class="panel-body" style="display: none">
+				<form id="frm" class="form-horizontal" >
+		<input type="hidden" name="memId" value="${mvo.memId}"/>
+		  <div class="form-group">
+		    <label class="control-label col-sm-2" for="title">제목:</label>
+		    <div class="col-sm-10">
+		      <input type="text" class="form-control" name="title" placeholder="Enter title">
+		    </div>
+		   </div>
+		 <div class="form-group">
+  		  <label class="control-label col-sm-2" for="content" >내용:</label>
+   			 <div class="col-sm-10">
+    		  <textarea rows="10" class="form-control" name="content"></textarea>
+   		 </div> 
+		  </div>
+		  <div class="form-group">
+		    <label class="control-label col-sm-2" for="writer">작성자:</label>
+		    <div class="col-sm-10">
+		      <input type="text" readonly="readonly" class="form-control" name="writer" value="${mvo.memName}">
+		    </div>
+		  </div>
+		  <div class="form-group">
+		    <div class="col-sm-offset-2 col-sm-10">
+		      <button type="button" class="btn btn-sm btn-success" onclick="goInsert()">등록</button>
+		      <button type="reset" class="btn btn-sm btn-info">취소</button>
+		    </div>
+		  </div>
+		</form>
 			</div>
 			<form action="#">
 				<textarea placeholder="짧게라도 좋으니 작품에 대한 감상을 기록해보세요"></textarea>
