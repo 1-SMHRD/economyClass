@@ -28,7 +28,7 @@ public class postDetailController implements Controller {
 		request.setAttribute("post", post);
 		List<PCommentVO> pc = dao.pcAllList(post_num);
 		request.setAttribute("pc", pc);
-		
+		dao.postView(post_num); // 조회수 누적
 		System.out.println("게시글 정보 " + post);
 
 		return "postDetail";
