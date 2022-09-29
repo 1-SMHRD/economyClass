@@ -162,7 +162,7 @@ function goInsert(){
 					<div class="row">
 						<div class="col-lg-3">
 							<div class="collection__details__pic set-bg" style="height:300px;">
-								<img src="${cpath}/utoon/images/anime/details-pic.jpg">
+								<img src="${wt.wt_thum}">
 
 							</div>
 						</div>
@@ -171,29 +171,27 @@ function goInsert(){
 						<div class="col-lg-9">
 							<div class="collection__details__text">
 								<div class="collection__details__title">
-									<h3>망할 가문을 살려보겠습니다</h3>
+									<h3>${wt.wt_title}</h3>
 
 								</div>
 
 								<!-- 작품설명 -->
 								<p>
-									그것도 몇 장 나오지 않았던 엘리어스 가문의 다섯째 딸, <br> 고도비반 히키코모리 영애인 테라
-									엘리어스. <br> 산넘어 산이라고 이 가문은 곧 역적으로 몰려 멸문하고, <br> 직계가족은
-									모두 단두대 행! <br> 고로, 곧 테라도 죽는다.
+									${wt.wt_detail}
 								</p>
 								<div class="collection__details__widget">
 									<div class="row">
 										<div class="col-lg-6 col-md-6">
 											<ul>
-												<li><span>장르:</span> 로판</li>
-												<li><span>글, 그림:</span> 무늬랑, NU</li>
+												<li><span>장르:</span> ${wt.wt_gen}</li>
+												<li><span>글, 그림:</span>${wt.wt_auth}</li>
 
 											</ul>
 										</div>
 										<div class="col-lg-6 col-md-6">
 											<ul>
-												<li><span>연재 시작일:</span> 월요일</li>
-												<li><span>연령등급:</span> 전체이용가</li>
+												<li><span>연재 시작일:</span>${wt.up_date}</li>
+												<li><span>연령등급:</span>${wt.wt_grd}</li>
 											</ul>
 										</div>
 									</div>
