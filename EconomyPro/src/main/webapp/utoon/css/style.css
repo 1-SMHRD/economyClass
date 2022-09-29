@@ -1231,7 +1231,7 @@ input.mail_bt::placeholder {
 }
 /* ---------------------------------------------------------------box1(찜,보는중,봤어요) */
 .hm_want,.hm_watching,.hm_saw {
-    padding-top: 7%;
+    padding-top: 3%;
     padding-bottom: 2%;
     margin-left: 6%;
 }
@@ -1420,8 +1420,7 @@ button, input, optgroup, select, textarea {
     background: #5e27cd2a;
     color: gray;
     border-radius: 30px;
-    /* width: 1110px; */
-    width: 1000px;
+    width: 1110px;
 }
 
 
