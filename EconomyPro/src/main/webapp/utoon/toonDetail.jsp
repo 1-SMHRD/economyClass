@@ -226,7 +226,7 @@ function goInsert(){
 		<div class="collection__details__btn">
 			<a href="#" class="follow-btn"> &#128544; 별로에요</a> <a href="#"
 				class="follow-btn"> &#128522; 좋아요</a> <a href="#" class="follow-btn"><i
-				class="fa fa-heart-o"></i> Follow</a>
+				class="fa fa-heart-o"></i> Follow</a> 
 		</div>
 		<br>
 	
