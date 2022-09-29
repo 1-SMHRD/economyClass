@@ -30,7 +30,8 @@
 <link rel="icon" href="${cpath}/utoon/images/fevicon.png"
 	type="image/gif" />
 <!-- Scrollbar Custom CSS -->
-<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+<link rel="stylesheet"
+	href="${cpath}/utoon/css/jquery.mCustomScrollbar.min.css">
 <!-- Tweaks for older IEs-->
 <link rel="stylesheet"
 	href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
@@ -96,80 +97,89 @@
 
 	<div class="new_section container">
 		<br>
-		<!-- 필터 시작 -->
-		<div class="filter container" style="font-size: 17px;">
-			<label for="platform-select" style="font-weight: bold;">플랫폼 </label>
-			<input type="checkbox" value="naver-webtoon">네이버웹툰 <input
-				type="checkbox" value="kakao-webtoon">카카오웹툰 <input
-				type="checkbox" value="lezin-webtoon">레진코믹스 <input
-				type="checkbox" value="top-webtoon">탑툰 <input
-				type="checkbox" value="toomics-webtoon">투믹스 <br> <label
-				for="point-select">UToon평점</label> <select name="points"
-				id="point-select"
-				style="background-color: #5e27cd2a; border-radius: 30px;">
-				<option value="" disabled selected>--선택해주세요--</option>
-				<option value="5points">5점 이하</option>
-				<option value="4points">4점 이하</option>
-				<option value="3points">3점 이하</option>
-				<option value="2points">2점 이하</option>
-				<option value="1point">1점 이하</option>
-			</select> <label for="theme-select">장르/테마</label> <select name="themes"
-				id="theme-select"
-				style="background-color: #5e27cd2a; border-radius: 30px;">
-				<option value="" disabled selected>--선택해주세요--</option>
-				<option value="horror">공포</option>
-				<option value="action">액션</option>
-				<option value="comic">코믹</option>
-				<option value="pure">순정</option>
-				<option value="fantasy">판타지</option>
-				<option value="bl/gl">BL/GL</option>
-			</select> <input type="button" value="검색" onclick="check()"
-				style="background-color: #5e27cd2a; border-radius: 30px; border-color: #5e27cd2a;" />
-		</div>
+		<!-- 1. 탐색용 카테고리 선택 창 START-->
+		<form action="${cpath}/exploreFilter.do">
+			<div class="filter container">
+				<label for="platform-select">플랫폼 : </label> <input type="checkbox"
+					value="NV01" name="PLAT">네이버웹툰 <input type="checkbox"
+					value="KK01" name="PLAT">카카오웹툰 <input type="checkbox"
+					value="LZ01" name="PLAT">레진코믹스 <input type="checkbox"
+					value="TT01" name="PLAT">탑툰 <input type="checkbox"
+					value="TM01" name="PLAT">투믹스 <br> <label
+					for="point-select">UToon평점 </label> <select name="points"
+					id="point-select"
+					style="background-color: #5e27cd2a; border-radius: 30px;">
+					<option disabled selected>--선택해주세요--</option>
+					<option value="90">90점 이상</option>
+					<option value="80">80점 이상</option>
+					<option value="60">60점 이상</option>
+					<option value="40">40점 이상</option>
+					<option value="20">20점 이상</option>
+				</select> <label for="theme-select">장르/테마 </label> <select name="themes"
+					id="theme-select"
+					style="background-color: #5e27cd2a; border-radius: 30px;">
+					<option value="" disabled selected>--선택해주세요--</option>
+					<option value="공포">공포</option>
+					<option value="액션">액션</option>
+					<option value="코믹">코믹</option>
+					<option value="순정_멜로">순정_멜로</option>
+					<option value="판타지">판타지</option>
+					<option value="일상">일상</option>
+				</select>
+				<button type="submit">검색</button>
+			</div>
 
-		<!--필터 끝 -->
+		</form>
+		<!-- 1. 탐색용 카테고리 선택 창 END-->
 
-
+		<!-- 2. 탐색 필터링된 작품 선택 창 START-->
 		<br> <br>
 		<h1 class="new_title">작품 탐색 🔍</h1>
 		<br>
 
-		<div class="script">
-			<div class="script_box1">
-				<div class="new_box">
-					<a href="#"><img src="./images/독립일기.PNG"></a> <span
-						class="new_box_title">독립일기</span>
-				</div>
-			</div>
-			<div class="script_box1">
-				<div class="new_box">
-					<a href="#"><img src="./images/여신강림.PNG"></a>
-					<div class="new_box_title">여신강림</div>
-				</div>
-			</div>
-			<div class="script_box1">
-				<div class="new_box">
-					<a href="#"><img src="./images/싸움독학.PNG"></a>
-					<div class="new_box_title">싸움독학</div>
-				</div>
-			</div>
-			<div class="script_box1">
-				<div class="new_box">
-					<a href="#"><img src="./images/속도위반로맨스.PNG"></a>
-					<div class="new_box_title">속도위반로맨스</div>
-				</div>
-			</div>
-			<div class="script_box1">
-				<div class="new_box">
-					<a href="#"><img src="./images/별이삼샵.PNG"></a>
-					<div class="new_box_title">별이삼샵</div>
-				</div>
-			</div>
+		<!-- exploreFilterController 를 거치지 않은 기본 전체 작품 나열/ 필터링된 상황 두가지로 else if 문임 -->
+		<c:choose>
+			<c:when test="${!empty list}">
+				<c:forEach varStatus="stat" begin="0"
+					end="${ list.size() % 5 == 0 ? list.size() / 5 : list.size() / 5}">
+					<div class="card">
+						<div class="up_webtoon">
+							<c:forEach varStatus="j" begin="${ stat.index * 5 }"
+								end="${ stat.index*5+4 >= list.size() ? list.size()-1 : stat.index * 5 + 4 }">
 
-		</div>
-		<!-- 타임라인 종료 -->
+								<div class="new_box">
+									<a href="Home.html"><img src="${list[j.index].wt_thum}"></a>
+									<span class="new_box_title">${list[j.index].wt_title}</span>
+								</div>
+							</c:forEach>
+						</div>
+					</div>
+				</c:forEach>
+			</c:when>
+			<c:otherwise>
+				<c:forEach varStatus="stat" begin="0"
+					end="${allList.size() % 5 == 0 ? allList.size() / 5 : allList.size() / 5}">
+					<div class="card">
+						<div class="up_webtoon">
+							<c:forEach varStatus="j" begin="${stat.index * 5 }"
+								end="${stat.index*5+4 >= allList.size() ? allList.size()-1 : stat.index * 5 + 4 }">
 
+								<div class="new_box">
+									<a href="Home.html"><img src="${allList[j.index].wt_thum}"></a>
+									<span class="new_box_title">${allList[j.index].wt_title}</span>
+								</div>
+							</c:forEach>
+						</div>
+					</div>
+				</c:forEach>
+			</c:otherwise>
+		</c:choose>
 	</div>
+
+
+	<!-- 2. 탐색 필터링된 작품 선택 창 END-->
+
+	
 	<script src="js/jquery.min.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.bundle.min.js"></script>
