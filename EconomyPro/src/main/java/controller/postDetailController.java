@@ -24,11 +24,11 @@ public class postDetailController implements Controller {
 		MemberVO vo = (MemberVO) session.getAttribute("lvo");
 		request.setAttribute("vo", vo);
 		int post_num = Integer.parseInt(request.getParameter("post_num"));
+		dao.postView(post_num); // 조회수 누적
 		PostVO post = dao.postGet(post_num);
 		request.setAttribute("post", post);
 		List<PCommentVO> pc = dao.pcAllList(post_num);
 		request.setAttribute("pc", pc);
-		dao.postView(post_num); // 조회수 누적
 		System.out.println("게시글 정보 " + post);
 
 		return "postDetail";
