@@ -226,16 +226,10 @@ function goInsert(){
 		<div class="collection__details__btn">
 			<a href="#" class="follow-btn"> &#128544; 별로에요</a> <a href="#"
 				class="follow-btn"> &#128522; 좋아요</a> <a href="#" class="follow-btn"><i
-				class="fa fa-heart-o"></i> Follow</a> <a href="#" class="follow-btn"><span>Watch
-					Now</span></a>
+				class="fa fa-heart-o"></i> Follow</a>
 		</div>
 		<br>
-		<div class="collection__details__btn">
-			<a href="#" class="book-btn"> &#128681; 책갈피</a> <a href="#"
-				class="book-btn"> &#128374; 보는 중</a> <a href="#" class="book-btn">
-				&#9989; 봤어요</a> <a href="#" class="book-btn"> &#128214; 리뷰</a>
-
-		</div>
+	
 	</div>
 	<br>
 
@@ -271,14 +265,7 @@ function goInsert(){
 			<div class="section-title">
 				<h5>내가 작성한 리뷰</h5>
 			</div>
-			<div id="vfrm" class="panel-body">
-				<table class="table table-bordered table-hover">
-					<tr>
-						<td>제목</td>
-						<td>작성자</td>
-					</tr>
-				</table>
-			</div>
+	
 			<%-- <div id="wfrm" class="panel-body" style="display: none">
 				<form id="frm" class="form-horizontal">
 					<input type="hidden" name="mem_id" value="${vo.mem_id}" />
@@ -306,8 +293,8 @@ function goInsert(){
 			</div> --%>
 			<form id="frm">
 				<textarea placeholder="짧게라도 좋으니 작품에 대한 감상을 기록해보세요" name="rv_ctnt"></textarea>
-				<input type="text" name="wt_id" value="${wt.wt_id}" disabled="disabled">
-				<input type="text" name="mem_id" value="${vo.mem_id}" disabled="disabled">
+				<input type="hidden" name="wt_id" value="${wt.wt_id}" disabled="disabled">
+				<input type="hidden" name="mem_id" value="${vo.mem_id}" disabled="disabled">
 				<button type="button" class="btn btn-sm btn-success" onclick="goInsert()">등록</button>
 				<button type="reset" class="btn btn-sm btn-info">취소</button>
 				<!-- <button class="btn btn-sm btn-primary" onclick="goWrite()" style="background: #5e27cd8c;">글쓰기</button> -->
