@@ -128,6 +128,9 @@
 	<div class="container">
 	<table>
 		<tr>
+			<td>조회수 : ${post.post_vcnt}</td>
+		</tr>
+		<tr>
 			<td>내용 ${post.post_ctnt}</td>
 		</tr>
 	</table>
@@ -176,6 +179,7 @@
 
 				<!-- 조회수  -->
 				<td>작성일 : ${pc.cmt_date}</td>
+				
 
 			</tr>
 		</table>
