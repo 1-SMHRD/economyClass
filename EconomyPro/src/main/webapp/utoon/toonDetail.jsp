@@ -154,63 +154,62 @@ function goInsert(){
 
 	<!--0000  -->
 	<section>
-	<section class="collection-details1" >
-		<div class="container">
-			<div class="collection__details__content"   >
-			<div>
-				<!-- <section > -->
-					<div class="row">
-						<div class="col-lg-3">
-							<div class="collection__details__pic set-bg" style="height:300px;">
-								<img src="${wt.wt_thum}">
-
-							</div>
-						</div>
-						
-						<br>
-						<div class="col-lg-9">
-							<div class="collection__details__text">
-								<div class="collection__details__title">
-									<h3>${wt.wt_title}</h3>
+		<section class="collection-details1">
+			<div class="container">
+				<div class="collection__details__content">
+					<div>
+						<!-- <section > -->
+						<div class="row">
+							<div class="col-lg-3">
+								<div class="collection__details__pic set-bg"
+									style="height: 300px;">
+									<img src="${wt.wt_thum}">
 
 								</div>
+							</div>
 
-								<!-- 작품설명 -->
-								<p>
-									${wt.wt_detail}
-								</p>
-								<div class="collection__details__widget">
-									<div class="row">
-										<div class="col-lg-6 col-md-6">
-											<ul>
-												<li><span>장르:</span> ${wt.wt_gen}</li>
-												<li><span>글, 그림:</span>${wt.wt_auth}</li>
+							<br>
+							<div class="col-lg-9">
+								<div class="collection__details__text">
+									<div class="collection__details__title">
+										<h3>${wt.wt_title}</h3>
 
-											</ul>
-										</div>
-										<div class="col-lg-6 col-md-6">
-											<ul>
-												<li><span>연재 시작일:</span>${wt.up_date}</li>
-												<li><span>연령등급:</span>${wt.wt_grd}</li>
-											</ul>
+									</div>
+
+									<!-- 작품설명 -->
+									<p>${wt.wt_detail}</p>
+									<div class="collection__details__widget">
+										<div class="row">
+											<div class="col-lg-6 col-md-6">
+												<ul>
+													<li><span>장르:</span> ${wt.wt_gen}</li>
+													<li><span>글, 그림:</span>${wt.wt_auth}</li>
+
+												</ul>
+											</div>
+											<div class="col-lg-6 col-md-6">
+												<ul>
+													<li><span>연재 시작일:</span>${wt.up_date}</li>
+													<li><span>연령등급:</span>${wt.wt_grd}</li>
+												</ul>
+											</div>
 										</div>
 									</div>
+
+
+									<!-- UTOON 선호도 표시(신호등) start -->
+									<div class="collection-light-wrap">
+										<div class="icon-light-green"></div>
+										<div class="collection-light-percent light-green">95.59%</div>
+									</div>
+									<!-- UTOON 선호도 표시(신호등) end -->
+
 								</div>
-
-
-								<!-- UTOON 선호도 표시(신호등) start -->
-								<div class="collection-light-wrap">
-									<div class="icon-light-green"></div>
-									<div class="collection-light-percent light-green">95.59%</div>
-								</div>
-								<!-- UTOON 선호도 표시(신호등) end -->
-
 							</div>
 						</div>
-					</div>
-				</section>
-				</div>
-				
+		</section>
+		</div>
+
 	</section>
 	<div class="container">
 		<div class="collection__details__btn">
@@ -229,7 +228,7 @@ function goInsert(){
 	</div>
 	<br>
 
-	 <hr> 
+	<hr>
 
 	<!-- UTOON 지수(가로그래프) start -->
 
@@ -255,7 +254,7 @@ function goInsert(){
 	<hr>
 
 	<!-- 리뷰 글 작성 START-->
-	
+
 	<div class="container">
 		<div class="collection__details__form">
 			<div class="section-title">
@@ -270,67 +269,71 @@ function goInsert(){
 						<td>작성일</td>
 						<td>조회수</td>
 					</tr>
-					<c:forEach var="vo" items="${list}">								
-					<tr>
-						<td>${vo.idx}</td>
-						<td id="t${vo.idx}"><a href="javascript:contentView(${vo.idx})">${vo.title}</a></td>
-						<td>${vo.writer}</td>
-						<td>${fn:split(vo.indate," ")[0]}</td>
-						<td id="c${vo.idx}">${vo.count}</td>
-					</tr>
-					<tr id ="ct${vo.idx}" style="display: none">
-					<td>내용</td>
-					<td colspan="4">
-						<textarea id = "ta${vo.idx}" rows="7" readonly="readonly" class = "form-control">${vo.content}</textarea>
-						<br>
-						<c:if test="${!empty mvo && vo.memId eq mvo.memId}">
-						<span id="b${vo.idx}"><button class = "btn btn-sm btn-success" onclick="goUpdateForm(${vo.idx})" >수정</button></span>
-						<button class = "btn btn-sm btn-warning" onclick="goDel(${vo.idx})">삭제</button>
-						</c:if>
-						<c:if test="${empty mvo || vo.memId ne mvo.memId}">
-						<button disabled="disabled" class = "btn btn-sm btn-success">수정</button>
-						<button disabled="disabled" class = "btn btn-sm btn-warning">삭제</button>
-						</c:if>
-					</td>
-					</tr>
+					<c:forEach var="vo" items="${list}">
+						<tr>
+							<td>${vo.idx}</td>
+							<td id="t${vo.idx}"><a
+								href="javascript:contentView(${vo.idx})">${vo.title}</a></td>
+							<td>${vo.writer}</td>
+							<td>${fn:split(vo.indate," ")[0]}</td>
+							<td id="c${vo.idx}">${vo.count}</td>
+						</tr>
+						<tr id="ct${vo.idx}" style="display: none">
+							<td>내용</td>
+							<td colspan="4"><textarea id="ta${vo.idx}" rows="7"
+									readonly="readonly" class="form-control">${vo.content}</textarea>
+								<br> <c:if test="${!empty mvo && vo.memId eq mvo.memId}">
+									<span id="b${vo.idx}"><button
+											class="btn btn-sm btn-success"
+											onclick="goUpdateForm(${vo.idx})">수정</button></span>
+									<button class="btn btn-sm btn-warning"
+										onclick="goDel(${vo.idx})">삭제</button>
+								</c:if> <c:if test="${empty mvo || vo.memId ne mvo.memId}">
+									<button disabled="disabled" class="btn btn-sm btn-success">수정</button>
+									<button disabled="disabled" class="btn btn-sm btn-warning">삭제</button>
+								</c:if></td>
+						</tr>
 					</c:forEach>
 					<c:if test="${!empty mvo}">
-					<tr>
-						<td colspan="5">
-							<button class="btn btn-sm btn-primary" onclick="goWrite()">글쓰기</button>
-						</td>
-					</tr>
+						<tr>
+							<td colspan="5">
+								<button class="btn btn-sm btn-primary" onclick="goWrite()">글쓰기</button>
+							</td>
+						</tr>
 					</c:if>
 				</table>
 			</div>
 			<div id="wfrm" class="panel-body" style="display: none">
-				<form id="frm" class="form-horizontal" >
-		<input type="hidden" name="memId" value="${mvo.memId}"/>
-		  <div class="form-group">
-		    <label class="control-label col-sm-2" for="title">제목:</label>
-		    <div class="col-sm-10">
-		      <input type="text" class="form-control" name="title" placeholder="Enter title">
-		    </div>
-		   </div>
-		 <div class="form-group">
-  		  <label class="control-label col-sm-2" for="content" >내용:</label>
-   			 <div class="col-sm-10">
-    		  <textarea rows="10" class="form-control" name="content"></textarea>
-   		 </div> 
-		  </div>
-		  <div class="form-group">
-		    <label class="control-label col-sm-2" for="writer">작성자:</label>
-		    <div class="col-sm-10">
-		      <input type="text" readonly="readonly" class="form-control" name="writer" value="${mvo.memName}">
-		    </div>
-		  </div>
-		  <div class="form-group">
-		    <div class="col-sm-offset-2 col-sm-10">
-		      <button type="button" class="btn btn-sm btn-success" onclick="goInsert()">등록</button>
-		      <button type="reset" class="btn btn-sm btn-info">취소</button>
-		    </div>
-		  </div>
-		</form>
+				<form id="frm" class="form-horizontal">
+					<input type="hidden" name="memId" value="${mvo.memId}" />
+					<div class="form-group">
+						<label class="control-label col-sm-2" for="title">제목:</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" name="title"
+								placeholder="Enter title">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-2" for="content">내용:</label>
+						<div class="col-sm-10">
+							<textarea rows="10" class="form-control" name="content"></textarea>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-2" for="writer">작성자:</label>
+						<div class="col-sm-10">
+							<input type="text" readonly="readonly" class="form-control"
+								name="writer" value="${mvo.memName}">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-offset-2 col-sm-10">
+							<button type="button" class="btn btn-sm btn-success"
+								onclick="goInsert()">등록</button>
+							<button type="reset" class="btn btn-sm btn-info">취소</button>
+						</div>
+					</div>
+				</form>
 			</div>
 			<form action="#">
 				<textarea placeholder="짧게라도 좋으니 작품에 대한 감상을 기록해보세요"></textarea>
@@ -353,21 +356,24 @@ function goInsert(){
 					<div class="section-title">
 						<h5>Reviews</h5>
 					</div>
-					<div class="collection__review__item">
-						<div class="collection__review__item__pic">
-							<img src="images/독립일기.PNG" alt="">
-						</div>
-						<div class="collection__review__item__text">
-							<h6>
-								<a href="nickname" ><span>${rv.mem_id} </a>1 Hour ago</span>
-							</h6>
-							<p>${rv.rv_ctnt}</p>
-							<br>
-							<button style="background: #5e27cd8c;" type="button">좋아요</button>
-							<button style="background: #5e27cd8c;" type="button">댓글달기</button>
-							<button style="background: #5e27cd8c;" type="button">공유하기</button>
-						</div>
-						<!-- </div>
+					<c:forEach var="rv" items="${rv}">
+						<div class="collection__review__item">
+							<div class="collection__review__item__pic">
+								<img src="images/독립일기.PNG" alt="">
+							</div>
+							<div class="collection__review__item__text">
+								<h6>
+									<span>${rv.mem_id}</span>
+								</h6>
+								<p>${rv.rv_ctnt}</p>
+								<br>
+								<button style="background: #5e27cd8c;" type="button">좋아요</button>
+								<button style="background: #5e27cd8c;" type="button">댓글달기</button>
+								<button style="background: #5e27cd8c;" type="button">공유하기</button>
+							</div>
+							</div>
+					</c:forEach>
+					<!-- </div>
                             <div class="collection__review__item">
                                 <div class="collection__review__item__pic">
                                     <img src="images/라온의남자.PNG" alt="">
@@ -430,13 +436,13 @@ function goInsert(){
                                     <button type="button">공유하기</button>
                                 </div>
                             </div> -->
-					</div>
-
 				</div>
-				<!-- 리뷰 글 내역 END-->
-			</div>
 
+			</div>
+			<!-- 리뷰 글 내역 END-->
 		</div>
+
+	</div>
 	</div>
 
 
