@@ -97,7 +97,7 @@
 
 	<!-- 리뷰 전체 게시글 불러오기 -->
 	<select id="reviewAllList" resultType="dao.ReviewVO">
-		select * from tbl_wt_review order by rv_date desc
+		select * from tbl_wt_review where wt_id = #{wt_id} order by rv_date desc
 	</select>
 	
 	<!-- 리뷰 게시글 쓰기 -->
