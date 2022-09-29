@@ -53,7 +53,63 @@
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
 	media="screen">
+<script type="text/javascript">
+function goDel(idx){
+	$.ajax({
+		url : "${cpath}/boardDelete.do",
+		type : "get",
+		data : {"idx":idx},
+		success : function(){
+			// 메인페이지로 reflash
+			location.href="${cpath}/boardList.do";
+		},
+		error : function(){ alert("error"); }
+	});
+	
+}
+function goUpdateForm(idx){
+	$("#ta"+idx).attr("readonly", false);
+	var tmpTitle=$("#t"+idx).text();
+	var newTitle="<input type='text' id='nt"+idx+"' class='form-control' value='"+tmpTitle+"'/>";
+	$("#t"+idx).html(newTitle);
+	var newBtn="<button class='btn btn-sm btn-primary' onclick='goUpdate("+idx+")'>수정하기</button>";
+	$("#b"+idx).html(newBtn);
+	
+}
+function goUpdate(idx){
+	var title=$("#nt"+idx).val();
+	var content=$("#ta"+idx).val();
+	$.ajax({
+		url : "${cpath}/boardUpdate.do",
+		type : "post",
+		data : {"idx":idx, "title":title, "content":content},
+		success : function(){
+			location.href="${cpath}/boardList.do";
+		},
+		error : function() { alert("error");}
+	});
+}
+function goWrite(){
+	$("#vfrm").css("display", "none");
+	$("#wfrm").css("display", "block");
+}
+function goInsert(){
+	//frm->memId, title, content, writer
+	var frmData=$("#frm").serialize();
+	// alert(frmData);
+	$.ajax({
+		url : "${cpath}/boardWrite.do",
+		type : "post",
+		data : frmData,
+		success : function(){
+			location.href="${cpath}/boardList.do";
+		},
+		error : function() { alert("error");}
+		
+	});
+}
 
+</script>
 </head>
 <body>
 	<!-- 보류//////////////////////////////////////////////////////////////////////////////-->

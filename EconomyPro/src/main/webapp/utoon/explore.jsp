@@ -99,7 +99,7 @@
 		<br>
 		<!-- 1. 탐색용 카테고리 선택 창 START-->
 		<form action="${cpath}/exploreFilter.do">
-			<div class="filter container">
+			<div class="filter container" style="font-size: 17px;">
 				<label for="platform-select">플랫폼 : </label> <input type="checkbox"
 					value="NV01" name="PLAT">네이버웹툰 <input type="checkbox"
 					value="KK01" name="PLAT">카카오웹툰 <input type="checkbox"
@@ -126,7 +126,7 @@
 					<option value="판타지">판타지</option>
 					<option value="일상">일상</option>
 				</select>
-				<button type="submit">검색</button>
+				<input type="button" value="검색" onclick="check()" style="background-color: #5e27cd2a; border-radius: 30px; border-color: #5e27cd2a;"/>
 			</div>
 
 		</form>
