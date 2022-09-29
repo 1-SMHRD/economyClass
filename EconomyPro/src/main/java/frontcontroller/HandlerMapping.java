@@ -27,9 +27,13 @@ import controller.postUpdateController;
 import controller.postUpdateFormController;
 import controller.postWriteController;
 import controller.postWriteFormController;
+import controller.reviewDeleteController;
 import controller.reviewDetailController;
+import controller.reviewUpdateController;
+import controller.reviewWriteController;
 import controller.searchAjaxController;
 import controller.searchController;
+import controller.toonDetailAjaxController;
 import controller.toonDetailController;
 import controller.totalRankingController;
 
@@ -78,10 +82,11 @@ public class HandlerMapping {
 		mappings.put("/postUpdate.do",new postUpdateController());
 		mappings.put("/postUpdateForm.do",new postUpdateFormController());
 		
-		
 		// 에이잭스 맵핑
-		mappings.put("/searchAjax.do",new searchAjaxController());
-		
+		mappings.put("/toonDetailAjax.do",new toonDetailAjaxController());
+		mappings.put("/reviewWrite.do",new reviewWriteController());
+		mappings.put("/reviewUpdate.do",new reviewUpdateController());
+		mappings.put("/reviewDelete.do",new reviewDeleteController());
 		
 		
 		
