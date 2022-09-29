@@ -206,8 +206,7 @@
 	<div class="container">
 		<div class="text-center">
 			<div class="communitywrite" >
-				<a href="community_write.html">
-					<button type="button" class="btn btn-secondary disabled">글쓰기</button>
+					<button type="button" class="btn btn-secondary disabled" onclick="location.href='${cpath}/postWrite.do'" >글쓰기</button>
 			</div>
 		</div>
 	</div>
@@ -249,7 +248,7 @@
 
 	<!-- Page section -->
 	<section class="page-section community-page set-bg"
-		data-setbg="images/community-bg.jpg"
+		data-setbg="${cpath}/utoon/images/community-bg.jpg"
 		style="border-top: 1px solid #d3d3d3; border-top: 1px solid #d3d3d3; margin-top:25px">
 		<div class="community-warp spad">
 			<div class="container">

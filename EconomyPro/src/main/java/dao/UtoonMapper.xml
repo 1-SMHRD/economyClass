@@ -103,8 +103,8 @@
 	<!-- 리뷰 게시글 쓰기 -->
 	<insert id="reviewInsert" parameterType="dao.ReviewVO">
 		insert into tbl_wt_review(
-		mem_id, rv_ctnt,wt_id)
-		values(#{mem_id},#{rv_ctnt},#{wt_id})
+		rv_num,wt_id,mem_id,rv_ctnt,rv_like,rv_date)
+		values(tbl_wt_review_seq.nextval,#{wt_id},#{mem_id},#{rv_ctnt},10,sysdate)
 	</insert>
 	
 	<!-- 리뷰 게시글 상세보기 -->

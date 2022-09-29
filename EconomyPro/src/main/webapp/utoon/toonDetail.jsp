@@ -102,7 +102,7 @@ function goInsert(){
 		type : "post",
 		data : frmData,
 		success : function(){
-			location.href="${cpath}/toonDetail.do?wt_id=${wt.wt_id}";
+			location.href="redirect:/toonDetail.do?wt_id=${rvw.wt_id}";
 		},
 		error : function() { alert("error");}
 		
@@ -293,9 +293,10 @@ function goInsert(){
 					</div>
 				</form>
 			</div> --%>
-			<form>
+			<form id="frm">
 				<textarea placeholder="짧게라도 좋으니 작품에 대한 감상을 기록해보세요" name="rv_ctnt"></textarea>
 				<input type="text" name="wt_id" value="${wt.wt_id}" disabled="disabled">
+				<input type="text" name="mem_id" value="${vo.mem_id}" disabled="disabled">
 				<button type="button" class="btn btn-sm btn-success" onclick="goInsert()">등록</button>
 				<button type="reset" class="btn btn-sm btn-info">취소</button>
 				<!-- <button class="btn btn-sm btn-primary" onclick="goWrite()" style="background: #5e27cd8c;">글쓰기</button> -->
