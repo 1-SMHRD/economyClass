@@ -67,7 +67,7 @@
 	<div class="container">
 
 		<div>
-			<h3 class="hm_comment"">
+			<h3 class="hm_comment">
 				<a href="mypage.html">마이페이지</a> > 내 리뷰 댓글
 			</h3>
 		</div>
@@ -92,16 +92,15 @@
 		</div>
 	</div>
 
-	<c:forEach var="post" items="${myPost}">
+	<c:forEach var="rc" items="${myRC}">
 		<div class="container">
 			<div class="story_text_content">
 				<div class="st">
 					<h6 class="rv_name">
-						<a href="${cpath}/postDetail.do?post_num=${post.post_num}">${post.post_title}</a>
+						${rc.cmt_ctnt}
 					</h6>
-
-					<h6 class="rv_view">작성일 ${post.post_date}</h6>
-					<h6 class="rv_date">조회수 ${post.post_vcnt}명</h6>
+					<h6 class="rv_view">${rc.mem_id}</h6>
+					<h6 class="rv_date">${fn:split(rc.cmt_date," ")[0]} ${fn:split(rc.cmt_date," ")[1]} ${fn:split(rc.cmt_date," ")[2]}</h6>
 				</div>
 			</div>
 		</div>
