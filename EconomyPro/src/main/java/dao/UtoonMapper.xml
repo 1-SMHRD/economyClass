@@ -231,6 +231,12 @@
 	<select id="filtListWT" parameterType = "dao.WebtoonVO" resultType="dao.WebtoonVO">
 		select * from tbl_wtoon where plat_id IN (${plat_id}) AND (wt_l_cnt/(wt_l_cnt+wt_d_cnt))*100 >= ${point} and WT_GEN = #{wt_gen} 
 	</select>
+	
+	<!-- 메인 검색바 검색 결과 페이지*********현범0929************** -->
+	
+	<select id="findListWT" parameterType = "dao.WebtoonVO" resultType="dao.WebtoonVO">
+		select * from tbl_wtoon where wt_title like ${wt_title} OR wt_auth like ${wt_auth} OR wt_gen like ${wt_gen}
+	</select>
 
 
 

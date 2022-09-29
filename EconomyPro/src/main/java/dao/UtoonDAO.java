@@ -366,23 +366,33 @@ public class UtoonDAO {
 		session.close();// 반납
 		return list;
 	}
-	
+
 ///////////////////////////신현범0928탐색페이지///////////////////////////////////////////	
-	
+
 // 탐색 페이지 기본 전체 작품 리스트 (처음 들어갔을때 / 아무것도 입력안하고 검색버튼 누를시)
 	public List<WebtoonVO> allListWT() {
-	SqlSession session = sqlSessionFactory.openSession();
-	List<WebtoonVO> list = session.selectList("allListWT");
-	session.close();// 반납
-	return list;
+		SqlSession session = sqlSessionFactory.openSession();
+		List<WebtoonVO> list = session.selectList("allListWT");
+		session.close();// 반납
+		return list;
 	}
+
 // 플렛폼 조건 + 장르 조건 + 평점 조건 제출시 
 	public List<WebtoonVO> filtListWT(WebtoonVO vo) {
-	SqlSession session = sqlSessionFactory.openSession();
+		SqlSession session = sqlSessionFactory.openSession();
 
-	List<WebtoonVO> list = session.selectList("filtListWT", vo);
-	session.close();// 반납
-	return list;
+		List<WebtoonVO> list = session.selectList("filtListWT", vo);
+		session.close();// 반납
+		return list;
+	}
+///////////////////////////신현범0929 메인 검색결과페이지///////////////////////////////////////////	
+
+//탐색 페이지 기본 전체 작품 리스트 (처음 들어갔을때 / 아무것도 입력안하고 검색버튼 누를시)
+	public List<WebtoonVO> findListWT(WebtoonVO vo) {
+		SqlSession session = sqlSessionFactory.openSession();
+		List<WebtoonVO> list = session.selectList("findListWT", vo);
+		session.close();// 반납
+		return list;
 	}
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////

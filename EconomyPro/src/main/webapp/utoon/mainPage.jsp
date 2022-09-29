@@ -118,16 +118,18 @@
 				<div class="containt_main">
 					<div class="main">
 						<!-- Another variation with a button -->
+						<form action="${cpath}/mainFinder.do">
 						<div class="input-group">
 							<input type="text" class="form-control"
-								placeholder="작품명 / 작가 검색하기">
+								placeholder="작품명 / 작가 검색하기" name ="keyWord">
 							<div class="input-group-append">
-								<button class="btn btn-secondary" type="button"
+								<button class="btn btn-secondary" type="submit"
 									style="background-color: #6e3ecd; border-color: #6e3ecd">
 									<i class="fa fa-search"></i>
 								</button>
 							</div>
 						</div>
+						</form>
 					</div>
 					<div class="header_box">
 						<div class="login_menu">

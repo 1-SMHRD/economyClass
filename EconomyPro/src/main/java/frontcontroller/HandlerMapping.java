@@ -12,6 +12,7 @@ import controller.exploreController;
 import controller.exploreFilterController;
 import controller.loginController;
 import controller.loginFormController;
+import controller.mainFinderController;
 import controller.mainPageController;
 import controller.myPCommentController;
 import controller.myPageController;
@@ -52,7 +53,7 @@ public class HandlerMapping {
 		
 		// 기본페이지 맵핑
 		mappings.put("/mainPage.do",new mainPageController());
-		mappings.put("/search.do",new searchController());
+		mappings.put("/mainFinder.do",new mainFinderController()); // 검색 창
 		mappings.put("/totalRanking.do",new totalRankingController());
 		mappings.put("/community.do",new communityController());
 		mappings.put("/collection.do",new collectionController());
