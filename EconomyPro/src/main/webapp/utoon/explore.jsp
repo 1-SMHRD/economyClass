@@ -148,7 +148,7 @@
 								end="${ stat.index*5+4 >= list.size() ? list.size()-1 : stat.index * 5 + 4 }">
 
 								<div class="new_box">
-									<a href="Home.html"><img src="${list[j.index].wt_thum}"></a>
+									<a href="${cpath}/toonDetail.do?wt_id=${list[j.index].wt_id}"><img src="${list[j.index].wt_thum}"></a>
 									<span class="new_box_title" style=" display:block; overflow: hidden; white-space: nowrap;text-overflow: ellipsis; word-break: break-all; ">${list[j.index].wt_title}</span>
 								</div>
 							</c:forEach>
@@ -165,7 +165,7 @@
 								end="${stat.index*5+4 >= allList.size() ? allList.size()-1 : stat.index * 5 + 4 }">
 
 								<div class="new_box">
-									<a href="Home.html"><img src="${allList[j.index].wt_thum}"></a>
+									<a href="${cpath}/toonDetail.do?wt_id=${allList[j.index].wt_id}"><img src="${allList[j.index].wt_thum}"></a>
 									<span class="new_box_title" style="display:block; overflow: hidden; white-space: nowrap;text-overflow: ellipsis; word-break: break-all; ">${allList[j.index].wt_title}</span>
 								</div>
 							</c:forEach>
