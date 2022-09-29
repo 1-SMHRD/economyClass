@@ -117,8 +117,9 @@
 	
 	
 	
-	
-	
+	<div class="container">
+
+	<div id="box_2th" style="height: 200px; backgroud-color : #5e27cd2a;">
 	<div class="container">
 	<h3 class="head_comment">📰 내용</h3>
 	
@@ -161,29 +162,39 @@
 		</tr>
 	</table> --%>
 	<br></div>
+	</div>
+	</div>
 	<!-- 게시글 상세 끝 -->
 	</div>
 	<hr>
 	<!-- 댓글 시작  -->
+	<div class="container">
+
+	<div id="box_2th" style="height: 450px; backgroud-color : #5e27cd2a;">
+	<div class="container">
 	<div class="container">
 	<h3 class="head_comment">📰 댓글</h3>
 	<c:forEach var="pc" items="${pc}">
 		<table>
 			<tr>
 
-				<!-- 게시글제목(링크로 상세페이지연결) -->
-				<td>작성자 : ${pc.mem_id}</td>
-
 				<!-- 작성일 -->
 				<td>내용 : ${pc.cmt_ctnt}</td>
-
+				
 				<!-- 조회수  -->
 				<td>작성일 : ${pc.cmt_date}</td>
+				
+				<!-- 게시글제목(링크로 상세페이지연결) -->
+				<td>작성자 : ${pc.mem_id}</td>
+				---------------------------------------------------------------------------------
 				
 
 			</tr>
 		</table>
 	</c:forEach>
+	</div>
+	</div>
+	</div>
 	</div>
 	<!-- 댓글 끝  -->
 
@@ -206,6 +217,25 @@
 	<button type="button" class="btn btn-sm btn-info"
 		onclick="location.href='${cpath}/community.do'">리스트</button>
 	</div>
+	
+	<!-- Javascript files-->
+	<script src="${cpath}/utoon/js/jquery.min.js"></script>
+	<script src="${cpath}/utoon/js/popper.min.js"></script>
+	<script src="${cpath}/utoon/js/bootstrap.bundle.min.js"></script>
+	<script src="${cpath}/utoon/js/jquery-3.0.0.min.js"></script>
+	<script src="${cpath}/utoon/js/plugin.js"></script>
+	<!-- sidebar -->
+	<script src="${cpath}/utoon/js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="${cpath}/utoon/js/custom.js"></script>
+	<script>
+		function openNav() {
+			document.getElementById("mySidenav").style.width = "250px";
+		}
+
+		function closeNav() {
+			document.getElementById("mySidenav").style.width = "0";
+		}
+	</script>
 	
 	
 </body>
