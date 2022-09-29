@@ -359,10 +359,9 @@ function goInsert(){
 						</div>
 						<div class="collection__review__item__text">
 							<h6>
-								<a href="nickname" ><span>Chris Curry - </a>1 Hour ago</span>
+								<a href="nickname" ><span>${rv.mem_id} </a>1 Hour ago</span>
 							</h6>
-							<p>whachikan Just noticed that someone categorized this as
-								belonging to the genre "demons" LOL</p>
+							<p>${rv.rv_ctnt}</p>
 							<br>
 							<button style="background: #5e27cd8c;" type="button">좋아요</button>
 							<button style="background: #5e27cd8c;" type="button">댓글달기</button>
