@@ -100,10 +100,10 @@
 	<section class="collection-details spad">
 		<div class="container">
 			<div class="collection__details__content">
-				<div class="row">
+				<div class="row" style="margin-top: 30px;">
 					<div class="col-lg-3">
 						<div class="collection__details__pic set-bg">
-							<img src="${wt.wt_thum}">
+							<img src="${wt.wt_thum}" style="height: 100%">
 
 						</div>
 					</div>
